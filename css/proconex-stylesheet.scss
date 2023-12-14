@@ -10,7 +10,18 @@
 		background-color: #4e5397;
 	}
 }
-
+@mixin absolute{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+@mixin BGcenter{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 //Web Fonts
 @font-face {
     font-family: 'Swis721 Cn BT';
@@ -108,6 +119,8 @@ img{
 	}
 	header{
 		background-color: #F2F2F2;
+        position: relative;
+        z-index: 3;
 	}
 	.navbar-brand{
 		display: block;
@@ -168,50 +181,69 @@ img{
 			justify-content: space-between;
 		}
 	}
-	.jumbotron{
-		min-height: calc(100vh - 97.81px);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
+    main{
+        position: relative;
+        z-index: 1;
+    }
+	.carousel{
 		position: relative;
-		&:before{
+		&:before{ 
 			content: "";
 			background-color: #000000;
 			opacity: 0.5;
-			position: absolute;
+			position: absolute; 
 			left: 0px;
 			top: 0px;
 			right: 0px;
 			bottom: 0px;
-			z-index: 1;
+			z-index: 3;
 		}
-		h1{
-			font-size: 400%;
-		}
-		p{
-			font-size: 200%;
-		}
-		h1, p{
-			color: #ffffff;
-			text-shadow: 1px 1px 5px #403f7c, 1px 1px 5px #403f7c, 2px 2px 5px #403f7c, 2px 2px 5px #403f7c, 2px 2px 5px #403f7c;
-		}
-		p{
-			letter-spacing: 0.5px;
-			.btn{
-				background-color: #035AA6;
-				border: none;
-				box-shadow: none;
-				margin: 6px;
-				@include hover; 
-				&.btn-lg{
-					font-size: 100%; 
-				}
-			}
-		}
+        .carousel-inner{
+            @include absolute;
+            z-index: 2;
+            .carousel-item{
+                height: 100%;
+                @include BGcenter;
+            }
+        }
 		.cover1{
-			position: relative;
-			z-index: 2;
-			padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 4;
+			height: calc(100vh - 97.81px);
+            min-height: 350px;
+            .cover_1{
+    			padding: 25px;
+                h1{
+                    font-size: 400%;
+                }
+                p{
+                    font-size: 200%;
+                }
+                h1, p{
+                    color: #ffffff;
+                    text-shadow: 1px 1px 5px #403f7c, 1px 1px 5px #403f7c, 2px 2px 5px #403f7c, 2px 2px 5px #403f7c, 2px 2px 5px #403f7c;
+                }
+                p{
+                    letter-spacing: 0.5px;
+                    .btn{
+                        background-color: #035AA6;
+                        border: none;
+                        box-shadow: none;
+                        margin: 6px;
+                        @include hover; 
+                        &.btn-lg{
+                            font-size: 100%; 
+                        }
+                    }
+                }
+            }
 		}
 	}
+    footer{
+        position: relative;
+        z-index: 2;
+    }
 }
