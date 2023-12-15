@@ -189,6 +189,11 @@ img{
     main{
         position: relative;
         z-index: 1;
+        .container{
+            @media (max-width: 767px){
+                max-width: 95%;
+            }
+        }
     }
 	.carousel{
         background-color: #000000;
@@ -220,7 +225,7 @@ img{
             z-index: 4;
 			min-height: calc(100vh - 97.81px);
             .cover_1{
-    			padding: 25px;
+    			padding: 50px 25px;
                 h1{
                     font-size: 400%;
                 }
@@ -243,6 +248,9 @@ img{
                             font-size: 100%; 
                         }
                     }
+                    &.lead:last-child {
+                        margin-bottom: 0px;
+                    }
                 }
             }
 		}
@@ -263,9 +271,24 @@ img{
         }
         h3{
             font-size: 260%;
+            font-weight: bold;
         }
         p{
             font-size: 180%;
+        }
+        #pExim1{
+            display: block;
+        }
+        #pExim2{
+            display: none;
+        }
+        @media (max-width: 767px){
+            #pExim2{
+                display: block;
+            }
+            #pExim1{
+                display: none;
+            }
         }
     }
     
