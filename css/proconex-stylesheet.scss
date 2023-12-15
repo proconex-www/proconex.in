@@ -115,12 +115,21 @@ img{
 	@media (max-width: 319px){
 		font-size: 6px; 
 	}
-	.bg-white{
+	.bg_white{
 		background-color: #F2F2F2;
 	}
 	.heading{
 		font-family: 'Futura Md BT';
-	}
+        &_green{
+            background: #227153;
+            color: #ffffff;
+            display: inline-block;
+            padding: 6px 12px;
+            margin-left: -12px; 
+            border-radius: 15px;
+            border: 3px solid #1EA4D9;
+        }
+    }
 	header{
         position: relative;
         z-index: 3;
@@ -257,7 +266,7 @@ img{
 	}
     
     //Services section
-    #proconEx_services{
+    [id*="proconEx_services"]{ 
         padding: 60px 0px;
         .proconEx_services_1{
             padding: 15px;
@@ -276,22 +285,38 @@ img{
         p{
             font-size: 180%;
         }
-        #pExim1{
+    }
+    #proconEx_services_industry{
+        background-color: #1EA4D9;
+        position: relative;
+        &:before{
+            content: "";
             display: block;
+            @include absolute;
+            background-image: url("../images/petrochemicals-industry.jpg");
+            @include BGcenter;
+            background-attachment: fixed;
+            z-index: 1;
+            opacity: 0.1;
         }
-        #pExim2{
-            display: none;
+        .container{
+            position: relative;
+            z-index: 2;
         }
-        @media (max-width: 767px){
-            #pExim2{
-                display: block;
+        .proconEx_services_1{
+            font-size: 90%;
+            p{
+                &:last-child{
+                    margin-bottom: 0px;
+                }
             }
-            #pExim1{
-                display: none;
+            &.bg_white{
+                border-radius: 15px;
+                border: 3px solid #1ea4d9;
+                margin: 13px 0px;
             }
         }
     }
-    
     footer{
         position: relative;
         z-index: 2;
