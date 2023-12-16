@@ -106,10 +106,21 @@ img{
     &.fadein{
         opacity: 1;
     }
-	@media (max-width: 991px){
+    @media (min-width: 1367px){
+        font-size: calc(10vw/1367 * 100);
+        .container{
+            max-width: 95%;
+        }
+        section{
+            .container{
+                max-width: 84.507%;
+            }
+        }
+    }
+	@media (max-width: 767px){
 		font-size: 9px;
 	}
-	@media (max-width: 567px){
+	@media (max-width: 576px){
 		font-size: 8px;
 	}
 	@media (max-width: 319px){
@@ -124,10 +135,10 @@ img{
             background: #227153;
             color: #ffffff;
             display: inline-block;
-            padding: 6px 12px;
-            margin-left: -12px; 
-            border-radius: 15px;
-            border: 4px solid #1EA4D9;
+            padding: calc(6em/26.1) calc(12em/26.1);
+            margin-left: calc(-12em/26.1); 
+            border-radius: calc(15em/26.1);
+            border: calc(4em/26.1) solid #1EA4D9;
         }
     }
 	header{
@@ -136,12 +147,15 @@ img{
 	}
 	.navbar-brand{
 		display: block;
-		max-width: 320px;
+		max-width: calc(320em/20);
 		height: auto; 
-		padding-right: 35px; 
+		padding-right: calc(35em/20); 
+        @media(min-width: 1367px){
+            max-width: 23.721%;
+        }
 	}
 	.navbar{
-		padding: 25px;
+		padding: calc(25em/10);
 	}
 	.navbar-nav{
 		font-size: 160%;
@@ -155,7 +169,7 @@ img{
 		border-color: #84c3e7;
 		background-color: #b8e4e8;
 		.dropdown-item{
-			padding: 5px 11px;
+			padding: calc(5em/14) calc(11em/14);
 			margin: 0px;
 			white-space: normal;
 			word-wrap: break-word;
@@ -232,26 +246,29 @@ img{
             align-items: center;
             position: relative;
             z-index: 4;
-			min-height: calc(100vh - 97.81px);
+			min-height: calc(100vh - calc(97.81em/10));
             .cover_1{
-    			padding: 50px 25px;
+    			padding: calc(50em/10) calc(25em/10);
+                h1, p{
+                    color: #ffffff;
+                }
                 h1{
                     font-size: 400%;
+                    text-shadow: calc(1em/40) calc(1em/40) calc(5em/40) #403f7c, calc(1em/40) calc(1em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c;
+                    margin-bottom: calc(8em/20);
                 }
                 p{
                     font-size: 200%;
-                }
-                h1, p{
-                    color: #ffffff;
-                    text-shadow: 1px 1px 5px #403f7c, 1px 1px 5px #403f7c, 2px 2px 5px #403f7c, 2px 2px 5px #403f7c, 2px 2px 5px #403f7c;
-                }
-                p{
-                    letter-spacing: 0.5px;
+                    text-shadow: calc(1em/20) calc(1em/20) calc(5em/20) #403f7c, calc(1em/20) calc(1em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c;
+                    letter-spacing: calc(0.5em/20);
+                    margin-bottom: calc(16em/20);
                     .btn{
                         background-color: #035AA6;
+                        padding: calc(8em/20) calc(16em/20);
+                        border-radius: calc(4.8em/20);
                         border: none;
                         box-shadow: none;
-                        margin: 6px;
+                        margin: calc(6em/20);
                         @include hover; 
                         &.btn-lg{
                             font-size: 100%; 
@@ -267,9 +284,9 @@ img{
     
     //Services section
     [id*="proconEx_services"]{ 
-        padding: 60px 0px;
+        padding: calc(60em/10) 0px;
         .proconEx_services_1{
-            padding: 15px;
+            padding: calc(15em/10);
         }
         h2{
             font-size: 290%; 
@@ -311,12 +328,13 @@ img{
                 }
             }
             &.bg_white{
-                border-radius: 15px;
-                border: 4px solid #1ea4d9;
-                margin: 13px 0px;
+                border-radius: calc(15em/9);
+                border: calc(4em/9) solid #1ea4d9;
+                margin: calc(13em/9) 0px;
                 img{
-                    border: 4px solid #d8e9ef;
-                    margin: 6px 0px; 
+                    width: 100%;
+                    border: calc(4em/9) solid #d8e9ef;
+                    margin: calc(6em/9) 0px; 
                 }
             }
         }
