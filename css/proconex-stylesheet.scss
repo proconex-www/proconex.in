@@ -398,6 +398,7 @@ img{
                 font-size: 160%; 
                 .form-control-file{
                     margin-top: calc(-3em/16);
+                    outline: none;
                 }
             }
             input[type="submit"]{
@@ -439,6 +440,17 @@ img{
             }
             .d-flex{
                 .proconEx_certify_1 {
+                    p{
+                        margin-bottom: 0px;
+                        + p{
+                            margin-top: 6px;
+                        }
+                    }
+                    a{
+                        color: #f2f2f2; 
+                        display: inline-block;
+                        @include linkhoverlight;
+                    }
                     @media (min-width: 1200px){
                         width: 20%;
                     }
@@ -455,12 +467,23 @@ img{
             }
             .proconEx_certify_1 {
                 padding: calc(15em/14);
-                img{
-                    display: block;
-                    width: 100%;
-                    margin: auto;
-                    @media (min-width:768px){
-                        max-width: 50%;
+                address{
+                    margin: 0px;
+                }
+                &.bg-white {
+                    margin-top: calc(12em/14);
+                    a{
+                        display: block;
+                        width: 33.3333%;
+                        margin: calc(8em/14);
+                        img{
+                            display: block;
+                            margin: auto;
+                            width: 80%;
+                            @media (min-width: 768px){
+                                width: 40%;
+                            }
+                        }
                     }
                 }
             }
