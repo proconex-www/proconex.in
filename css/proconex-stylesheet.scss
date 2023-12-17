@@ -124,7 +124,7 @@ img{
 		font-size: 8px;
 	}
 	@media (max-width: 319px){
-		font-size: 6px; 
+		font-size: 7px; 
 	}
 	.bg_white{
 		background-color: #F2F2F2;
@@ -181,12 +181,12 @@ img{
 		margin: 0px;
 		outline: none;
 		position: absolute;
-		right: 25px;
-		top: 27px;
+		right: calc(25em/20);
+		top: calc(27em/20);
 		@include hover;
 	}
 	.navbar-toggler-icon{
-		font-size: 117%;
+		font-size: 117%; 
 		padding: 0px;
 		margin: 0px;
 		line-height: 35px;
@@ -301,6 +301,9 @@ img{
         }
         p{
             font-size: 180%;
+            &:last-child{
+                margin-bottom: 0px;
+            }
         }
     }
     #proconEx_services_industry{
@@ -326,6 +329,18 @@ img{
                 &:last-child{
                     margin-bottom: 0px;
                 }
+                a.btn{
+                    &.btn-secondary{
+                        font-size: 160%;
+                        font-weight: bold;
+                        color: #ffffff;
+                        background-color: #0A6DFC;
+                        border-radius: calc(15em/16.2);
+                        border: calc(4em/16.2) solid #1ea4d9;
+                        box-shadow: none;
+                        @include hover;
+                    }
+                }
             }
             &.bg_white{
                 border-radius: calc(15em/9);
@@ -339,7 +354,55 @@ img{
             }
         }
     }
+    #proconEx_support{
+        background-color: #0A7ABF;
+        padding: calc(60em/10) 0px;
+        h2{
+            color: #ffffff;
+            font-size: 370%;
+            margin-bottom: calc(24em/30);
+        }
+        p{
+            color: #ffffff;
+            font-size: 180%;
+        }
+        form{
+            color: #ffffff;
+            label{
+                font-size: 130%;
+                letter-spacing: 0.6px;
+                &.custom-file-label{
+                    margin: 0px;
+                    letter-spacing: 0px;
+                }
+            }
+            .form-control{ 
+                font-size: 160%; 
+                .form-control-file{
+                    margin-top: calc(-3em/16);
+                }
+            }
+            input[type="submit"]{
+                &.btn{
+                    font-size: 230%;
+                    color: #ffffff;
+                    background-color: #035AA6;
+                    min-width: 50%;
+                    border: none;
+                    box-shadow: none;
+                    padding: calc(6em/10);
+                    margin-top: calc(6em/10);
+                    &.btn-primary{
+                        @include hover; 
+                    }
+                }
+            }
+        }
+    }
     footer{
+        font-size: 90%;
+        color: #ffffff;
+        background-color: #035AA6;
         position: relative;
         z-index: 2;
     }
