@@ -189,7 +189,15 @@ img{
 		font-size: 160%;
 		.nav-link{
 			color: #333333;
+            position: relative;
+            padding-right: 19px;
             @include linkhoverwbg;
+            .icon{
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
 		}
 	}
 	.dropdown-menu{ 
