@@ -450,8 +450,20 @@ img{
         background-color: #035AA6;
         position: relative;
         z-index: 2;
+        &:before{
+            content: "";
+            display: block;
+            background-image: url("../images/bg1.jpg");
+            @include BGcenter;
+            background-attachment: fixed;
+            @include absolute;
+            z-index: 0;
+            opacity: 0.01;
+        }
         #proconEx_certify{
             padding: calc(60em/14) 0px 0px;
+            position: relative;
+            z-index: 1;
             h2{
                 font-size: calc(340%/1.4);
             }
@@ -515,6 +527,8 @@ img{
             }
         }
         .copyrights{
+            position: relative;
+            z-index: 2;
             padding: calc(15em/14);
             flex-wrap: wrap;
             justify-content: center;
