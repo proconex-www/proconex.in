@@ -326,6 +326,9 @@ img{
                     @media (max-width:991px){
                         max-height: 25px;
                     }
+                    @media (max-width:374px){
+                        max-height: 16px;
+                    }
                 }
             }
         }
