@@ -1,0 +1,365 @@
+@import "variables"; 
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2') format('woff2'), url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.proconex-cart1 {
+  &:before {
+    content: $proconex-cart1; 
+  }
+}
+.proconex-messenger {
+  &:before {
+    content: $proconex-messenger;     
+    color: #00b2ff;
+  }
+}
+.proconex-microsoftexcel {
+  &:before {
+    content: $proconex-microsoftexcel;     
+    color: #217346;
+  }
+}
+.proconex-microsoftpowerpoint {
+  &:before {
+    content: $proconex-microsoftpowerpoint;     
+    color: #d24726;
+  }
+}
+.proconex-microsoftword {
+  &:before {
+    content: $proconex-microsoftword;     
+    color: #2b579a;
+  }
+}
+.proconex-connection {
+  &:before {
+    content: $proconex-connection; 
+  }
+}
+.proconex-mic {
+  &:before {
+    content: $proconex-mic; 
+  }
+}
+.proconex-cart {
+  &:before {
+    content: $proconex-cart; 
+  }
+}
+.proconex-phone {
+  &:before {
+    content: $proconex-phone; 
+  }
+}
+.proconex-phone-hang-up {
+  &:before {
+    content: $proconex-phone-hang-up; 
+  }
+}
+.proconex-location {
+  &:before {
+    content: $proconex-location; 
+  }
+}
+.proconex-location2 {
+  &:before {
+    content: $proconex-location2; 
+  }
+}
+.proconex-map {
+  &:before {
+    content: $proconex-map; 
+  }
+}
+.proconex-map2 {
+  &:before {
+    content: $proconex-map2; 
+  }
+}
+.proconex-printer {
+  &:before {
+    content: $proconex-printer; 
+  }
+}
+.proconex-mobile {
+  &:before {
+    content: $proconex-mobile; 
+  }
+}
+.proconex-user {
+  &:before {
+    content: $proconex-user; 
+  }
+}
+.proconex-spinner9 {
+  &:before {
+    content: $proconex-spinner9; 
+  }
+}
+.proconex-search {
+  &:before {
+    content: $proconex-search; 
+  }
+}
+.proconex-lock {
+  &:before {
+    content: $proconex-lock; 
+  }
+}
+.proconex-unlocked {
+  &:before {
+    content: $proconex-unlocked; 
+  }
+}
+.proconex-cog {
+  &:before {
+    content: $proconex-cog; 
+  }
+}
+.proconex-pie-chart {
+  &:before {
+    content: $proconex-pie-chart; 
+  }
+}
+.proconex-stats-dots {
+  &:before {
+    content: $proconex-stats-dots; 
+  }
+}
+.proconex-stats-bars2 {
+  &:before {
+    content: $proconex-stats-bars2; 
+  }
+}
+.proconex-download3 {
+  &:before {
+    content: $proconex-download3; 
+  }
+}
+.proconex-upload3 {
+  &:before {
+    content: $proconex-upload3; 
+  }
+}
+.proconex-sphere {
+  &:before {
+    content: $proconex-sphere; 
+  }
+}
+.proconex-earth {
+  &:before {
+    content: $proconex-earth; 
+  }
+}
+.proconex-link {
+  &:before {
+    content: $proconex-link; 
+  }
+}
+.proconex-attachment {
+  &:before {
+    content: $proconex-attachment; 
+  }
+}
+.proconex-warning {
+  &:before {
+    content: $proconex-warning; 
+  }
+}
+.proconex-plus {
+  &:before {
+    content: $proconex-plus; 
+  }
+}
+.proconex-minus {
+  &:before {
+    content: $proconex-minus; 
+  }
+}
+.proconex-cancel-circle {
+  &:before {
+    content: $proconex-cancel-circle; 
+  }
+}
+.proconex-blocked {
+  &:before {
+    content: $proconex-blocked; 
+  }
+}
+.proconex-cross {
+  &:before {
+    content: $proconex-cross; 
+  }
+}
+.proconex-checkmark {
+  &:before {
+    content: $proconex-checkmark; 
+  }
+}
+.proconex-volume-high {
+  &:before {
+    content: $proconex-volume-high; 
+  }
+}
+.proconex-volume-mute2 {
+  &:before {
+    content: $proconex-volume-mute2; 
+  }
+}
+.proconex-loop2 {
+  &:before {
+    content: $proconex-loop2; 
+  }
+}
+.proconex-arrow-up {
+  &:before {
+    content: $proconex-arrow-up; 
+  }
+}
+.proconex-arrow-right {
+  &:before {
+    content: $proconex-arrow-right; 
+  }
+}
+.proconex-arrow-down {
+  &:before {
+    content: $proconex-arrow-down; 
+  }
+}
+.proconex-arrow-left {
+  &:before {
+    content: $proconex-arrow-left; 
+  }
+}
+.proconex-shift {
+  &:before {
+    content: $proconex-shift; 
+  }
+}
+.proconex-checkbox-checked {
+  &:before {
+    content: $proconex-checkbox-checked; 
+  }
+}
+.proconex-checkbox-unchecked {
+  &:before {
+    content: $proconex-checkbox-unchecked; 
+  }
+}
+.proconex-radio-checked2 {
+  &:before {
+    content: $proconex-radio-checked2; 
+  }
+}
+.proconex-radio-unchecked {
+  &:before {
+    content: $proconex-radio-unchecked; 
+  }
+}
+.proconex-share {
+  &:before {
+    content: $proconex-share; 
+  }
+}
+.proconex-mail3 {
+  &:before {
+    content: $proconex-mail3; 
+  }
+}
+.proconex-facebook2 {
+  &:before {
+    content: $proconex-facebook2; 
+  }
+}
+.proconex-whatsapp {
+  &:before {
+    content: $proconex-whatsapp; 
+  }
+}
+.proconex-youtube {
+  &:before {
+    content: $proconex-youtube; 
+  }
+}
+.proconex-appleinc {
+  &:before {
+    content: $proconex-appleinc; 
+  }
+}
+.proconex-android {
+  &:before {
+    content: $proconex-android; 
+  }
+}
+.proconex-windows8 {
+  &:before {
+    content: $proconex-windows8; 
+  }
+}
+.proconex-skype {
+  &:before {
+    content: $proconex-skype; 
+  }
+}
+.proconex-reddit {
+  &:before {
+    content: $proconex-reddit; 
+  }
+}
+.proconex-linkedin {
+  &:before {
+    content: $proconex-linkedin; 
+  }
+}
+.proconex-pinterest {
+  &:before {
+    content: $proconex-pinterest; 
+  }
+}
+.proconex-file-pdf {
+  &:before {
+    content: $proconex-file-pdf; 
+  }
+}
+.proconex-file-openoffice {
+  &:before {
+    content: $proconex-file-openoffice; 
+  }
+}
+.proconex-file-word {
+  &:before {
+    content: $proconex-file-word; 
+  }
+}
+

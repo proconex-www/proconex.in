@@ -18,6 +18,14 @@
 		color: #4e5397;
 	}
 }
+@mixin linkhoverwbg{
+	&:hover, &:focus{
+		color: #1367a5;
+	}
+	&:active{
+		color: #0d4f81;
+	}
+}
 @mixin linkhoverlight{
 	&:hover, &:focus{
 		color: #95dfc3;
@@ -112,6 +120,8 @@
     font-style: normal;
     font-display: fallback;
 }
+//import font-icons
+@import url("icons.css"); 
 img{
 	max-width: 100%;
 	height: auto;
@@ -179,6 +189,7 @@ img{
 		font-size: 160%;
 		.nav-link{
 			color: #333333;
+            @include linkhoverwbg;
 		}
 	}
 	.dropdown-menu{ 
@@ -305,6 +316,18 @@ img{
         padding: calc(60em/10) 0px;
         .proconEx_services_1{
             padding: calc(15em/10);
+            .brands{
+                p{
+                    display: inline-block;
+                }
+                img{
+                    max-height: 45px;
+                    margin: 6px;
+                    @media (max-width:991px){
+                        max-height: 25px;
+                    }
+                }
+            }
         }
         h2{
             font-size: 290%; 
