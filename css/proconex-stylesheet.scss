@@ -221,6 +221,11 @@ img{
 		right: calc(25em/20);
 		top: calc(27em/20);
 		@include hover;
+        &:hover, &:focus, &:active{
+            .navbar-toggler-icon{
+                color: #ffffff;
+            }
+        }
 	}
 	.navbar-toggler-icon{
 		font-size: 117%; 
