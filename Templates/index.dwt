@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Turbine Control Parts & Spares Procurement &mdash; Proconex Pvt. Ltd.</title>
-<!-- InstanceEndEditable -->
-<link href="images/proconex-icon.ico" rel="icon" type="image/x-icon">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Template of Proconex Pvt. Ltd.</title>
+<!-- TemplateEndEditable -->
+<link href="../images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/proconex-stylesheet.css?v=1.92" rel="stylesheet">
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="../css/proconex-stylesheet.css?v=1.92" rel="stylesheet">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <body id="proconEx_bdy">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script>
-<!-- InstanceBeginEditable name="hd-js" -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<!-- TemplateBeginEditable name="hd-js" -->
     
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 <header>
-  <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="index.html"><img src="images/proconex-pvt-ltd.png" width="1024" height="121" alt="Proconex Pvt. Ltd."></a>
+  <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="../index.html"><img src="../images/proconex-pvt-ltd.png" width="1024" height="121" alt="Proconex Pvt. Ltd."></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">&#9776;</span> </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
@@ -48,7 +48,7 @@
   </nav>
 </header>
 <main>
-<!-- InstanceBeginEditable name="Mains" -->
+<!-- TemplateBeginEditable name="Mains" -->
 <section>
   <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000" data-pause="false">
     <div class="cover1 text-center">
@@ -60,10 +60,10 @@
       </div>
     </div>
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active" style="background-image: url('images/rotor-management-service-centers.jpg')"></div>
-      <div class="carousel-item" style="background-image: url('images/Allen-Bradley-PLC-application.jpg')"></div>
-      <div class="carousel-item" style="background-image: url('images/Shahaab-turbine-control-spares-and-repairs-solution-provider.jpg')"></div>
-      <div class="carousel-item" style="background-image: url('images/global-controls.jpg')"></div>
+      <div class="carousel-item active" style="background-image: url('../images/rotor-management-service-centers.jpg')"></div>
+      <div class="carousel-item" style="background-image: url('../images/Allen-Bradley-PLC-application.jpg')"></div>
+      <div class="carousel-item" style="background-image: url('../images/Shahaab-turbine-control-spares-and-repairs-solution-provider.jpg')"></div>
+      <div class="carousel-item" style="background-image: url('../images/global-controls.jpg')"></div>
     </div>
   </div>
 </section>
@@ -97,7 +97,7 @@
         <div class="proconEx_services_1">
           <picture>
             <source srcset="images/proconex-services-.jpg" media="(max-width: 767px)">
-            <img src="images/proconex-services.jpg" width="1920" height="207" alt="Proconex Repair and Supply Services"  style="width:100%"></picture>
+            <img src="../images/proconex-services.jpg" width="1920" height="207" alt="Proconex Repair and Supply Services"  style="width:100%"></picture>
           <!--
             <div class="brands d-flex justify-content-center align-items-center flex-wrap">
               <p><strong>Renowned brands</strong></p>
@@ -135,28 +135,28 @@
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="proconEx_services_1 bg_white">
           <h3>SPARES</h3>
-          <img src="images/spares-major-industries.jpg" width="250" height="250" alt="Metal Automation Spare Parts" title="Metal Automation Spare Parts">
+          <img src="../images/spares-major-industries.jpg" width="250" height="250" alt="Metal Automation Spare Parts" title="Metal Automation Spare Parts">
           <p>We provide extensive support and supply services for both current control systems and instrumentation spares, including obsolete panels that may not be supported by the original equipment manufacturers (OEMs). Our supplied parts come with a 12 to 18-month warranty, ensuring reliability. These components are genuine, originally manufactured by the OEMs, and accompanied by interchangeability certificates, certificates of origin, and test certificates.</p>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="proconEx_services_1 bg_white">
           <h3>REPAIRS</h3>
-          <img src="images/turbine-control-spares-repairs.jpg" width="250" height="209" alt="Turbine spares and repairs - Proconex" title="Turbine spares and repairs - Proconex">
+          <img src="../images/turbine-control-spares-repairs.jpg" width="250" height="209" alt="Turbine spares and repairs - Proconex" title="Turbine spares and repairs - Proconex">
           <p>We specialize in the repair of degraded and non-functional cards, offering component-level repairs or complete refurbishment. Our process takes into account factors such as aging, bulging, and overheating components, ensuring the restoration of cards to full functionality. All repairs come with a 12-month warranty.</p>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="proconEx_services_1 bg_white">
           <h3>TEST &amp; CERTIFICATION</h3>
-          <img src="images/testing-certifying-cards.jpg" width="250" height="209" alt="Testing and certifying the cards">
+          <img src="../images/testing-certifying-cards.jpg" width="250" height="209" alt="Testing and certifying the cards">
           <p>We ensure that all essential spare parts in your storeroom are prepared for immediate replacement. Our process involves testing and certifying the cards to guarantee their functional readiness when you pick them up.</p>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="proconEx_services_1 bg_white">
           <h3>BUY BACK &amp; ASSET RECOVERY</h3>
-          <img src="images/buy-back-asset-recovery.jpg" width="250" height="209" alt="BUY BACK & ASSET RECOVERY">
+          <img src="../images/buy-back-asset-recovery.jpg" width="250" height="209" alt="BUY BACK & ASSET RECOVERY">
           <p><strong>Uncertain about handling downgraded parts or excess stock?</strong> <strong>Looking to convert unwanted inventory into more critical spares?</strong> We facilitate cross-buying between plants or can directly purchase the stock. Additionally, we conduct appraisals for unused stock slated for disposal, providing you with the designated value for the goods regardless of their depreciated value.</p>
         </div>
       </div>
@@ -244,7 +244,7 @@
     </div>
   </div>
 </section>
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 </main>
 <footer>
   <section id="proconEx_certify">
@@ -327,11 +327,11 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="proconEx_certify_1 bg-white text-center d-flex"> <a href="https://www.iso.org/standard/62085.html" target="_blank"><img src="images/iso/proconex-iso-9001-2015.jpg" width="374" height="361" alt="Proconex ISO 9001:2015"></a><a href="https://www.iso.org/standard/60857.html" target="_blank"><img src="images/iso/proconex-iso-14001-2015.jpg" width="374" height="361" alt="Proconex ISO 14001:2015"></a><a href="https://www.iso.org/standard/63787.html" target="_blank"><img src="images/iso/proconex-iso-45001-2018.jpg" width="374" height="361" alt="Proconex ISO 45001:2018"></a> </div>
+          <div class="proconEx_certify_1 bg-white text-center d-flex"> <a href="https://www.iso.org/standard/62085.html" target="_blank"><img src="../images/iso/proconex-iso-9001-2015.jpg" width="374" height="361" alt="Proconex ISO 9001:2015"></a><a href="https://www.iso.org/standard/60857.html" target="_blank"><img src="../images/iso/proconex-iso-14001-2015.jpg" width="374" height="361" alt="Proconex ISO 14001:2015"></a><a href="https://www.iso.org/standard/63787.html" target="_blank"><img src="../images/iso/proconex-iso-45001-2018.jpg" width="374" height="361" alt="Proconex ISO 45001:2018"></a> </div>
         </div>
       </div>
     </div>
-    <img src="images/proconex-process-control-experts.jpg" width="1654" height="197" alt="" style="width: 100%"> </section>
+    <img src="../images/proconex-process-control-experts.jpg" width="1654" height="197" alt="" style="width: 100%"> </section>
   <div class="d-flex copyrights">
       <p>Follow us on Social Media: Facebook <span class="icon proconex-facebook2"></span> | <a href="https://in.linkedin.com/company/proconex-pvt-ltd" target="_blank">LinkedIn</a> <span class="icon proconex-linkedin"></span> | <span class="icon proconex-youtube"></span> YouTube Channel</p>
     <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
@@ -340,11 +340,11 @@
 </footer>
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/proconEx-1.js"></script>
-<!-- InstanceBeginEditable name="js1" -->
+<script src="../js/popper.min.js"></script> 
+<script src="../js/bootstrap-4.4.1.js"></script>
+<script src="../js/proconEx-1.js"></script>
+<!-- TemplateBeginEditable name="js1" -->
     
-<!-- InstanceEndEditable --> 
+<!-- TemplateEndEditable --> 
 </body>
-<!-- InstanceEnd --></html>
+</html>
