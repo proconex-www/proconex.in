@@ -149,7 +149,7 @@ img{
 		font-size: 9px;
 	}
 	@media (max-width: 576px){
-		font-size: 8px;
+//		font-size: 8px;
 	}
 	@media (max-width: 319px){
 		font-size: 7px; 
@@ -511,7 +511,7 @@ img{
                     @media (max-width: 576px){
                         width: 50%;
                     }
-                    @media (max-width: 319px){
+                    @media (max-width: 424px){
                         width: 100%;
                     }
                 }
@@ -538,6 +538,11 @@ img{
                     }
                 }
             }
+			@media (min-width: 576px){
+				.container{
+					max-width: 95%;
+				}
+			}
         }
         .copyrights{
             position: relative;
