@@ -363,6 +363,32 @@ img{
                 margin-bottom: 0px;
             }
         }
+        ul{
+            font-size: 180%;
+            padding: 12px 0px;
+            margin-left: 55px;
+            li{
+                font-size: 100%;
+                list-style-type: none;
+                position: relative;
+                padding: 0px;
+                margin: 0px;
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    left: -20px;
+                    top: 7px;
+                    background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwMjQgMTAyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6dXJsKCNTVkdJRF8xXyk7fQ0KPC9zdHlsZT4NCjxnIGlkPSJsaXN0aW5nIj4NCgkNCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMTE1NC4xNDI5IiB5MT0iODkuNzYiIHgyPSItMTQ0LjE0MyIgeTI9Ijg5Ljc2IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDYuMTIzMjM0ZS0xNyAtMSAtMSAtNi4xMjMyMzRlLTE3IDYwMS43NiAtMTQ5LjAyKSI+DQoJCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiMzRDU3OTEiLz4NCgkJPHN0b3AgIG9mZnNldD0iMC4yOSIgc3R5bGU9InN0b3AtY29sb3I6IzVDODJCNSIvPg0KCQk8c3RvcCAgb2Zmc2V0PSIwLjc2IiBzdHlsZT0ic3RvcC1jb2xvcjojN0RCRUU4Ii8+DQoJCTxzdG9wICBvZmZzZXQ9IjAuODUiIHN0eWxlPSJzdG9wLWNvbG9yOiM4RENBRTYiLz4NCgkJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6IzlEREFFOSIvPg0KCTwvbGluZWFyR3JhZGllbnQ+DQoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3NC43LDI1OS41IDc0LjcsNzY0LjUgNTEyLDEwMTcgOTQ5LjMsNzY0LjUgOTQ5LjMsMjU5LjUgNTEyLDcgCSIvPg0KPC9nPg0KPC9zdmc+DQo=');
+                    background-size: 10px 10px;
+                    width: 10px;
+                    height: 10px;
+                }
+                + li{
+                    margin-top: 6px;
+                }
+            }
+        }
     }
     #proconEx_services_industry{
         background-color: #1EA4D9;
