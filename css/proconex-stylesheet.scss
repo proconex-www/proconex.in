@@ -403,6 +403,11 @@ img{
             z-index: 1;
             opacity: 0.1;
         }
+        &.bg-networks{
+            &:before{
+                background-image: url("../images/extensive-network.jpg");
+            }
+        }
         .container{
             position: relative;
             z-index: 2;
