@@ -330,6 +330,9 @@ img{
         padding: calc(60em/10) 0px;
         .proconEx_services_1{
             padding: calc(15em/10);
+            dl, dt, dd{
+                margin: 0px;
+            }
             .brands{
                 p{
                     display: inline-block;
@@ -425,9 +428,12 @@ img{
         }
         .proconEx_services_1{
             font-size: 90%;
+            dl, dt, dd{
+                margin: 0px;
+            }
             p{
                 &:last-child{
-                    margin-bottom: 0px;
+                    margin-bottom: 0px; 
                 }
                 a.btn{
                     &.btn-secondary{
