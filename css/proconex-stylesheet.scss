@@ -330,6 +330,12 @@ img{
         padding: calc(60em/10) 0px;
         .proconEx_services_1{
             padding: calc(15em/10);
+            dt{
+                p{
+                    font-size: 210%;
+                    margin-bottom: calc(12em/21);
+                }
+            }
             dl, dt, dd{
                 margin: 0px;
             }
@@ -355,21 +361,35 @@ img{
                font-size: 130%;
                 display: block;
             }
+            margin-top: calc(12em/29);
+            &:first-child{
+                margin-top: 0px;
+            }
         }
-        h3{
+        h3{  
             font-size: 260%;
             font-weight: bold;
+            margin-top: calc(12em/26);
+            &:first-child{
+                margin-top: 0px;
+            }
+        }
+        p, ul, ol{
+            &:first-child{
+                margin-top: 0px;
+            }
         }
         p{
             font-size: 180%;
-            &:last-child{
-                margin-bottom: 0px;
-            }
+            margin-bottom: 0px;
+            margin-top: calc(12em/18);
         }
         ul{
             font-size: 180%;
-            padding: calc(12em/18) 0px;
+            padding: 0px;
+            margin-top: calc(12em/18);
             margin-left: calc(30em/18);
+            margin-bottom: 0px; 
             li{
                 font-size: 100%;
                 list-style-type: none;
@@ -387,8 +407,35 @@ img{
                     width: calc(10em/18);
                     height: calc(10em/18);
                 }
+                ul{
+                    font-size: 100%;
+                    li{
+                        &:before{
+                       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMSwuY2xzLTJ7ZmlsbC1ydWxlOmV2ZW5vZGQ7fS5jbHMtMXtmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50KTt9LmNscy0ye2ZpbGw6dXJsKCNsaW5lYXItZ3JhZGllbnQtMik7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxMDk1NzMuNzkiIHkxPSI1MzczMy4wOCIgeDI9IjEwOTU3My43OSIgeTI9IjY3MTM4Ljk3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuMDIsIDAuMDEsIDAuMDEsIC0wLjAyLCAtMjgwNy42NSwgMzk5LjUpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2Q1NzkxIi8+PHN0b3Agb2Zmc2V0PSIwLjI5IiBzdG9wLWNvbG9yPSIjNWM4MmI1Ii8+PHN0b3Agb2Zmc2V0PSIwLjc2IiBzdG9wLWNvbG9yPSIjN2RiZWU4Ii8+PHN0b3Agb2Zmc2V0PSIwLjg1IiBzdG9wLWNvbG9yPSIjOGRjYWU2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOWRkYWU5Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudC0yIiB4MT0iNTk3LjI2IiB5MT0iLTU3NTguMzkiIHgyPSI1OTcuMjYiIHkyPSIxODM3LjM0IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDI5MC41MSAtMjk1LjM0KSByb3RhdGUoMzAuMjgpIiB4bGluazpocmVmPSIjbGluZWFyLWdyYWRpZW50Ii8+PC9kZWZzPjxnPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTU4OC41OCw0MzMuMzlDNTQ1LjI1LDUwNy42LDU3MC4xOSw2MDMuNDYsNjQ0LjY4LDY0N1M4MTQuODUsNjY1LDg1OC4xOCw1OTAuODJoMGM0My40NS03NC40MiwxOC42My0xNzAuNDktNTUuOC0yMTRoMEM3MjcuOSwzMzMuMzgsNjMyLDM1OSw1ODguNTgsNDMzLjM5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTQ2NCwzNjAuNjZhMjg5LjE0LDI4OS4xNCwwLDAsMC0yOC40NSw2Ni42MmgwTDAsNDI2LjA5djE4MC42bDQzOSwuNzVjMjIuNDEsNjYuNjMsNjcuNjYsMTI2LDEzMi45LDE2NC4wOGgwYzE0Myw4My41MywzMjcuNjgsMzUsNDExLjA4LTEwNy44aDBjODMuNjktMTQzLjMyLDM1LTMyNy42OC0xMDgtNDExLjIxUzU0Ny43LDIxNy4zNCw0NjQsMzYwLjY2Wm0xMjQuNTcsNzIuNzNDNjMyLDM1OSw3MjcuOSwzMzMuMzgsODAyLjM4LDM3Ni44N2gwYzc0LjQzLDQzLjQ2LDk5LjI1LDEzOS41Myw1NS44LDIxNGgwQzgxNC44NSw2NjUsNzE5LjEsNjkwLjQxLDY0NC42OCw2NDdoMGMtNzQuNDktNDMuNDktOTkuNDMtMTM5LjM1LTU2LjEtMjEzLjU2WiIvPjwvZz48L3N2Zz4=')
+                    }
+                    }
+                }
                 + li{
                     margin-top: calc(6em/18);
+                }
+            }
+            &.d-flex{
+                li{
+                    width: 33.3333%;
+                    margin-bottom: calc(12em/18);
+                    ul{
+                        padding-right: calc(40em/18);
+                    }
+                    li{
+                        width: auto;
+                        margin-bottom: 0px;
+                    }
+                    @media (max-width: 991px){
+                        width: 50%;
+                    }
+                    @media (max-width: 576px){
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -396,8 +443,13 @@ img{
             font-size: 180%;
             padding: calc(12em/18) 0px;
             margin-left: calc(30em/18);
+            margin-top: calc(12em/18);
+            margin-bottom: 0px;
             li{
                 font-size: 100%;
+                ul{
+                    font-size: 100%;
+                }
                 + li{
                     margin-top: calc(6em/18);
                 }
