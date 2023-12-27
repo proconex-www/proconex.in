@@ -384,6 +384,32 @@ img{
             font-size: 180%;
             margin-bottom: 0px;
             margin-top: calc(12em/18);
+            a{
+                color: #06468d;
+                &:hover, &:focus{
+                    color: #026ad9;
+                }
+                &:active{
+                    color: #003A78;
+                    text-decoration: none;
+                }
+                &.btn{
+                    color: #ffffff;
+                    &:active{
+                        color: #dddddd;
+                    }
+                    &.btn-secondary{
+                        font-size: 160%;
+                        font-weight: bold;
+                        color: #ffffff;
+                        background-color: #0A6DFC;
+                        border-radius: calc(15em/16.2);
+                        border: calc(4em/16.2) solid #1ea4d9;
+                        box-shadow: none;
+                        @include hover;
+                    }
+                }
+            }
         }
         ul{
             font-size: 180%;
@@ -487,18 +513,6 @@ img{
             p{
                 &:last-child{
                     margin-bottom: 0px; 
-                }
-                a.btn{
-                    &.btn-secondary{
-                        font-size: 160%;
-                        font-weight: bold;
-                        color: #ffffff;
-                        background-color: #0A6DFC;
-                        border-radius: calc(15em/16.2);
-                        border: calc(4em/16.2) solid #1ea4d9;
-                        box-shadow: none;
-                        @include hover;
-                    }
                 }
             }
             &.bg_white{
