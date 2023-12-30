@@ -200,17 +200,25 @@ img{
             }
 		}
 	}
-    .dropdown-toggle::after{
-        content: "";
-        border: none;
-        background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxkZWZzPjxzdHlsZT4uY2xzLTEsLmNscy0ye2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtMntmaWxsOnVybCgjTmV3X0dyYWRpZW50X1N3YXRjaCk7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI2MzczLjYxIiB5MT0iNDgyLjk4IiB4Mj0iLTY4MS41IiB5Mj0iNTE3LjY1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2Q1NzkxIi8+PHN0b3Agb2Zmc2V0PSIwLjI5IiBzdG9wLWNvbG9yPSIjNWM4MmI1Ii8+PHN0b3Agb2Zmc2V0PSIwLjc2IiBzdG9wLWNvbG9yPSIjN2RiZWU4Ii8+PHN0b3Agb2Zmc2V0PSIwLjg1IiBzdG9wLWNvbG9yPSIjOGRjYWU2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOWRkYWU5Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Ik5ld19HcmFkaWVudF9Td2F0Y2giIHgxPSIyODkuNTEiIHkxPSI4MzIuNTciIHgyPSI3MzQuNDkiIHkyPSI4MzIuNTciIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgLTEsIDAsIDE1NTYuMDkpIiB4bGluazpocmVmPSIjbGluZWFyLWdyYWRpZW50Ii8+PC9kZWZzPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI1OTcuODIgNDIzLjA1IDU5Ny44MiAwIDQyNi4xOCAwIDQyNi4xOCA0MjMuMDUgMTY1LjA0IDQyMy4wNSA1MTIgMTAyNCA4NTguOTYgNDIzLjA1IDU5Ny44MiA0MjMuMDUiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNTEyIDkxNi4yMSAyODkuNTEgNTMwLjg0IDczNC40OSA1MzAuODQgNTEyIDkxNi4yMSIvPjwvc3ZnPg==');
-        background-size: calc(12em/17) calc(12em/17);
-        width: calc(12em/17);
-        height: calc(12em/17);
-        position: absolute;
-        top: 50%;
-        right: 5px;
-        transform: translateY(-50%);
+    .dropdown{
+        &.show{
+            .dropdown-toggle::after{
+                transform: translateY(6px);
+            }
+        }
+        .dropdown-toggle::after{
+            content: "";
+            border: none;
+            background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxkZWZzPjxzdHlsZT4uY2xzLTEsLmNscy0ye2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtMntmaWxsOnVybCgjTmV3X0dyYWRpZW50X1N3YXRjaCk7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI2MzczLjYxIiB5MT0iNDgyLjk4IiB4Mj0iLTY4MS41IiB5Mj0iNTE3LjY1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjM2Q1NzkxIi8+PHN0b3Agb2Zmc2V0PSIwLjI5IiBzdG9wLWNvbG9yPSIjNWM4MmI1Ii8+PHN0b3Agb2Zmc2V0PSIwLjc2IiBzdG9wLWNvbG9yPSIjN2RiZWU4Ii8+PHN0b3Agb2Zmc2V0PSIwLjg1IiBzdG9wLWNvbG9yPSIjOGRjYWU2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOWRkYWU5Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9Ik5ld19HcmFkaWVudF9Td2F0Y2giIHgxPSIyODkuNTEiIHkxPSI4MzIuNTciIHgyPSI3MzQuNDkiIHkyPSI4MzIuNTciIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgLTEsIDAsIDE1NTYuMDkpIiB4bGluazpocmVmPSIjbGluZWFyLWdyYWRpZW50Ii8+PC9kZWZzPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI1OTcuODIgNDIzLjA1IDU5Ny44MiAwIDQyNi4xOCAwIDQyNi4xOCA0MjMuMDUgMTY1LjA0IDQyMy4wNSA1MTIgMTAyNCA4NTguOTYgNDIzLjA1IDU5Ny44MiA0MjMuMDUiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNTEyIDkxNi4yMSAyODkuNTEgNTMwLjg0IDczNC40OSA1MzAuODQgNTEyIDkxNi4yMSIvPjwvc3ZnPg==');
+            background-size: calc(12em/17) calc(12em/17);
+            width: calc(12em/17);
+            height: calc(12em/17);
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            transition: 0.1s transform linear;
+        }
     }
 	.dropdown-menu{ 
 		font-size: 90%;
@@ -380,9 +388,9 @@ img{
             }
         }
         h3{  
-            font-size: 260%;
+            font-size: 240%;
             font-weight: normal;
-            margin-top: calc(12em/26);
+            margin-top: calc(12em/24);
             &:first-child{
                 margin-top: 0px;
             }
