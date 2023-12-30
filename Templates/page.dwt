@@ -40,7 +40,7 @@
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="proconEx_navbar_Dropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Major Industries</a>
           <div class="dropdown-menu" aria-labelledby="proconEx_navbar_Dropdown3"> <a class="dropdown-item" href="../power-generation.html" title="Gas, Thermal, Hydro Winds & Biomass">Power Generation</a> <a class="dropdown-item" href="#">Petrochemicals</a> <a class="dropdown-item" href="#">Refineries</a> <a class="dropdown-item" href="#">Mines</a> <a class="dropdown-item" href="#">Oil &amp; Gas</a> <a class="dropdown-item" href="#">Steel Plants</a> <a class="dropdown-item" href="#">Sugar Plants</a> <a class="dropdown-item" href="#">Paper Mills</a> <a class="dropdown-item" href="#">Smelting &amp; all Other Metal Working Plants</a> <a class="dropdown-item" href="#">Textile Plants</a> <a class="dropdown-item" href="#">Automobile Plants</a> <a class="dropdown-item" href="#">Pharmaceutical Plants</a> <a class="dropdown-item" href="#">All kind of Processing &amp; Automation Plants</a> </div>
         </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Support </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../support.html">Support </a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">Store</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">Contact Us </a> </li>
       </ul>

@@ -350,6 +350,21 @@ img{
         padding: calc(60em/10) 0px;
         .proconEx_services_1{
             padding: calc(15em/10);
+            &.support{
+                .support-icons{ 
+                    width: calc(220em/10);
+                    margin: 12px;
+                }
+                form{
+                    .form-control, input{
+                        font-size: 170%;
+                    }
+                    input, button{
+                        width: 100%;
+                        border-radius: 0px;
+                    }
+                }
+            }
             dt{
                 p{
                     font-size: 210%;
@@ -358,6 +373,17 @@ img{
             }
             dl, dt, dd{
                 margin: 0px;
+            }
+            .btn{
+                background-color: #035AA6;
+                padding: calc(8em/20) calc(16em/20);
+                border-radius: calc(4.8em/20);
+                border: none;
+                box-shadow: none;
+                &.btn-primary{
+                    background-color: #035AA6;
+                    @include hover;
+                }
             }
             .brands{
                 p{
