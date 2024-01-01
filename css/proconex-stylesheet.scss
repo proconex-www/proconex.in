@@ -348,6 +348,18 @@ img{
     //Services section
     [id*="proconEx_services"]{ 
         padding: calc(60em/10) 0px;
+        .customer-support{
+            .proconEx_services_1{
+                display: flex;
+                flex-direction: column-reverse;
+                border: 1px solid #ddd;
+                text-align: center;
+                img{
+                    width: 100px;
+                    margin: 12px;
+                }
+            }
+        }
         .proconEx_services_1{
             padding: calc(15em/10);
             &.support{
