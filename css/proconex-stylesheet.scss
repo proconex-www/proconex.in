@@ -356,10 +356,19 @@ img{
                     margin: 12px;
                 }
                 form{
-                    .form-control, input{
-                        font-size: 170%;
+                    label{
+                        font-size: 130%;
+                        letter-spacing: 0.6px;
+                        margin-bottom: 6px;
                     }
-                    input, button{
+                    .form-control, input, select{
+                        font-size: 170%;
+                        margin-bottom: 12px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                    }
+                    input, button, select{
                         width: 100%;
                         border-radius: 0px;
                     }
@@ -604,6 +613,11 @@ img{
         &.bg-networks{
             &:before{
                 background-image: url("../images/extensive-network.jpg");
+            }
+        }
+        &.bg-obsolute-panels{
+            &:before{
+                background-image: url("../images/Supply-repair-OBSOLETE-Panels.jpg");
             }
         }
         .container{
