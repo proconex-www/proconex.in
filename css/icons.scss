@@ -33,9 +33,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.proconex-cart1 {
+.proconex-ask-engineers {
+  &:before { 
+    content: $proconex-ask-engineers;     
+    color: #035aa6;
+  }
+}
+.proconex-contact-store {
   &:before {
-    content: $proconex-cart1; 
+    content: $proconex-contact-store;     
+    color: #035aa6;
+  }
+}
+.proconex-FAX {
+  &:before {
+    content: $proconex-FAX;     
+    color: #035aa6;
+  }
+}
+.proconex-insurance {
+  &:before {
+    content: $proconex-insurance;     
+    color: #035aa6;
+  }
+}
+.proconex-shipping {
+  &:before {
+    content: $proconex-shipping;     
+    color: #035aa6;
+  }
+}
+.proconex-warranty-returns {
+  &:before {
+    content: $proconex-warranty-returns;     
+    color: #035aa6;
   }
 }
 .proconex-messenger {
@@ -62,6 +93,22 @@
     color: #2b579a;
   }
 }
+.proconex-whatsapp1 {
+  &:before {
+    content: $proconex-whatsapp1;     
+    color: #25d366;
+  }
+}
+.proconex-newspaper {
+  &:before {
+    content: $proconex-newspaper; 
+  }
+}
+.proconex-pencil {
+  &:before {
+    content: $proconex-pencil; 
+  }
+}
 .proconex-connection {
   &:before {
     content: $proconex-connection; 
@@ -72,9 +119,19 @@
     content: $proconex-mic; 
   }
 }
+.proconex-qrcode {
+  &:before {
+    content: $proconex-qrcode; 
+  }
+}
 .proconex-cart {
   &:before {
     content: $proconex-cart; 
+  }
+}
+.proconex-coin-dollar {
+  &:before {
+    content: $proconex-coin-dollar; 
   }
 }
 .proconex-phone {
@@ -85,6 +142,11 @@
 .proconex-phone-hang-up {
   &:before {
     content: $proconex-phone-hang-up; 
+  }
+}
+.proconex-envelop {
+  &:before {
+    content: $proconex-envelop; 
   }
 }
 .proconex-location {
@@ -117,9 +179,64 @@
     content: $proconex-mobile; 
   }
 }
+.proconex-tablet {
+  &:before {
+    content: $proconex-tablet; 
+  }
+}
+.proconex-tv {
+  &:before {
+    content: $proconex-tv; 
+  }
+}
+.proconex-download {
+  &:before {
+    content: $proconex-download; 
+  }
+}
+.proconex-upload {
+  &:before {
+    content: $proconex-upload; 
+  }
+}
+.proconex-redo2 {
+  &:before {
+    content: $proconex-redo2; 
+  }
+}
+.proconex-bubble {
+  &:before {
+    content: $proconex-bubble; 
+  }
+}
+.proconex-bubbles3 {
+  &:before {
+    content: $proconex-bubbles3; 
+  }
+}
 .proconex-user {
   &:before {
     content: $proconex-user; 
+  }
+}
+.proconex-user-tie {
+  &:before {
+    content: $proconex-user-tie; 
+  }
+}
+.proconex-spinner2 {
+  &:before {
+    content: $proconex-spinner2; 
+  }
+}
+.proconex-spinner4 {
+  &:before {
+    content: $proconex-spinner4; 
+  }
+}
+.proconex-spinner5 {
+  &:before {
+    content: $proconex-spinner5; 
   }
 }
 .proconex-spinner9 {
@@ -130,6 +247,36 @@
 .proconex-search {
   &:before {
     content: $proconex-search; 
+  }
+}
+.proconex-zoom-in {
+  &:before {
+    content: $proconex-zoom-in; 
+  }
+}
+.proconex-zoom-out {
+  &:before {
+    content: $proconex-zoom-out; 
+  }
+}
+.proconex-enlarge {
+  &:before {
+    content: $proconex-enlarge; 
+  }
+}
+.proconex-shrink {
+  &:before {
+    content: $proconex-shrink; 
+  }
+}
+.proconex-enlarge2 {
+  &:before {
+    content: $proconex-enlarge2; 
+  }
+}
+.proconex-shrink2 {
+  &:before {
+    content: $proconex-shrink2; 
   }
 }
 .proconex-lock {
@@ -162,6 +309,21 @@
     content: $proconex-stats-bars2; 
   }
 }
+.proconex-bin {
+  &:before {
+    content: $proconex-bin; 
+  }
+}
+.proconex-bin2 {
+  &:before {
+    content: $proconex-bin2; 
+  }
+}
+.proconex-power-cord {
+  &:before {
+    content: $proconex-power-cord; 
+  }
+}
 .proconex-download3 {
   &:before {
     content: $proconex-download3; 
@@ -190,6 +352,21 @@
 .proconex-attachment {
   &:before {
     content: $proconex-attachment; 
+  }
+}
+.proconex-eye {
+  &:before {
+    content: $proconex-eye; 
+  }
+}
+.proconex-eye-blocked {
+  &:before {
+    content: $proconex-eye-blocked; 
+  }
+}
+.proconex-heart {
+  &:before {
+    content: $proconex-heart; 
   }
 }
 .proconex-warning {
@@ -227,9 +404,99 @@
     content: $proconex-checkmark; 
   }
 }
+.proconex-play2 {
+  &:before {
+    content: $proconex-play2; 
+  }
+}
+.proconex-pause {
+  &:before {
+    content: $proconex-pause; 
+  }
+}
+.proconex-stop {
+  &:before {
+    content: $proconex-stop; 
+  }
+}
+.proconex-previous {
+  &:before {
+    content: $proconex-previous; 
+  }
+}
+.proconex-next {
+  &:before {
+    content: $proconex-next; 
+  }
+}
+.proconex-backward {
+  &:before {
+    content: $proconex-backward; 
+  }
+}
+.proconex-forward2 {
+  &:before {
+    content: $proconex-forward2; 
+  }
+}
+.proconex-play3 {
+  &:before {
+    content: $proconex-play3; 
+  }
+}
+.proconex-pause2 {
+  &:before {
+    content: $proconex-pause2; 
+  }
+}
+.proconex-stop2 {
+  &:before {
+    content: $proconex-stop2; 
+  }
+}
+.proconex-backward2 {
+  &:before {
+    content: $proconex-backward2; 
+  }
+}
+.proconex-forward3 {
+  &:before {
+    content: $proconex-forward3; 
+  }
+}
+.proconex-first {
+  &:before {
+    content: $proconex-first; 
+  }
+}
+.proconex-last {
+  &:before {
+    content: $proconex-last; 
+  }
+}
+.proconex-previous2 {
+  &:before {
+    content: $proconex-previous2; 
+  }
+}
+.proconex-next2 {
+  &:before {
+    content: $proconex-next2; 
+  }
+}
+.proconex-eject {
+  &:before {
+    content: $proconex-eject; 
+  }
+}
 .proconex-volume-high {
   &:before {
     content: $proconex-volume-high; 
+  }
+}
+.proconex-volume-medium {
+  &:before {
+    content: $proconex-volume-medium; 
   }
 }
 .proconex-volume-mute2 {
@@ -262,6 +529,46 @@
     content: $proconex-arrow-left; 
   }
 }
+.proconex-arrow-up2 {
+  &:before {
+    content: $proconex-arrow-up2; 
+  }
+}
+.proconex-arrow-right2 {
+  &:before {
+    content: $proconex-arrow-right2; 
+  }
+}
+.proconex-arrow-down2 {
+  &:before {
+    content: $proconex-arrow-down2; 
+  }
+}
+.proconex-arrow-left2 {
+  &:before {
+    content: $proconex-arrow-left2; 
+  }
+}
+.proconex-circle-up {
+  &:before {
+    content: $proconex-circle-up; 
+  }
+}
+.proconex-circle-right {
+  &:before {
+    content: $proconex-circle-right; 
+  }
+}
+.proconex-circle-down {
+  &:before {
+    content: $proconex-circle-down; 
+  }
+}
+.proconex-circle-left {
+  &:before {
+    content: $proconex-circle-left; 
+  }
+}
 .proconex-shift {
   &:before {
     content: $proconex-shift; 
@@ -287,9 +594,19 @@
     content: $proconex-radio-unchecked; 
   }
 }
+.proconex-crop {
+  &:before {
+    content: $proconex-crop; 
+  }
+}
 .proconex-share {
   &:before {
     content: $proconex-share; 
+  }
+}
+.proconex-mail2 {
+  &:before {
+    content: $proconex-mail2; 
   }
 }
 .proconex-mail3 {
@@ -362,4 +679,3 @@
     content: $proconex-file-word; 
   }
 }
-
