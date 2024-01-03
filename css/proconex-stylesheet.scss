@@ -1,5 +1,5 @@
 // Scss Document of Proconex Pvt. Ltd.
-//active colors
+//active colors 
 @mixin hover{
 	&:hover, &:focus{
 		color: #ffffff;
@@ -452,6 +452,7 @@ img{
             margin-top: calc(12em/24);
             &:first-child{
                 margin-top: 0px;
+                padding-bottom: calc(6em/24);
             }
         }
         p, ul, ol{
@@ -528,13 +529,16 @@ img{
             &.d-flex{
                 li{
                     width: 33.3333%;
+                    margin-top: 0px;
                     margin-bottom: calc(12em/18);
-                    ul{
-                        padding-right: calc(40em/18);
+                    padding-right: calc(40em/18);
+                    &:last-child{
+                        margin-bottom: 0px;
                     }
                     li{
                         width: auto;
                         margin-bottom: 0px;
+                        padding-right: 0px;
                     }
                     @media (max-width: 991px){
                         width: 50%;
@@ -614,6 +618,28 @@ img{
                 }
                 + li{
                     margin-top: calc(6em/18);
+                }
+            }
+            &.d-flex{
+                li{
+                    width: 33.3333%;
+                    margin-top: 0px;
+                    margin-bottom: calc(12em/18);
+                    padding-right: calc(40em/18);
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                    li{
+                        width: auto;
+                        margin-bottom: 0px;
+                        padding-right: 0px;
+                    }
+                    @media (max-width: 991px){
+                        width: 50%;
+                    }
+                    @media (max-width: 576px){
+                        width: 100%;
+                    }
                 }
             }
         }
