@@ -48,6 +48,12 @@
     background-size: cover;
     background-position: center center;
 }
+@mixin socialhover($obj){
+    &:hover, &:focus{
+        color: $obj;
+        outline: none;
+    }
+}
 //Web Fonts
 @font-face {
     font-family: 'Swis721 Cn BT';
@@ -398,6 +404,58 @@ img{
                     }
                 }
             }
+            &.social{
+                a.social-icon{
+                    font-weight: bold;
+                    text-align: center;
+                    display: inline-block;
+                    text-decoration: none;
+                    margin: calc(5em/18);
+                    $fb: #0866ff;
+                    $ln: #0a66c2;
+                    $yt: #f00;
+                    $wa: #25d366;
+                    $sac: #4e5397!important;
+                    &.facebook{
+                        @include socialhover($fb);
+                    }
+                    &.linkedin{
+                        @include socialhover($ln);
+                    }
+                    &.youtube{
+                        @include socialhover($yt);
+                    }
+                    &.whatsapp{
+                        @include socialhover($wa);
+                    }
+                    .icon{
+                        font-size: 300%;
+                        display: inline-block;
+                        padding: 12px;
+                        text-decoration: none;
+                        &.proconex-facebook2{
+                            color: $fb;
+                        }
+                        &.proconex-linkedin{
+                            color: $ln;
+                        }
+                        &.proconex-youtube{
+                            color: $yt;
+                        }
+                        &.proconex-whatsapp{
+                            color: $wa;
+                        }
+                    }
+                    &:active{
+                        color: $sac;
+                        .icon{
+                            &[class*="proconex-"]{
+                                color: $sac;
+                            }
+                        }
+                    }
+                }
+            }
             dt{
                 p{
                     font-size: 210%;
@@ -454,6 +512,11 @@ img{
             &:first-child{
                 margin-top: 0px;
                 padding-bottom: calc(6em/24);
+            }
+        }
+        h2, h3, p, ul, ol, dl {
+            + iframe, + form {
+                margin-top: calc(12em/10);
             }
         }
         p, ul, ol{
@@ -669,6 +732,11 @@ img{
         &.bg-obsolute-panels{
             &:before{
                 background-image: url("../images/Supply-repair-OBSOLETE-Panels.jpg");
+            }
+        }
+        &.bg-social{
+            &:before{
+                background-image: url("../images/social-subscription.jpg");
             }
         }
         .container{
