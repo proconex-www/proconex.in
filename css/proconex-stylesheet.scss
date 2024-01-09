@@ -456,6 +456,13 @@ img{
                     }
                 }
             }
+            &.gmap{
+                height: 100%;
+                iframe{
+                    height: calc(100% - (30em/10));
+                    min-height: 480px;
+                }
+            }
             dt{
                 p{
                     font-size: 210%;
