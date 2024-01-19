@@ -196,7 +196,7 @@ img{
 		.nav-link{
 			color: #333333;
             position: relative;
-            padding: calc(8rem/17) calc(19rem/17) calc(8rem/17)  calc(8rem/17);
+            padding: calc(8rem/17) calc(19em/17) calc(8rem/17) calc(8rem/17);
             @include linkhoverwbg;
             .icon{
                 position: absolute;
@@ -231,8 +231,9 @@ img{
 		padding: 0px;
 		border-color: #84c3e7;
 		background-color: #b8e4e8;
+        min-width: calc(160em/15.3);
 		.dropdown-item{
-			padding: calc(5em/14) calc(11em/14);
+			padding: calc(5em/15.3) calc(11em/15.3);
 			margin: 0px;
 			white-space: normal;
 			word-wrap: break-word;
