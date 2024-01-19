@@ -196,7 +196,7 @@ img{
 		.nav-link{
 			color: #333333;
             position: relative;
-            padding-right: 19px;
+            padding: calc(8rem/17) calc(19rem/17) calc(8rem/17)  calc(8rem/17);
             @include linkhoverwbg;
             .icon{
                 position: absolute;
@@ -209,7 +209,7 @@ img{
     .dropdown{
         &.show{
             .dropdown-toggle::after{
-                transform: translateY(6px);
+                transform: translateY(calc(6rem/17));
             }
         }
         .dropdown-toggle::after{
@@ -221,7 +221,7 @@ img{
             height: calc(12em/17);
             position: absolute;
             top: 50%;
-            right: 5px;
+            right: calc(5rem/17);
             transform: translateY(-50%);
             transition: 0.1s transform linear;
         }
@@ -257,7 +257,7 @@ img{
 		font-size: 117%; 
 		padding: 0px;
 		margin: 0px;
-		line-height: 35px;
+		line-height: calc(35rem/17);
 	}
 	@media (min-width: 992px){
 		.navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -266,7 +266,7 @@ img{
 	}
 	@media (max-width: 1199px){
 		.navbar-nav{
-			margin-top: 13px;
+			margin-top: calc(13rem/17);
 		}
 	}
 	@media (min-width: 1200px){
