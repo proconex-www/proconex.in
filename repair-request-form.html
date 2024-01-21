@@ -69,7 +69,7 @@
             <form id="pExfrm1">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="m-3">
+                  <div class="p-3">
                     <h3>Personal Information:</h3>
                     <div class="form-group">
                       <label for="fullname_pExfrm1">Full Name:</label>
@@ -97,10 +97,14 @@
                       <label for="com_pExfrm1">Company Name:</label>
                       <input type="text" required="required" class="form-control" id="com_pExfrm1" placeholder="Enter Company Name">
                     </div>
+                    <div class="form-group">
+                      <label for="comurl">Company Website:</label>
+                      <input name="comurl" type="url" class="form-control" id="comurl" placeholder="Enter Company Name">
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="m-3">
+                  <div class="p-3">
                     <h3>Equipment Details:</h3>
                     <div class="form-group">
                       <label for="urgence_type">Equipment Type</label>
@@ -123,12 +127,12 @@
                       <textarea name="other_equip_type" rows="4" class="form-control"  id="other_equip_type" placeholder="Specify Here"></textarea>
                     </div>
                     <div class="form-group">
-                      <label for="inq_pExfrm1">Issue/Inquiry Description:</label>
-                      <textarea rows="4" required="required" class="form-control"  id="inq_pExfrm1" placeholder="Enter Issue/Inquiry description"></textarea>
-                    </div>
-                    <div class="form-group">
                       <label for="partnum">Equipment Part Number:</label>
                       <input name="partnum" type="text" required="required" class="form-control" id="partnum" placeholder="Part number">
+                    </div>
+                    <div class="form-group">
+                      <label for="inq_pExfrm1">Issue/Inquiry Description:</label>
+                      <textarea rows="4" required="required" class="form-control"  id="inq_pExfrm1" placeholder="Enter Issue/Inquiry description"></textarea>
                     </div>
                     <div class="form-group">
                       <label for="files_pExfrm1">Attach Relevant Documents or Images (if any):</label>
@@ -138,8 +142,8 @@
                     </div>
                   </div>
                 </div>
-                  <div class="col-lg-6">
-                  <div class="m-3">
+                <div class="col-lg-6">
+                  <div class="p-3">
                     <h3>Shipping Information:</h3>
                     <div class="form-group">
                       <label for="street_address">Street Address:</label>
@@ -161,11 +165,10 @@
                       <label for="country">Country:</label>
                       <input name="country" type="text" class="form-control" id="country">
                     </div>
-                    
                   </div>
                 </div>
-                  <div class="col-lg-6">
-                  <div class="m-3">
+                <div class="col-lg-6">
+                  <div class="p-3">
                     <h3>Urgency and Timeline:</h3>
                     <div class="form-group">
                       <label for="urgence_type">Urgency:</label>
@@ -179,9 +182,24 @@
                       <input name="repair_date" type="date" class="form-control" id="repair_date">
                     </div>
                   </div>
+                  <div class="p-3">
+                    <h3>Any Additional Information</h3>
+                    <div class="form-group">
+                      <label for="comments">Comments:</label>
+                      <textarea name="comments" rows="4" required="required" class="form-control"  id="comments" placeholder="Enter Issue/Inquiry description"></textarea>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12 text-center">
-                  <input type="submit" class="btn btn-primary" value="Submit">
+                  <div class="p-3">
+                    <h3>Confirmation</h3>
+                    <div class="form-group">
+                      <label for="repairconfirm">
+                        <input name="repairconfirm" type="checkbox" class="form-control" id="repairconfirm">
+                        I confirm that the information provided is accurate.</label>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                  </div>
                 </div>
               </div>
             </form>
