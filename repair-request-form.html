@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +11,13 @@
 <link href="images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/proconex-stylesheet.css?v=3.5" rel="stylesheet">
-
+<link href="css/proconex-stylesheet.css?v=3.9" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-
 </head>
 <body id="proconEx_bdy">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script> 
 <!-- InstanceBeginEditable name="hd-js" --> <!-- InstanceEndEditable -->
 <header>
   <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="index.html"><img src="images/proconex-pvt-ltd.png" width="1024" height="121" alt="Proconex Pvt. Ltd."></a>
@@ -47,9 +46,7 @@
     </div>
   </nav>
 </header>
-<main>
-
-  <!-- InstanceBeginEditable name="features_text" -->
+<main> <!-- InstanceBeginEditable name="features_text" -->
   <section style="background-image: url('images/repair-request-form-bg.jpg')" id="proconEx_features" class="d-flex justify-content-center align-items-center bg-white">
     <div class="container">
       <div class="row">
@@ -62,8 +59,7 @@
       </div>
     </div>
   </section>
-  <!-- InstanceEndEditable -->
-  <!-- InstanceBeginEditable name="page-content" -->
+  <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="page-content" -->
   <section id="proconEx_support">
     <div class="container">
       <div class="row">
@@ -113,18 +109,51 @@
                     <div class="form-group">
                       <label for="urgence_type">Equipment Type</label>
                       <select name="equip_type" class="form-control" id="equip_type">
-                        <option value="Turbine Control">Turbine Control</option>
-                        <option value="Programmable Logic Control">Programmable Logic Control</option>
-                        <option value="Distributed Control System">Distributed Control System</option>
-                        <option value="Excitation System">Excitation System</option>
-                        <option value="Liquid Cooled Inverter">Liquid Cooled Inverter</option>
-                        <option value="Vibration Monitoring System">Vibration Monitoring System</option>
-                        <option value="Drive Controls">Drive Controls</option>
-                        <option value="Variable Frequency Drive">Variable Frequency Drive</option>
-                        <option value="Industrial and Automation Spares">Industrial and Automation Spares</option>
-                        <option value="Control and Instrumentation Spares">Control and Instrumentation Spares</option>
+                        <option value="TC">Turbine Control</option>
+                        <option value="PLC">Programmable Logic Control</option>
+                        <option value="DCS">Distributed Control System</option>
+                        <option value="ES">Excitation System</option>
+                        <option value="LCI">Liquid Cooled Inverter</option>
+                        <option value="VMS">Vibration Monitoring System</option>
+                        <option value="DCntrl">Drive Controls</option>
+                        <option value="VFD">Variable Frequency Drive</option>
+                        <option value="IAS">Industrial and Automation Spares</option>
+                        <option value="CIS">Control and Instrumentation Spares</option>
+                        <option value="CLTRS">Component Level Testing and Repair Services</option>
+                        <option value="ROP">Repair of OBSOLETE Panels</option>
                         <option value="0">Others</option>
                       </select>
+                    </div>
+                    <div id="rop" style="display: none">
+                      <div class="form-group">
+                        <label for="rop_servicetype">Select OBSOLETE Panels service type</label>
+                        <select name="rop_servicetype" class="form-control" id="rop_servicetype">
+                          <option value="repair">Repair</option>
+                          <option value="remanufacturing">Remanufacturing</option>
+                          <option value="refurbishing">Refurbishing</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="rop_oem">OEM of OBSOLETE Panels</label>
+                        <input name="rop_oem" type="text" required="required" class="form-control" id="rop_oem">
+                      </div>
+                    </div>
+                    <div id="cl_trs" style="display: none">
+                      <div class="form-group">
+                        <label for="cl_trs_product">Select Component Level product type</label>
+                        <select name="cl_trs_product" class="form-control" id="cl_trs_product">
+                          <option value="pcb">PCB boards</option>
+                          <option value="controlcards">Control Cards</option>
+                          <option value="powercards">Power Cards</option>
+                          <option value="igbtcards">IGBT Cards</option>
+                          <option value="comcards">Communication Cards</option>
+                          <option value="customsolutions">Custom Solutions</option>
+                        </select>
+                      </div>
+                      <div class="form-group" id="custom_solns" style="display: none">
+                        <label for="cl_trs_custom_solns">Custom Solutions details:</label>
+                        <textarea name="cl_trs_custom_solns" rows="4" required="required" class="form-control"  id="cl_trs_custom_solns" placeholder="Custom Solutions in detail"></textarea>
+                      </div>
                     </div>
                     <div class="form-group" id="other_equip" style="display: none">
                       <label for="other_equip_type">Other Equipment, Specify:</label>
@@ -135,8 +164,8 @@
                       <input name="partnum" type="text" required="required" class="form-control" id="partnum" placeholder="Part number">
                     </div>
                     <div class="form-group">
-                      <label for="inq_pExfrm1">Issue/Inquiry Description:</label>
-                      <textarea rows="4" required="required" class="form-control"  id="inq_pExfrm1" placeholder="Enter Issue/Inquiry description"></textarea>
+                      <label for="inquiry">Issue/Inquiry Description:</label>
+                      <textarea name="inquiry" rows="4" required="required" class="form-control"  id="inquiry" placeholder="Enter Issue/Inquiry description"></textarea>
                     </div>
                     <div class="form-group">
                       <label for="files_pExfrm1">Attach Relevant Documents or Images (if any):</label>
@@ -199,8 +228,8 @@
                     <h3>Confirmation</h3>
                     <div class="form-check">
                       <label for="repairconfirm" class="form-check-label">
-                        <input name="repairconfirm" type="checkbox" required="required" class="form-check-input" id="repairconfirm"><span class="icon"></span>
-                        I confirm that the information provided is accurate.</label>
+                        <input name="repairconfirm" type="checkbox" required="required" class="form-check-input" id="repairconfirm">
+                        <span class="icon"></span> I confirm that the information provided is accurate.</label>
                     </div>
                     <input type="submit" class="btn btn-primary" value="Submit Repair Request">
                   </div>
@@ -212,8 +241,7 @@
       </div>
     </div>
   </section>
-  <!-- InstanceEndEditable -->
-</main>
+  <!-- InstanceEndEditable --> </main>
 <footer>
   <section id="proconEx_certify">
     <div class="container">
@@ -234,7 +262,8 @@
             <div class="proconEx_certify_1">
               <h3>Corporate Office</h3>
               <address>
-                  <p>Proconex Pvt. Ltd. <br> #7, 1<sup>st</sup> Floor, 1<sup>st</sup> A Cross, MCECHS Layout, Dr. SRK Nagar, Bangalore, Karnataka, India, <span class="d-inline-block">PIN: 560077</span></p>
+              <p>Proconex Pvt. Ltd. <br>
+                #7, 1<sup>st</sup> Floor, 1<sup>st</sup> A Cross, MCECHS Layout, Dr. SRK Nagar, Bangalore, Karnataka, India, <span class="d-inline-block">PIN: 560077</span></p>
               </address>
             </div>
             <div class="proconEx_certify_1">
@@ -265,7 +294,7 @@
               <p>Follow us on Facebook <span class="icon proconex-facebook2"></span></p>
               <p>Follow us on LinkedIn <span class="icon proconex-linkedin"></span></p>
               <p><span class="icon proconex-youtube"></span> YouTube Channel</p>
-            </div>-->
+            </div>--> 
           </div>
         </div>
         <div class="col-12 mt-3">
@@ -302,7 +331,7 @@
     </div>
     <img src="images/proconex-process-control-experts.jpg" width="1654" height="197" alt="" style="width: 100%"> </section>
   <div class="d-flex copyrights">
-      <p>Follow us on Social Media: <span class="d-inline-block"><a href="https://www.facebook.com/Proconex-Pvt-Ltd" target="_blank">Facebook</a> <span class="icon proconex-facebook2"></span></span> | <span class="d-inline-block"><a href="https://in.linkedin.com/company/proconex-pvt-ltd" target="_blank">LinkedIn</a> <span class="icon proconex-linkedin"></span></span> | <span class="d-inline-block"><span class="icon proconex-youtube"></span> <a href="https://www.youtube.com/channel/UCCjLkA30c6DoEprVm6CJJ3w" target="_parent">YouTube Channel</a></span></p>
+    <p>Follow us on Social Media: <span class="d-inline-block"><a href="https://www.facebook.com/Proconex-Pvt-Ltd" target="_blank">Facebook</a> <span class="icon proconex-facebook2"></span></span> | <span class="d-inline-block"><a href="https://in.linkedin.com/company/proconex-pvt-ltd" target="_blank">LinkedIn</a> <span class="icon proconex-linkedin"></span></span> | <span class="d-inline-block"><span class="icon proconex-youtube"></span> <a href="https://www.youtube.com/channel/UCCjLkA30c6DoEprVm6CJJ3w" target="_parent">YouTube Channel</a></span></p>
     <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
     <p>Copyrights<sup>&copy;</sup> Proconex Pvt. Ltd. All rights reserved<sup>&reg;</sup></p>
   </div>
@@ -310,8 +339,8 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/proconEx-1.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script src="js/proconEx-1.js"></script> 
 <!-- InstanceBeginEditable name="js1" --> 
 <script>
     $(function(){
@@ -320,13 +349,38 @@
            console.log($otherequips);
            if($otherequips == 0){
             $("#other_equip").show();
+            $("#rop").hide();
+            $("#cl_trs").hide();
+           }
+           else if($otherequips == "CLTRS"){
+            $("#cl_trs").show();
+            $("#other_equip").hide();
+            $("#rop").hide();
+           }
+           else if($otherequips == "ROP"){
+            $("#rop").show();
+            $("#cl_trs").hide();
+            $("#other_equip").hide();
            }
            else{
             $("#other_equip").hide();
+            $("#rop").hide();
+            $("#cl_trs").hide();
+           }
+       });
+        //custom solution
+        $("#cl_trs_product").change(function(){
+           var $custom = $(this).val();
+           if($custom == "customsolutions"){
+               $("#custom_solns").show();
+           }
+           else{
+              $("#custom_solns").hide(); 
            }
        })
     });
 </script> 
-<!-- InstanceEndEditable --> 
+<!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

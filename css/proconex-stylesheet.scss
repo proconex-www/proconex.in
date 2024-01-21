@@ -181,6 +181,7 @@ img{
 	header{
         position: relative;
         z-index: 3;
+        user-select: none;
 	}
 	.navbar-brand{
 		display: block;
@@ -294,6 +295,7 @@ img{
 	.carousel{
         background-color: #333333;
 		position: relative;
+        user-select: none;
 		&:before{ 
 			content: "";
 			background-color: #333333;
@@ -390,6 +392,7 @@ img{
                     margin: 12px;
                 }
                 form{
+                    user-select: none;
                     label{
                         font-size: 130%;
                         letter-spacing: 0.6px;
@@ -789,6 +792,7 @@ img{
         }
         form{
             color: #ffffff;
+            user-select: none;
             label{
                 font-size: 130%;
                 letter-spacing: calc(0.6em/13);
