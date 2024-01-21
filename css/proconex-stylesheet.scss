@@ -54,6 +54,9 @@
         outline: none;
     }
 }
+@mixin textshadow1($shadowcolor){
+    text-shadow: calc(1em/40) calc(1em/40) calc(5em/40) $shadowcolor,calc(1em/40) calc(1em/40) calc(5em/40) $shadowcolor,calc(2em/40) calc(2em/40) calc(5em/40) $shadowcolor,calc(2em/40) calc(2em/40) calc(5em/40) $shadowcolor,calc(2em/40) calc(2em/40) calc(5em/40) $shadowcolor;
+}
 //Web Fonts
 @font-face {
     font-family: 'Swis721 Cn BT';
@@ -841,7 +844,7 @@ img{
                 font-size: 400%;
                 color: inherit;
                 margin: 0px;
-                text-shadow: calc(1em/40) calc(1em/40) calc(5em/40) #403f7c,calc(1em/40) calc(1em/40) calc(5em/40) #403f7c,calc(2em/40) calc(2em/40) calc(5em/40) #403f7c,calc(2em/40) calc(2em/40) calc(5em/40) #403f7c,calc(2em/40) calc(2em/40) calc(5em/40) #403f7c;
+                @include textshadow1(#403f7c);
                 + p{
                     margin-top: 12px;
                 }
@@ -850,9 +853,21 @@ img{
                 font-size: 200%;
                 color: inherit;
                 margin: 0px;
-                text-shadow: calc(1em/20) calc(1em/20) calc(5em/20) #403f7c,calc(1em/20) calc(1em/20) calc(5em/20) #403f7c,calc(2em/20) calc(2em/20) calc(5em/20) #403f7c,calc(2em/20) calc(2em/20) calc(5em/20) #403f7c,calc(2em/20) calc(2em/20) calc(5em/20) #403f7c;
+                @include textshadow1(#403f7c);
                 + p{
                     margin-top: 6px;
+                }
+            }
+        }
+        &.bg-white{
+            color: #333333;
+            &::before {
+                background-color: #ffffff;
+                opacity: 0.8;
+            }
+            .proconEx_features_text{
+                h1, p{
+                    @include textshadow1(#f2f2f2);
                 }
             }
         }
