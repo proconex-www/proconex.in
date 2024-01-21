@@ -791,11 +791,45 @@ img{
             color: #ffffff;
             label{
                 font-size: 130%;
-                letter-spacing: 0.6px;
+                letter-spacing: calc(0.6em/13);
                 &.custom-file-label{
                     margin: 0px;
                     letter-spacing: 0px;
                 }
+                &.form-check-label{
+                    font-size: 140%;
+                    display: inline-block;
+                    padding-left: calc(22em/14);
+                    position: relative;
+                    user-select: none;
+                    .form-check-input{
+                        display: none;
+                        + .icon{
+                            display: block;
+                            width: calc(15em/14.84);
+                            height: calc(15em/14.84);
+                            position: absolute;
+                            left: 0px;
+                            margin-top: calc(-7.5em/14.84);
+                            transform: translateY(50%);
+                            line-height: calc(15em/14.84);
+                            font-size: 106%;
+                            &:before{
+                                content: "\ea53";
+                            }
+                        }
+                        &:checked{
+                            + .icon{
+                               &:before{
+                                    content: "\ea52";
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+            .form-check{
+                margin-bottom: 1em;
             }
             .form-control{ 
                 font-size: 160%; 
