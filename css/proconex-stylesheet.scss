@@ -398,9 +398,6 @@ img{
                         font-size: 130%;
                         letter-spacing: 0.6px;
                         margin-bottom: 6px;
-                        &.form-check-label{
-                            font-size: 140%;
-                        }
                     }
                     .form-control, input, select{
                         font-size: 170%;
@@ -770,7 +767,7 @@ img{
         }
         form{
             .form-check-label{
-                font-size: 160%;
+                font-size: 140%;
                 color: #495057;
                 display: flex;
                 flex-wrap: nowrap;
@@ -780,7 +777,6 @@ img{
                     display: none;
                     + .icon{ 
                         background-color: #ffffff;
-                        font-size: 115%;
                         border-radius: 0.5em;
                         line-height: calc(10em/14.49);
                         &:before{
@@ -808,6 +804,11 @@ img{
                 .checkbox-text{
                     display: inline-block;
                     margin-left: 5px;
+                }
+            }
+            &.search-form{
+                label{
+                    font-size: 140%;
                 }
             }
         }

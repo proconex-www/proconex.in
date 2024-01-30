@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +11,13 @@
 <link href="images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/proconex-stylesheet.css?v=5" rel="stylesheet">
-
+<link href="css/proconex-stylesheet.css?v=5.1" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-
 </head>
 <body id="proconEx_bdy">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script> 
 <!-- InstanceBeginEditable name="hd-js" --> <!-- InstanceEndEditable -->
 <header>
   <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="index.html"><img src="images/proconex-pvt-ltd.png" width="1024" height="121" alt="Proconex Pvt. Ltd."></a>
@@ -47,72 +46,146 @@
     </div>
   </nav>
 </header>
-<main>
-
-  <!-- InstanceBeginEditable name="features_text" -->
+<main> <!-- InstanceBeginEditable name="features_text" -->
   <section style="background-image: url('images/store-proconex.jpg'); min-height: 50px; padding: calc(2em) 0;" id="proconEx_features" class="d-flex justify-content-center align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="proconEx_features_text text-center">
-            <h1><strong>Proconex Stocks</strong></h1>
+            <h1><strong>Search for Your Industrial Spare Parts</strong></h1>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- InstanceEndEditable -->
-  <!-- InstanceBeginEditable name="page-content" -->
+  <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="page-content" -->
   <section id="proconEx_services" class="bg_white pt-0">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="proconEx_services_1">
-            <p>Welcome &mdash; Your Source for Industrial and Automation Spare Parts, and Turbine Control Panels, Control System Boards and Instrumentation, etc.</p>
-            <h2>Explore a Wide Range of Quality Industrial Spare Parts and Product Categories</h2>
-            <p class="d-flex flex-wrap flex-btns"> <a href="#" class="btn btn-primary">Control and Safety Systems</a> <a href="#" class="btn btn-primary">Analysers</a> <a href="#" class="btn btn-primary">Detectors</a> <a href="#" class="btn btn-primary">Pressure Measuring Devices</a> <a href="#" class="btn btn-primary">Flow Measuring Devices</a> <a href="#" class="btn btn-primary">Switches</a> <a href="#" class="btn btn-primary">Temperature Measuring Devices</a> <a href="#" class="btn btn-primary">Level Measuring Devices</a> <a href="#" class="btn btn-primary">Instrumentation Bulk Materials</a> <a href="#" class="btn btn-primary">Density and Viscosity Measuring Devices</a> </p>
+              <h2>Search Options</h2>
+            <form class="search-form">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="form-group">
+                    <label for="ps_search">Search</label>
+                    <input name="ps_search" type="search" class="form-control" id="ps_search" placeholder="Search Products">
+                  </div>
+                    <div class="p-2">
+                    <p><strong>Total Products:</strong> 7000</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="form-group">
+                    <label for="ps_brand">Brands/Manufacturer</label>
+                    <select name="ps_brand" multiple="MULTIPLE" class="form-control" id="ps_brand" style="min-height: 100px">
+                      <option>All</option>
+                      <option>GE</option>
+                      <option>Siemens</option>
+                      <option>Honeywell</option>
+                      <option>ABB</option>
+                      <option>Allen Bradlley</option>
+                      <option>Fanuc</option>
+                      <option>Yokogawa</option>
+                      <option>Mistibushi</option>
+                      <option>Woodward</option>
+                      <option>Mesto</option>
+                      <option>Omron</option>
+                      <option>Foxbro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="form-group">
+                    <label for="ps_partnum">Model/Part Number</label>
+                    <select name="ps_partnum" multiple="MULTIPLE" class="form-control" id="ps_partnum" style="min-height: 100px">
+                      <option>All</option>
+                      <option>QHFT 201</option>
+                      <option>51303928-100</option>
+                      <option>LKS 210-10 (B1-5 S1)</option>
+                      <option>1C31234G01</option>
+                      <option>6ES7972-0BA52-0XA0</option>
+                      <option>1MLR-PA1B</option>
+                      <option>1P 6ES7153-2BA10-0XB0</option>
+                      <option>1P 6ES7 321-7BH01-0AB0</option>
+                      <option>2MLF-AD4S</option>
+                      <option>1P 6ES7 322-1BL00-0AA0</option>
+                      <option>1P 6ES7332-5HF00-0AB0</option>
+                      <option>XGRE12P</option>
+                      <option>2MLF-AD4S</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="form-group">
+                    <label for="ps_partype">Part Type</label>
+                    <select name="ps_partype" multiple="MULTIPLE" class="form-control" id="ps_partype" style="min-height: 100px">
+                      <option>All</option>
+                      <option>Tacho Terminal</option>
+                      <option>24 Vdc Digital Input (Single IOP)</option>
+                      <option>Air Damper Actuators</option>
+                      <option>16 Channel Compact Digital Input Electronics Module</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="form-group">
+                    <h4>Stocking Option</h4>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="partavails[]" class="form-check-input" value="In Stock">
+                      <span class="icon"></span> <span class="checkbox-text">In Stock</span></label>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="partavails[]" class="form-check-input" value="Request Source">
+                      <span class="icon"></span> <span class="checkbox-text">Request Source</span></label>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="partavails[]" class="form-check-input" value="With Lead Time">
+                      <span class="icon"></span> <span class="checkbox-text">With Lead Time</span></label>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="form-group">
+                    <h4>Part Condition</h4>
+                    <label  class="form-check-label">
+                      <input type="checkbox" name="partcondition[]" class="form-check-input" value="Used/Refurbished">
+                      <span class="icon"></span> <span class="checkbox-text">Used/Refurbished</span></label>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="partcondition[]" class="form-check-input" value="Unused/Excess inventory (new surplus)">
+                      <span class="icon"></span> <span class="checkbox-text">Unused/Excess inventory (new surplus)</span></label>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="partcondition[]" class="form-check-input" value="Factory New">
+                      <span class="icon"></span> <span class="checkbox-text">Factory New</span></label>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="partcondition[]" class="form-check-input" value="Repair Service">
+                      <span class="icon"></span> <span class="checkbox-text">Repair Service</span></label>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="form-group">
+                    <h4>Media Option</h4>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="medias[]" class="form-check-input" value="techdocs">
+                      <span class="icon"></span> <span class="checkbox-text">Datasheets</span></label>
+                    <label class="form-check-label">
+                      <input type="checkbox" name="medias[]" class="form-check-input" value="multiphoto">
+                      <span class="icon"></span> <span class="checkbox-text">Photos</span></label>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                  <div class="form-group pt-2 m-0">
+                    <input type="submit" value="Search" class="btn btn-primary" style="font-size: 240%; width: 100%">
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="proconEx_services_1">
-              <h2><strong>Discover the Product Range</strong>Competitive Pricing, Quality Assurance and Online Ordering.</h2>
-              </div>
-          </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="proconEx_services_1">
-              <h3>Extensive Product Range</h3>
-              <p>We boast an extensive inventory, ensuring you find the exact spare part or product you need.</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Request Source</a></p>
-            </div>
-          </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="proconEx_services_1">
-              <h3>Quality Assurance</h3>
-              <p>Our products undergo rigorous quality checks to guarantee their durability and reliability in industrial environments.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Explore Factory New</a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="proconEx_services_1">
-              <h3>Competitive Pricing</h3>
-              <p>We strive to offer competitive prices without compromising on the quality of our products.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Compare Prices</a></p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="proconEx_services_1">
-              <h3>Easy Online Ordering</h3>
-              <p>Our user-friendly website allows you to browse, select, and order products with ease.</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Explore Products</a></p>
-            </div>
-          </div>
-        </div>
     </div>
   </section>
-  <!-- InstanceEndEditable -->
-</main>
+  <!-- InstanceEndEditable --> </main>
 <footer>
   <section id="proconEx_certify">
     <div class="container">
@@ -134,8 +207,9 @@
             <div class="proconEx_certify_1">
               <h3>Work Office</h3>
               <address>
-                  <p>Proconex Pvt. Ltd. <br> No. 23/A, II<sup>nd</sup> floor, Skanda Complex, Central Revenue Layout, MCECHS  Double Road, Bengaluru, Karnataka, India, <span class="d-inline-block">PIN: 560077</span></p>
-                  <p><span class="icon proconex-phone"></span> Telephone: <a href="tel:08026280000">080-26280000</a></p>
+              <p>Proconex Pvt. Ltd. <br>
+                No. 23/A, II<sup>nd</sup> floor, Skanda Complex, Central Revenue Layout, MCECHS  Double Road, Bengaluru, Karnataka, India, <span class="d-inline-block">PIN: 560077</span></p>
+              <p><span class="icon proconex-phone"></span> Telephone: <a href="tel:08026280000">080-26280000</a></p>
               </address>
             </div>
             <div class="proconEx_certify_1">
@@ -166,7 +240,7 @@
               <p>Follow us on Facebook <span class="icon proconex-facebook2"></span></p>
               <p>Follow us on LinkedIn <span class="icon proconex-linkedin"></span></p>
               <p><span class="icon proconex-youtube"></span> YouTube Channel</p>
-            </div>-->
+            </div>--> 
           </div>
         </div>
         <div class="col-12 mt-3">
@@ -203,7 +277,7 @@
     </div>
     <img src="images/proconex-process-control-experts.jpg" width="1654" height="197" alt="" style="width: 100%"> </section>
   <div class="d-flex copyrights">
-      <p>Follow us on Social Media: <span class="d-inline-block"><a href="https://www.facebook.com/Proconex-Pvt-Ltd" target="_blank">Facebook</a> <span class="icon proconex-facebook2"></span></span> | <span class="d-inline-block"><a href="https://in.linkedin.com/company/proconex-pvt-ltd" target="_blank">LinkedIn</a> <span class="icon proconex-linkedin"></span></span> | <span class="d-inline-block"><span class="icon proconex-youtube"></span> <a href="https://www.youtube.com/channel/UCCjLkA30c6DoEprVm6CJJ3w" target="_parent">YouTube Channel</a></span></p>
+    <p>Follow us on Social Media: <span class="d-inline-block"><a href="https://www.facebook.com/Proconex-Pvt-Ltd" target="_blank">Facebook</a> <span class="icon proconex-facebook2"></span></span> | <span class="d-inline-block"><a href="https://in.linkedin.com/company/proconex-pvt-ltd" target="_blank">LinkedIn</a> <span class="icon proconex-linkedin"></span></span> | <span class="d-inline-block"><span class="icon proconex-youtube"></span> <a href="https://www.youtube.com/channel/UCCjLkA30c6DoEprVm6CJJ3w" target="_parent">YouTube Channel</a></span></p>
     <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
     <p>Copyrights<sup>&copy;</sup> Proconex Pvt. Ltd. All rights reserved<sup>&reg;</sup></p>
   </div>
@@ -211,8 +285,9 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/proconEx-1.js"></script>
-<!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable --> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script src="js/proconEx-1.js"></script> 
+<!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

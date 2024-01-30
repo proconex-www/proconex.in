@@ -10,7 +10,7 @@
 <link href="../images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="../css/proconex-stylesheet.css?v=5" rel="stylesheet">
+<link href="../css/proconex-stylesheet.css?v=5.1" rel="stylesheet">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>
