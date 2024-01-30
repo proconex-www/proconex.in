@@ -398,6 +398,9 @@ img{
                         font-size: 130%;
                         letter-spacing: 0.6px;
                         margin-bottom: 6px;
+                        &.form-check-label{
+                            font-size: 140%;
+                        }
                     }
                     .form-control, input, select{
                         font-size: 170%;
@@ -508,6 +511,16 @@ img{
                         max-height: calc(16em/10);
                     }
                 }
+            }
+        }
+        .flex-btns{
+            column-gap: calc(10em/18);
+            row-gap: calc(10em/18);
+            .btn{
+                font-size: 97%;
+                font-weight: 700;
+                flex-grow: 1;
+                letter-spacing: 0.01em;
             }
         }
         h2{
@@ -739,6 +752,49 @@ img{
                     @media (max-width: 576px){
                         width: 100%;
                     }
+                }
+            }
+        }
+        form{
+            .form-check-label{
+                font-size: 160%;
+                color: #495057;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: baseline;
+                margin: 0.05em 1em;
+                .form-check-input{
+                    display: none;
+                    + .icon{ 
+                        background-color: #ffffff;
+                        font-size: 115%;
+                        border-radius: 0.5em;
+                        line-height: calc(10em/14.49);
+                        &:before{
+                            color: #0A7ABF;
+                            content: "\ea52";
+                            display: none;
+                        }
+                        &:after{
+                            color: #ced4da;
+                            content: "\ea53";
+                            display: block;
+                        } 
+                    }
+                    &:checked{
+                        + .icon{
+                            &:before{
+                                display: block;
+                            }
+                            &:after{
+                                display: none;
+                            } 
+                        }
+                    }
+                }
+                .checkbox-text{
+                    display: inline-block;
+                    margin-left: 5px;
                 }
             }
         }
