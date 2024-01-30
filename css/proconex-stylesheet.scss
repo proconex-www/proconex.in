@@ -545,6 +545,19 @@ img{
                 padding-bottom: calc(6em/24);
             }
         }
+        h4{  
+            font-size: 180%;
+            font-weight: 600;
+            margin-top: calc(12em/24);
+            margin-bottom: 0px; 
+            &:first-child{
+                margin-top: 0px;
+                padding-bottom: calc(6em/24);
+            }
+            + label{
+                padding-top: calc(6em/24);
+            }
+        }
         h2, h3, p, ul, ol, dl {
             + iframe, + form {
                 margin-top: calc(12em/10);
