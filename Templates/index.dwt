@@ -258,9 +258,9 @@
             <div class="proconEx_certify_1">
               <h3>Product Literature</h3>
               <p><span class="icon proconex-mail3"></span> <a href="#">Mail us</a></p>
-              <p><a href="#">Visit our e-Store</a></p>
-              <p>Spares &amp; Repairs</p>
-              <p>Spares &amp; Services</p>
+              <p><a href="../stock-search.html">Visit our e-Store</a></p>
+              <p><a href="../repair-request-form.html">Spares &amp; Repairs</a></p>
+              <p><a href="../support.html">Spares &amp; Services</a></p>
             </div>
             <div class="proconEx_certify_1">
               <h3>Programmes</h3>
@@ -273,7 +273,7 @@
             <div class="proconEx_certify_1">
               <h3>References</h3>
               <p>Major Industries</p>
-              <p>Support</p>
+              <p><a href="../support.html">Support</a></p>
               <p>Buy Back &amp; Asset recovery</p>
               <p>Ask Network of Engineers?</p>
               <p>Customer Support</p>
