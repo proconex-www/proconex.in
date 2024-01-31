@@ -387,6 +387,13 @@ img{
         }
         .proconEx_services_1{
             padding: calc(15em/10);
+            hr{
+                display: block;
+                height: 3px;
+                background-image: url("../images/hr.gif");
+                background-repeat: repeat-x;
+                border: none;
+            }
             &.support{
                 .support-icons{ 
                     width: calc(220em/10);
@@ -472,6 +479,73 @@ img{
                 iframe{
                     height: 100%;
                     min-height: 480px;
+                }
+            }
+            &.products{
+                padding: 0px;
+                .proconEx_product{
+                    width: 33.3333%;
+                    a{
+                        color: #333333;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 12px;
+                        margin: 12px;
+                        background-color: #ffffff;
+                        border: 1px solid #eee;
+                        &:hover, &:focus{
+                            color: #227153;
+                            text-decoration: none;
+                            img{
+                                transform: scale(1.1);
+                                transition: transform 0.1s linear;
+                            }
+                        }
+                        &:active{
+                            color: #4E5397;
+                            img{
+                                transform: scale(1);
+                                transition: none; 
+                            }
+                        }
+                        .product_text{
+                            padding: 0px 5px 5px 0px;
+                        }
+                        h3, p{
+                            padding: 0px;
+                            margin: 0px;
+                        }
+                        h3{
+                            font-size: 160%;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 140%;
+                            strong{
+                                font-weight: 500;
+                            }
+                        }
+                        img{
+                            border: 1px double #f2f2f2;
+                            width: auto;
+                            height: 60px;
+                        }
+                        @media (max-width: 991px){
+                            flex-wrap: wrap;
+                        }
+                        @media (max-width: 767px){
+                            flex-wrap: nowrap;
+                        }
+                        @media (max-width: 374px){
+                            flex-wrap: wrap;
+                        }
+                    }
+                    @media (max-width: 767px){
+                        width: 50%;
+                    }
+                    @media (max-width: 576px){
+                        width: 100%;
+                    }
                 }
             }
             dt{
@@ -809,6 +883,11 @@ img{
             &.search-form{
                 label{
                     font-size: 140%;
+                }
+                @media (max-width: 424px){
+                    .input-group-append{
+                        width: 100%;
+                    }
                 }
             }
         }
