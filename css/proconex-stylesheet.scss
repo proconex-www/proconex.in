@@ -131,6 +131,7 @@
 }
 //import font-icons
 @import url("icons.css"); 
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -183,7 +184,6 @@ img{
         position: relative;
         z-index: 3;
         user-select: none;
-	}
 	.navbar-brand{
 		display: block;
 		max-width: calc(320em/20);
@@ -281,6 +281,7 @@ img{
 			justify-content: space-between;
 		}
 	}
+    }
     
     //Mains
     main{
@@ -357,7 +358,7 @@ img{
             }
 		}
 	}
-    
+            
     //Services section
     [id*="proconEx_services"]{ 
         padding: calc(60em/10) 0px;
@@ -406,7 +407,7 @@ img{
                         letter-spacing: 0.6px;
                         margin-bottom: 6px;
                     }
-                    .form-control, input, select{
+                    .form-control, input, select, .form-select{
                         font-size: 170%;
                         margin-bottom: 12px;
                         &:last-child{
@@ -839,7 +840,7 @@ img{
                 }
             }
         }
-        form{
+        form{ 
             .form-check-label{
                 font-size: 140%;
                 color: #495057;
