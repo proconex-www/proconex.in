@@ -562,7 +562,7 @@ img{
                 }
             }
             &.product_details{
-                .product_photo{
+                .product_photo_zoom{
                     overflow: hidden;
                     img{
                         display: block;
@@ -994,6 +994,9 @@ img{
                     }
                 }
             }
+        }
+        .btn{
+            @include hover; 
         }
     }
     #proconEx_services_industry{
