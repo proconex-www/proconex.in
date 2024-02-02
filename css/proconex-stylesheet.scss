@@ -57,6 +57,9 @@
 @mixin textshadow1($shadowcolor){
     text-shadow: calc(1em/40) calc(1em/40) calc(5em/40) $shadowcolor,calc(1em/40) calc(1em/40) calc(5em/40) $shadowcolor,calc(2em/40) calc(2em/40) calc(5em/40) $shadowcolor,calc(2em/40) calc(2em/40) calc(5em/40) $shadowcolor,calc(2em/40) calc(2em/40) calc(5em/40) $shadowcolor;
 }
+@mixin boxshadow1{
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
 //Web Fonts
 @font-face {
     font-family: 'Swis721 Cn BT';
@@ -855,12 +858,14 @@ img{
                 flex-wrap: nowrap;
                 align-items: baseline;
                 margin: 0.05em 1em;
+                position: relative;
                 .form-check-input{
-                    display: none;
+                    position: absolute;
+                    z-index: -1;
                     + .icon{ 
                         background-color: #ffffff;
                         border-radius: 0.5em;
-                        line-height: calc(10em/14.49);
+                        line-height: calc(11em/14.49);
                         &:before{
                             color: #0A7ABF;
                             content: "\ea52";
@@ -872,7 +877,17 @@ img{
                             display: block;
                         } 
                     }
+                    &:focus{
+                        + .icon{
+                            background-color: rgba(3,90,166,0.5);
+                        }
+                    }
                     &:checked{
+                        &:focus{
+                            + .icon{
+                                background-color: rgba(3,90,166,0);
+                            }
+                        }
                         + .icon{
                             &:before{
                                 display: block;
@@ -1060,7 +1075,8 @@ img{
                     position: relative;
                     user-select: none;
                     .form-check-input{
-                        display: none;
+                        position: absolute;
+                        z-index: -1;
                         + .icon{
                             display: block;
                             width: calc(15em/14.84);
@@ -1075,11 +1091,21 @@ img{
                                 content: "\ea53";
                             }
                         }
+                        &:focus{
+                            + .icon{
+                                background-color: rgba(255,255,255,0.5);
+                            }
+                        }
                         &:checked{
                             + .icon{
                                &:before{
                                     content: "\ea52";
                                 } 
+                            }
+                            &:focus{
+                                + .icon{
+                                    background-color: rgba(255,255,255,0);
+                                }
                             }
                         }
                     }
