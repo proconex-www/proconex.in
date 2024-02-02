@@ -10,7 +10,7 @@
 <link href="images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/proconex-stylesheet.css?v=5.5" rel="stylesheet">
+<link href="css/proconex-stylesheet.css?v=6" rel="stylesheet">
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -140,7 +140,7 @@
           <div class="col-12">
             <div class="p-3">
               <form action="stock-search.html">
-                  <h3>Search Options</h3>
+                <h3>Search Options</h3>
                 <div class="form-group">
                   <label for="ps_search">Search</label>
                   <div class="input-group">
@@ -155,85 +155,271 @@
                 <div class="row">
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="form-group">
-                      <label for="ps_brand">Brands/Manufacturer</label>
-                      <select name="ps_brand" multiple="MULTIPLE" class="form-select form-control" id="ps_brand" style="min-height: 180px">
-                        <option selected="selected">All</option>
-                        <option>GE</option>
-                        <option>Siemens</option>
-                        <option>Honeywell</option>
-                        <option>ABB</option>
-                        <option>Allen Bradlley</option>
-                        <option>Fanuc</option>
-                        <option>Yokogawa</option>
-                        <option>Mistibushi</option>
-                        <option>Woodward</option>
-                        <option>Mesto</option>
-                        <option>Omron</option>
-                        <option>Foxbro</option>
-                      </select>
+                      <label>Brands/Manufacturer</label>
+                      <div class="custom-list">
+                        <input type="search" placeholder="Search brand" class="form-control ps_search" id="searchbrand">
+                        <input type="hidden" name="brandsearch" id="brandsearch">
+                        <ul class="form-control">
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="All">
+                              <span class="list">All</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="GE">
+                              <span class="list">GE</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Siemens">
+                              <span class="list">Siemens</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Honeywell">
+                              <span class="list">Honeywell</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="ABB">
+                              <span class="list">ABB</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Allen Bradlley">
+                              <span class="list">Allen Bradlley</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Fanuc">
+                              <span class="list">Fanuc</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Yokogawa">
+                              <span class="list">Yokogawa</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Mistibushi">
+                              <span class="list">Mistibushi</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Woodward">
+                              <span class="list">Woodward</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Mesto">
+                              <span class="list">Mesto</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_brand[]" value="Foxbro">
+                              <span class="list">Foxbro</span></label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="form-group">
-                      <label for="ps_partnum">Model/Part Number</label>
-                      <select name="ps_partnum" multiple="MULTIPLE" class="form-select form-control" id="ps_partnum" style="min-height: 180px">
-                        <option selected="selected">All</option>
-                        <option>QHFT 201</option>
-                        <option>51303928-100</option>
-                        <option>LKS 210-10 (B1-5 S1)</option>
-                        <option>1C31234G01</option>
-                        <option>6ES7972-0BA52-0XA0</option>
-                        <option>1MLR-PA1B</option>
-                        <option>1P 6ES7153-2BA10-0XB0</option>
-                        <option>1P 6ES7 321-7BH01-0AB0</option>
-                        <option>2MLF-AD4S</option>
-                        <option>1P 6ES7 322-1BL00-0AA0</option>
-                        <option>1P 6ES7332-5HF00-0AB0</option>
-                        <option>XGRE12P</option>
-                        <option>2MLF-AD4S</option>
-                      </select>
+                      <label>Model/Part Number</label>
+                      <div class="custom-list">
+                        <input type="search" placeholder="Search Part Number" class="form-control ps_search" id="searchpartnumber">
+                        <input type="hidden" name="partnumbersearch" id="partnumbersearch">
+                        <ul class="form-control">
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">All</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">QHFT 201</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">51303928-100</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">LKS 210-10 (B1-5 S1)</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">1C31234G01</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">6ES7972-0BA52-0XA0</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">1MLR-PA1B</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">1P 6ES7153-2BA10-0XB0</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">1P 6ES7 321-7BH01-0AB0</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">2MLF-AD4S</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">1P 6ES7 322-1BL00-0AA0</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">1P 6ES7332-5HF00-0AB0</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">XGRE12P</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partnum[]" value="All">
+                              <span class="list">2MLF-AD4S</span></label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="form-group">
-                      <label for="ps_partype">Part Type</label>
-                      <select name="ps_partype" multiple="MULTIPLE" class="form-select form-control" id="ps_partype" style="min-height: 180px">
-                        <option selected="selected">All</option>
-                        <option>Tacho Terminal</option>
-                        <option>24 Vdc Digital Input (Single IOP)</option>
-                        <option>Air Damper Actuators</option>
-                        <option>16 Channel Compact Digital Input Electronics Module</option>
-                        <option>6ES7972-0BA52-0XA0</option>
-                        <option>1MLR-PA1B</option>
-                        <option>1P 6ES7153-2BA10-0XB0</option>
-                        <option>1P 6ES7 321-7BH01-0AB0</option>
-                        <option>2MLF-AD4S</option>
-                        <option>1P 6ES7 322-1BL00-0AA0</option>
-                        <option>1P 6ES7332-5HF00-0AB0</option>
-                        <option>XGRE12P</option>
-                        <option>2MLF-AD4S</option>
-                      </select>
+                      <label>Part Type</label>
+                      <div class="custom-list">
+                        <input type="search" placeholder="Search Part Type" class="form-control ps_search" id="searchparttype">
+                        <input type="hidden" name="parttypesearch" id="parttypesearch">
+                        <ul class="form-control">
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partype[]" value="All">
+                              <span class="list">All</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partype[]" value="All">
+                              <span class="list">Tacho Terminal</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partype[]" value="All">
+                              <span class="list">24 Vdc Digital Input (Single IOP)</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partype[]" value="All">
+                              <span class="list">Air Damper Actuators</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_partype[]" value="All">
+                              <span class="list">16 Channel Compact Digital Input Electronics Module</span></label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="form-group">
-                      <label for="ps_cate">Categories</label>
-                      <select name="ps_cate" multiple="MULTIPLE" class="form-select form-control" id="ps_cate" style="min-height: 180px">
-                        <option selected="selected">All</option>
-                        <option>Turbine Control</option>
-                        <option>Programmable Logic Control</option>
-                        <option>Distributed Control System</option>
-                        <option>Excitation System</option>
-                        <option>Liquid Cooled Inverter</option>
-                        <option>Vibration Monitoring System</option>
-                        <option>Drive Controls</option>
-                        <option>Variable Frequency Drive</option>
-                        <option>Industrial and Automation Spares</option>
-                        <option>Control and Instrumentation Spares</option>
-                        <option>Component Level Testing and Repair Services</option>
-                        <option>Repair of OBSOLETE Panels</option>
-                        <option>Others</option>
-                      </select>
+                      <label>Categories</label>
+                      <div class="custom-list">
+                        <input type="search" placeholder="Search Category" class="form-control ps_search" id="searchcategory">
+                        <input type="hidden" name="parttypesearch" id="categorysearch">
+                        <ul class="form-control">
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">All</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Turbine Control</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Programmable Logic Control</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Distributed Control System</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Excitation System</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Liquid Cooled Inverter</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Vibration Monitoring System</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Drive Controls</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Variable Frequency Drive</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Industrial and Automation Spares</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Control and Instrumentation Spares</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Component Level Testing and Repair Services</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Repair of OBSOLETE Panels</span></label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" name="ps_cate[]" value="All">
+                              <span class="list">Others</span></label>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -280,13 +466,13 @@
                         <span class="icon"></span> <span class="checkbox-text">Photos</span></label>
                     </div>
                   </div>
-                  </div>
-                  <div class="row justify-content-center">
+                </div>
+                <div class="row justify-content-center">
                   <div class="col-12 col-sm-6 col-md-5 col-lg-5 text-center">
                     <div class="form-group pt-2 m-0">
-                        <input type="submit" value="Search" class="btn btn-primary" style="font-size: 240%">
-                      </div>
+                      <input type="submit" value="Search" class="btn btn-primary" style="font-size: 240%">
                     </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -474,7 +660,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/proconEx-1.js?v=3"></script>
+<script src="js/proconEx-1.js?v=5"></script>
 <!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable --> 
 </body>
 <!-- InstanceEnd --></html>

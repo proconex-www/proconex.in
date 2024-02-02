@@ -129,6 +129,7 @@
     font-style: normal;
     font-display: fallback;
 }
+
 //import font-icons
 @import url("icons.css"); 
 
@@ -891,6 +892,64 @@ img{
                     }
                 }
             }
+            .custom-list { 
+                font-size: 100%;
+                input.ps_search{
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    position: relative;
+                    z-index: 1;
+                }
+                ul.form-control{
+                    font-size: 140%;
+                    padding: 0;
+                    margin: -1px 0 0;
+                    height: 180px;
+                    overflow: auto;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    li{
+                        font-size: 100%;
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        &:before{
+                            content: "";
+                            display: none;
+                        }
+                        label{
+                            font-size: 100%;
+                            display: block;
+                            word-wrap: break-word;
+                            padding: 0;
+                            margin: 0;
+                            position: relative;
+                            input[type="checkbox"]{
+                                position: absolute;
+                                z-index: -1;
+                                + .list{
+                                    color: #212529;
+                                    display: block;
+                                    padding: 0px 12px;
+                                }
+                                &:checked{
+                                    + .list{
+                                        color: #035AA6;
+                                        background-color: #eeeeee;
+                                    }
+                                }
+                                &:focus, &:hover{
+                                    + .list{
+                                        outline: 1px solid #eeeeee;
+                                        outline-offset: 0px;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     #proconEx_services_industry{
@@ -952,6 +1011,14 @@ img{
         form{
             label{
                 font-size: 140%;
+            }
+            ul.form-control{
+                font-size: 140%;
+            }
+            .custom-list{
+                label{
+                    font-size: 100%;
+                }
             }
         }
     }
