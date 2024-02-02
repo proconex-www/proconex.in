@@ -19,8 +19,7 @@
 <body id="proconEx_bdy">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.4.1.min.js"></script>
-<!-- InstanceBeginEditable name="hd-js" -->
-<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="hd-js" --> <!-- InstanceEndEditable -->
 <header>
   <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="index.html"><img src="images/proconex-pvt-ltd.png" width="1024" height="121" alt="Proconex Pvt. Ltd."></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#proconEx-navbar" aria-controls="proconEx-navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">&#9776;</span> </button>
@@ -71,8 +70,10 @@
           <div class="proconEx_services_1 product_details">
             <h2><strong>Air Damper Actuators</strong> from Honeywell</h2>
             <div class="row mt-3">
-                <div class="col-md-5"><div class="product_photo_zoom"><img src="images/inventory/4217821706609321.jpg" width="1238" height="1080" alt=""></div></div>
-              <div class="col-md-7">
+              <div class="col-md-6">
+                <div class="product_photo_zoom"><img src="images/inventory/4217821706609321.jpg" width="1238" height="1080" alt=""></div>
+              </div>
+              <div class="col-md-6">
                 <h3>Product Specifications</h3>
                 <p><strong>Model/Part Number:</strong> LKS 210-10 (B1-5 S1)</p>
                 <p><strong>Industrial Usage:</strong> Variable Frequency Drive (VFD), Industrial and Automation Spares</p>
@@ -87,9 +88,50 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="proconEx_services_1">
-            <h3>In-Stock: 448</h3>
+          <div class="proconEx_services_1 enquiry">
+            <h3 class="heading_green">In-Stock: 448</h3>
             <p>Available in bulk, can ship immediately</p>
+            <form>
+              <div class="form-group">
+                <h4>Part Condition</h4>
+                <label style="display: block">Choose Part Conditions</label>
+                <label class="form-check-label">
+                  <input type="checkbox" name="partcondition[]" class="form-check-input" value="Used/Refurbished">
+                  <span class="icon"></span> <span class="checkbox-text">Used/Refurbished</span></label>
+                <input name="refurbished" type="hidden" class="datatext" id="refurbished">
+                <label class="form-check-label">
+                  <input type="checkbox" name="partcondition[]" class="form-check-input" value="Unused/Excess inventory (new surplus)">
+                  <span class="icon"></span> <span class="checkbox-text">Unused/Excess inventory (new surplus)</span></label>
+                <input name="surplus" type="hidden" class="datatext" id="surplus">
+                <label class="form-check-label">
+                  <input type="checkbox" name="partcondition[]" class="form-check-input" value="Factory New">
+                  <span class="icon"></span> <span class="checkbox-text">Factory New</span></label>
+                <input name="factorynew" type="hidden" class="datatext" id="factorynew">
+                <label class="form-check-label">
+                  <input type="checkbox" name="partcondition[]" class="form-check-input" value="Repair Service">
+                  <span class="icon"></span> <span class="checkbox-text">Repair Service</span></label>
+                <input name="repairservice" type="hidden" class="datatext" id="repairservice">
+              </div>
+              <div class="form-group">
+                <h4>Part Availability</h4>
+                  <label style="display: block">Choose Part Availability</label>
+                  <label class="form-check-label">
+                    <input type="checkbox" name="partavails[]" class="form-check-input" value="In Stock">
+                    <span class="icon"></span> <span class="checkbox-text">In Stock</span></label>
+                  <input name="stock" type="hidden" class="datatext" id="stock">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="partavails[]" class="form-check-input" value="Request Source">
+                    <span class="icon"></span> <span class="checkbox-text">Request Source</span></label>
+                  <input name="requsetsrc" type="hidden" class="datatext" id="requsetsrc">
+                  <label class="form-check-label">
+                    <input type="checkbox" name="partavails[]" class="form-check-input" value="With Lead Time">
+                    <span class="icon"></span> <span class="checkbox-text">With Lead Time</span></label>
+                  <input name="leadtime" type="hidden" class="datatext" id="leadtime">
+              </div>
+              <div class="form-group">
+                <input name="enquire" type="submit" id="enquire" class="btn btn-primary" value="Enquire Requirements">
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-12 mt-4">
@@ -202,7 +244,7 @@
     </div>
   </section>
   <section id="proconEx_services_industry" class="bg-obsolute-panels">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="proconEx_services_1">
@@ -660,8 +702,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/proconEx-1.js?v=5.1"></script>
-<!-- InstanceBeginEditable name="js1" -->
-<!-- InstanceEndEditable --> 
+<script src="js/proconEx-1.js?v=5.2"></script>
+<!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable --> 
 </body>
 <!-- InstanceEnd --></html>

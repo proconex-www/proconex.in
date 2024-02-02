@@ -152,6 +152,11 @@ img{
     &.fadein{
         opacity: 1;
     }
+    form{
+        input[type="checkbox"]{
+            appearance: none;
+        }
+    }
     @media (min-width: 1367px){
         font-size: calc(100vw/13670 * 100);
         .container{
@@ -581,6 +586,22 @@ img{
                     }
                 }
             }
+            &.enquiry{
+                background-color: #2ECEF2;
+                border-radius: 5px;
+                padding-left: 23px;
+                label{
+                    &.form-check-label{
+                        .form-check-input{
+                            + .icon{
+                                &:after{
+                                    color: #0a7abf;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             dt{
                 p{
                     font-size: 210%;
@@ -892,11 +913,13 @@ img{
                             color: #0A7ABF;
                             content: "\ea52";
                             display: none;
+                            line-height: 100%;
                         }
                         &:after{
                             color: #ced4da;
                             content: "\ea53";
                             display: block;
+                            line-height: 100%;
                         } 
                     }
                     &:focus{
@@ -907,7 +930,7 @@ img{
                     &:checked{
                         &:focus{
                             + .icon{
-                                background-color: rgba(3,90,166,0);
+                                background-color: #ffffff;
                             }
                         }
                         + .icon{
@@ -1129,7 +1152,7 @@ img{
                             }
                             &:focus{
                                 + .icon{
-                                    background-color: rgba(255,255,255,0);
+                                    background-color: #ffffff;
                                 }
                             }
                         }
