@@ -561,6 +561,13 @@ img{
                     }
                 }
             }
+            &.product_details{
+                h1{
+                    strong{
+                        display: inline-block;
+                    }
+                }
+            }
             dt{
                 p{
                     font-size: 210%;
