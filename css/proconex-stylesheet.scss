@@ -132,7 +132,10 @@
 
 //import font-icons
 @import url("icons.css"); 
-
+*{
+    outline-color: #227153;
+    outline-width: thin;
+}
 img{
 	max-width: 100%;
 	height: auto;
@@ -498,6 +501,9 @@ img{
                         &:hover, &:focus{
                             color: #227153;
                             text-decoration: none;
+                            border-color: #227153;
+                            outline-color: #227153;
+                            outline-width: thin;
                             img{
                                 transform: scale(1.1);
                                 transition: transform 0.1s linear;
@@ -940,6 +946,7 @@ img{
                                 }
                                 &:focus, &:hover{
                                     + .list{
+                                        color: #035AA6;
                                         outline: 1px solid #eeeeee;
                                         outline-offset: 0px;
                                         display: block;
