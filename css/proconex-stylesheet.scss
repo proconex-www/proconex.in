@@ -562,9 +562,22 @@ img{
                 }
             }
             &.product_details{
-                h1{
-                    strong{
-                        display: inline-block;
+                .product_photo{
+                    overflow: hidden;
+                    img{
+                        display: block;
+                    }
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        display: block;
+                        padding-right: 60px;
+                        margin: 5px 0px;
+                        &:has(+ ul){
+                            width: 100%;
+                        }
                     }
                 }
             }

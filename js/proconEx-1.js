@@ -1,9 +1,11 @@
 // JavaScript Document of Proconex Pvt. Ltd.
 $(function(){
     $("#proconEx_bdy").addClass("fadein");
-//    $.getScript("js/bootstrap-select.js").done(function(){
-//        $("select.selectpicker").selectpicker();
-//    });
+    if($(".product_photo").length > 0){
+        $.getScript("js/jquery.zoom.js").done(function(){
+            $(".product_photo").zoom();
+        });
+    }
     if($("input.ps_search").length > 0){
         $("input.ps_search").keyup(function(){
            $obj1 = "#"+ ($(this).attr("id"));
