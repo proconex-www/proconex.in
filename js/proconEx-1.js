@@ -9,12 +9,12 @@ $(function(){
             $(".product_photo_zoom").click(function(){
                 $(this).children(".icon").toggleClass("d-none");
             });
-            $(".product_photo_zoom").on("touchstart", function(){
-                $(this).children(".icon").toggleClass("d-none");
-            });
-            $(".product_photo_zoom").on("touchend", function(){
-                $(this).children(".icon").toggleClass("d-none");
-            })
+//            $(".product_photo_zoom").on("touchstart", function(){
+//                $(this).children(".icon").toggleClass("d-none");
+//            });
+//            $(".product_photo_zoom").on("touchend", function(){
+//                $(this).children(".icon").toggleClass("d-none");
+//            })
         });
     }
     if($(".owl-carousel").length > 0){
