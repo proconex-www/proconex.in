@@ -157,6 +157,7 @@ img{
             appearance: none;
         }
     }
+    
     @media (min-width: 1367px){
         font-size: calc(100vw/13670 * 100);
         .container{
@@ -400,6 +401,9 @@ img{
         }
         .proconEx_services_1{
             padding: calc(15em/10);
+            .proconEx_services_2{
+                padding: calc(15em/10);
+            }
             hr{
                 display: block;
                 height: 3px;
@@ -421,7 +425,7 @@ img{
                     }
                     .form-control, input, select, .form-select{
                         font-size: 170%;
-                        margin-bottom: 12px;
+                        margin-bottom: calc(12em/17);
                         &:last-child{
                             margin-bottom: 0px;
                         }
@@ -502,8 +506,8 @@ img{
                         color: #333333;
                         display: flex;
                         justify-content: space-between;
-                        padding: 12px;
-                        margin: 12px;
+                        padding: calc(12em/10);
+                        margin: calc(12em/10);
                         background-color: #ffffff;
                         border: 1px solid #eee;
                         &:hover, &:focus{
@@ -527,7 +531,7 @@ img{
                             }
                         }
                         .product_text{
-                            padding: 0px 5px 5px 0px;
+                            padding: 0px calc(5em/10) calc(5em/10) 0px;
                         }
                         h3, p{
                             padding: 0px;
@@ -546,7 +550,7 @@ img{
                         img{
                             border: 1px double #f2f2f2;
                             width: auto;
-                            height: 60px;
+                            height: calc(60em/10);
                         }
                         @media (max-width: 991px){
                             flex-wrap: wrap;
@@ -588,9 +592,10 @@ img{
             }
             &.enquiry{
                 background-color: #2ECEF2;
-                border-radius: 5px;
-                padding-left: 23px;
+                border-radius: calc(5em/10);
+                padding-left: calc(23em/10);
                 label{
+                    font-size: 130%;
                     &.form-check-label{
                         .form-check-input{
                             + .icon{
@@ -612,6 +617,7 @@ img{
                 margin: 0px;
             }
             .btn{
+                font-size: 100%;
                 background-color: #035AA6;
                 padding: calc(8em/20) calc(16em/20);
                 border-radius: calc(4.8em/20);
@@ -635,6 +641,11 @@ img{
                     @media (max-width:374px){
                         max-height: calc(16em/10);
                     }
+                }
+            }
+            form{ 
+                .btn{
+                    font-size: calc(16em/10);
                 }
             }
         }
@@ -894,6 +905,13 @@ img{
             }
         }
         form{ 
+            .form-control{
+                font-size: calc(16em/10); 
+                height: calc(38em/16);
+            }
+            .btn{
+                font-size: calc(16em/10);
+            }
             .form-check-label{
                 font-size: 140%;
                 color: #495057;
@@ -952,6 +970,11 @@ img{
                 label{
                     font-size: 140%;
                 }
+                .row{
+                    + .row{
+                        margin-top: calc(9em/10);
+                    }
+                }
                 @media (max-width: 424px){
                     .input-group-append{
                         width: 100%;
@@ -975,6 +998,8 @@ img{
                     overflow: auto;
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
                     li{
                         font-size: 100%;
                         padding: 0;
@@ -1069,7 +1094,10 @@ img{
             z-index: 2;
         }
         .proconEx_services_1{
-//            font-size: 90%;
+            
+            .proconEx_services_2{
+                padding: calc(15em/10);
+            }
             dl, dt, dd{
                 margin: 0px;
             }
