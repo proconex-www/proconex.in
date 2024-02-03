@@ -3,7 +3,37 @@ $(function(){
     $("#proconEx_bdy").addClass("fadein");
     if($(".product_photo_zoom").length > 0){
         $.getScript("js/jquery.zoom.js").done(function(){
-            $(".product_photo_zoom").zoom();
+            $(".product_photo_zoom").zoom({
+                on:"click"
+            });
+            $(".product_photo_zoom").mousedown(function(){
+                $(this).children(".icon").toggleClass("d-none");
+            })
+        });
+    }
+    if($(".owl-carousel").length > 0){
+        $.getScript("js/owl.carousel.js").done(function(){
+            $("#product_carousel").owlCarousel({
+                items:1,
+                autoplay:false,
+                loop:false,
+                center:true,
+                margin:10,
+                dots: false,
+                URLhashListener:true,
+                autoplayHoverPause:true,
+                startPosition: "URLHash"
+            });
+            $("#product_thumbs").owlCarousel({
+                items:4,
+                autoplay:false,
+                loop:false,
+                margin:10,
+                dots: false,
+                URLhashListener:true,
+                autoplayHoverPause:true,
+                startPosition: "URLHash"
+            });
         });
     }
     if($("input.ps_search").length > 0){

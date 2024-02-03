@@ -10,9 +10,11 @@
 <link href="images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/proconex-stylesheet.css?v=6.4" rel="stylesheet">
+<link href="css/proconex-stylesheet.css?v=6.7" rel="stylesheet">
 
 <!-- InstanceBeginEditable name="head" -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+
 <!-- InstanceEndEditable -->
 
 </head>
@@ -66,15 +68,26 @@
   <section id="proconEx_services" class="bg_white">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8 col-lg-9">
           <div class="proconEx_services_1 product_details">
             <h2><strong>Air Damper Actuators</strong> from Honeywell</h2>
             <div class="row mt-3">
-              <div class="col-md-6">
-                <div class="product_photo_zoom"><img src="images/inventory/4217821706609321.jpg" width="1238" height="1080" alt=""></div>
+              <div class="col-lg-6">
+                  <div id="product_carousel" class="owl-carousel">
+                      <div class="item" data-hash="product_photo1">
+                          <div class="product_photo_zoom"><span class="btn icon proconex-zoom-in"></span><span class="btn icon proconex-zoom-out d-none"></span><img src="images/inventory/4217821706609321.jpg" width="1238" height="1080" alt=""></div>
+                      </div>
+                      <div class="item" data-hash="product_photo2">
+                        <div class="product_photo_zoom"><span class="btn icon proconex-zoom-in"></span><span class="btn icon proconex-zoom-out d-none"></span><img src="images/inventory/4936721706874661.jpg" width="1866" height="1080" alt=""></div>
+                      </div>
+                  </div>
+                <div id="product_thumbs" class="owl-carousel">
+                      <a href="#product_photo1" class="product_photo_thumb"><img src="images/inventory/thumbnails/6306001706874055.jpg" width="275" height="240" alt=""></a>
+                      <a href="#product_photo2" class="product_photo_thumb"><img src="images/inventory/4936721706874661.jpg" width="1866" height="1080" alt=""></a>
+                  </div>
               </div>
-              <div class="col-md-6">
-                <h3>Product Specifications</h3>
+              <div class="col-lg-6 pt-4">
+                <h3><strong>Product Specifications</strong></h3>
                 <p><strong>Model/Part Number:</strong> LKS 210-10 (B1-5 S1)</p>
                 <p><strong>Industrial Usage:</strong> Variable Frequency Drive (VFD), Industrial and Automation Spares</p>
                 <p><strong>Warranty:</strong> 1 year</p>
@@ -87,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3">
           <div class="proconEx_services_1 enquiry">
             <h3 class="heading_green">In-Stock: 448</h3>
             <p>Available in bulk, can ship immediately</p>
@@ -114,19 +127,19 @@
               </div>
               <div class="form-group">
                 <h4>Part Availability</h4>
-                  <label style="display: block">Choose Part Availability</label>
-                  <label class="form-check-label">
-                    <input type="checkbox" name="partavails[]" class="form-check-input" value="In Stock">
-                    <span class="icon"></span> <span class="checkbox-text">In Stock</span></label>
-                  <input name="stock" type="hidden" class="datatext" id="stock">
-                  <label class="form-check-label">
-                    <input type="checkbox" name="partavails[]" class="form-check-input" value="Request Source">
-                    <span class="icon"></span> <span class="checkbox-text">Request Source</span></label>
-                  <input name="requsetsrc" type="hidden" class="datatext" id="requsetsrc">
-                  <label class="form-check-label">
-                    <input type="checkbox" name="partavails[]" class="form-check-input" value="With Lead Time">
-                    <span class="icon"></span> <span class="checkbox-text">With Lead Time</span></label>
-                  <input name="leadtime" type="hidden" class="datatext" id="leadtime">
+                <label style="display: block">Choose Part Availability</label>
+                <label class="form-check-label">
+                  <input type="checkbox" name="partavails[]" class="form-check-input" value="In Stock">
+                  <span class="icon"></span> <span class="checkbox-text">In Stock</span></label>
+                <input name="stock" type="hidden" class="datatext" id="stock">
+                <label class="form-check-label">
+                  <input type="checkbox" name="partavails[]" class="form-check-input" value="Request Source">
+                  <span class="icon"></span> <span class="checkbox-text">Request Source</span></label>
+                <input name="requsetsrc" type="hidden" class="datatext" id="requsetsrc">
+                <label class="form-check-label">
+                  <input type="checkbox" name="partavails[]" class="form-check-input" value="With Lead Time">
+                  <span class="icon"></span> <span class="checkbox-text">With Lead Time</span></label>
+                <input name="leadtime" type="hidden" class="datatext" id="leadtime">
               </div>
               <div class="form-group">
                 <input name="enquire" type="submit" id="enquire" class="btn btn-primary" value="Enquire Requirements">
@@ -702,7 +715,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/proconEx-1.js?v=5.2"></script>
+<script src="js/proconEx-1.js?v=5.3"></script>
 <!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable --> 
 </body>
 <!-- InstanceEnd --></html>

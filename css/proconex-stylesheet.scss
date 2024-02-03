@@ -157,7 +157,6 @@ img{
             appearance: none;
         }
     }
-    
     @media (min-width: 1367px){
         font-size: calc(100vw/13670 * 100);
         .container{
@@ -193,6 +192,7 @@ img{
             border: calc(4em/26.1) solid #1EA4D9;
         }
     }
+    //Header
 	header{
         position: relative;
         z-index: 3;
@@ -295,7 +295,6 @@ img{
 		}
 	}
     }
-    
     //Mains
     main{
         position: relative;
@@ -307,71 +306,72 @@ img{
         }
     }
     //Carousel 
-	.carousel{
-        background-color: #333333;
-		position: relative;
-        user-select: none;
-		&:before{ 
-			content: "";
-			background-color: #333333;
-			opacity: 0.5;
-			position: absolute; 
-			left: 0px;
-			top: 0px;
-			right: 0px;
-			bottom: 0px;
-			z-index: 3;
-		}
-        .carousel-inner{
-            @include absolute;
-            z-index: 2;
-            .carousel-item{
-                height: 100%;
-                @include BGcenter;
-            }
-        }
-		.cover1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    #proconEx_carousel{
+        &.carousel{
+            background-color: #333333;
             position: relative;
-            z-index: 4;
-			min-height: calc(100vh - calc(97.81em/10));
-            .cover_1{
-    			padding: calc(50em/10) calc(25em/10);
-                h1, p{
-                    color: #ffffff;
+            user-select: none;
+            &:before{ 
+                content: "";
+                background-color: #333333;
+                opacity: 0.5;
+                position: absolute; 
+                left: 0px;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 3;
+            }
+            .carousel-inner{
+                @include absolute;
+                z-index: 2;
+                .carousel-item{
+                    height: 100%;
+                    @include BGcenter;
                 }
-                h1{
-                    font-size: 400%;
-                    text-shadow: calc(1em/40) calc(1em/40) calc(5em/40) #403f7c, calc(1em/40) calc(1em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c;
-                    margin-bottom: calc(8em/20);
-                }
-                p{
-                    font-size: 200%;
-                    text-shadow: calc(1em/20) calc(1em/20) calc(5em/20) #403f7c, calc(1em/20) calc(1em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c;
-                    letter-spacing: calc(0.5em/20);
-                    margin-bottom: calc(16em/20);
-                    .btn{
-                        background-color: #035AA6;
-                        padding: calc(8em/20) calc(16em/20);
-                        border-radius: calc(4.8em/20);
-                        border: none;
-                        box-shadow: none;
-                        margin: calc(6em/20);
-                        @include hover; 
-                        &.btn-lg{
-                            font-size: 100%; 
+            }
+            .cover1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 4;
+                min-height: calc(100vh - calc(97.81em/10));
+                .cover_1{
+                    padding: calc(50em/10) calc(25em/10);
+                    h1, p{
+                        color: #ffffff;
+                    }
+                    h1{
+                        font-size: 400%;
+                        text-shadow: calc(1em/40) calc(1em/40) calc(5em/40) #403f7c, calc(1em/40) calc(1em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c, calc(2em/40) calc(2em/40) calc(5em/40) #403f7c;
+                        margin-bottom: calc(8em/20);
+                    }
+                    p{
+                        font-size: 200%;
+                        text-shadow: calc(1em/20) calc(1em/20) calc(5em/20) #403f7c, calc(1em/20) calc(1em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c, calc(2em/20) calc(2em/20) calc(5em/20) #403f7c;
+                        letter-spacing: calc(0.5em/20);
+                        margin-bottom: calc(16em/20);
+                        .btn{
+                            background-color: #035AA6;
+                            padding: calc(8em/20) calc(16em/20);
+                            border-radius: calc(4.8em/20);
+                            border: none;
+                            box-shadow: none;
+                            margin: calc(6em/20);
+                            @include hover; 
+                            &.btn-lg{
+                                font-size: 100%; 
+                            }
+                        }
+                        &.lead:last-child {
+                            margin-bottom: 0px;
                         }
                     }
-                    &.lead:last-child {
-                        margin-bottom: 0px;
-                    }
                 }
             }
-		}
-	}
-            
+        }
+    }
     //Services section
     [id*="proconEx_services"]{ 
         padding: calc(60em/10) 0px;
@@ -503,11 +503,12 @@ img{
                 .proconEx_product{
                     width: 33.3333%;
                     a{
+                        font-size: 120%;
                         color: #333333;
                         display: flex;
                         justify-content: space-between;
-                        padding: calc(12em/10);
-                        margin: calc(12em/10);
+                        padding: calc(30em/20);
+                        margin: calc(30em/20);
                         background-color: #ffffff;
                         border: 1px solid #eee;
                         &:hover, &:focus{
@@ -531,7 +532,7 @@ img{
                             }
                         }
                         .product_text{
-                            padding: 0px calc(5em/10) calc(5em/10) 0px;
+                            padding: 0px calc(10em/20) calc(10em/20) 0px;
                         }
                         h3, p{
                             padding: 0px;
@@ -550,7 +551,7 @@ img{
                         img{
                             border: 1px double #f2f2f2;
                             width: auto;
-                            height: calc(60em/10);
+                            height: calc(120em/20);
                         }
                         @media (max-width: 991px){
                             flex-wrap: wrap;
@@ -571,22 +572,22 @@ img{
                 }
             }
             &.product_details{
-                .product_photo_zoom{
-                    overflow: hidden;
-                    img{
-                        display: block;
-                    }
-                }
                 ul{
                     display: flex;
                     flex-wrap: wrap;
                     li{
                         display: block;
-                        padding-right: 60px;
-                        margin: 5px 0px;
+                        padding-right: calc(60em/18);
+                        margin: calc(5em/18) 0px;
                         &:has(+ ul){
                             width: 100%;
                         }
+                        @media (max-width: 767px){
+                            padding-right: 0; 
+                        }
+                    }
+                    @media (max-width: 767px){
+                        display: block;
                     }
                 }
             }
@@ -1057,6 +1058,37 @@ img{
         .btn{
             @include hover; 
         }
+    }
+    //product carousel
+    #product_carousel{
+        background-color: #ffffff;
+        border-radius: calc(25em/10);
+        border: calc(6em/10) double #2ecef2;
+        overflow: hidden;
+        .product_photo_zoom{
+            overflow: hidden;
+            img{
+                display: block;
+            }
+            .icon{
+                font-size: 180%;
+                color: #ffffff;
+                border-radius: 0px 0px 0px calc(18em/18);
+                position: absolute;
+                right: 0;
+                top:0;
+                z-index: 1;
+            }
+        }
+    }
+    #product_thumbs{
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #2cc5e8;
+        border-radius: 0px 0px calc(12.5em/10) calc(12.5em/10);
+        overflow: hidden;
+        margin: calc(3em/10) calc(25em/10);
+        width: calc(100% - (50em/10));
     }
     #proconEx_services_industry{
         background-color: #1EA4D9;
