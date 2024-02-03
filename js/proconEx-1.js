@@ -6,7 +6,13 @@ $(function(){
             $(".product_photo_zoom").zoom({
                 on:"click"
             });
-            $(".product_photo_zoom").mousedown(function(){
+            $(".product_photo_zoom").click(function(){
+                $(this).children(".icon").toggleClass("d-none");
+            });
+            $(".product_photo_zoom").on("touchstart", function(){
+                $(this).children(".icon").toggleClass("d-none");
+            });
+            $(".product_photo_zoom").on("touchend", function(){
                 $(this).children(".icon").toggleClass("d-none");
             })
         });
