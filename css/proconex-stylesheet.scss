@@ -960,17 +960,18 @@ img{
             }
             .custom-list { 
                 font-size: 100%;
-                input.ps_search{
+                input[type="search"].ps_search{
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                     position: relative;
                     z-index: 1;
+                    margin-bottom: 0px;
                 }
                 ul.form-control{
                     font-size: 140%;
                     padding: 0;
                     margin: -1px 0 0;
-                    height: 180px;
+                    height: calc(180em/14);
                     overflow: auto;
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
@@ -1078,13 +1079,13 @@ img{
                 }
             }
             &.bg_white{
-                border-radius: calc(15em/9);
-                border: calc(4em/9) solid #1ea4d9;
-                margin: calc(13em/9) 0px;
+                border-radius: calc(15em/10);
+                border: calc(4em/10) solid #1ea4d9;
+                margin: calc(13em/10) 0px;
                 img{
                     width: 100%;
-                    border: calc(4em/9) solid #d8e9ef;
-                    margin: calc(6em/9) 0px; 
+                    border: calc(4em/10) solid #d8e9ef;
+                    margin: calc(6em/10) 0px; 
                 }
             }
         }

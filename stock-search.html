@@ -10,7 +10,7 @@
 <link href="images/proconex-icon.ico" rel="icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/proconex-stylesheet.css?v=6.2" rel="stylesheet">
+<link href="css/proconex-stylesheet.css?v=6.3" rel="stylesheet">
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -77,14 +77,19 @@
                     <div class="input-group">
                       <input name="ps_search" type="search" required="required" class="form-control" id="ps_search" placeholder="Search Products">
                       <div class="input-group-append">
-                        <div class="p-2">
-                          <p><strong>Total Products:</strong> 7000</p>
-                        </div>
+                        <div class="form-group m-0">
+                        <input type="submit" value="Search" class="btn btn-primary" style="border-radius: 0px 5px 5px 0px">
+                      </div>
                       </div>
                     </div>
                   </div>
+                  <div class="form-group">
+                      <h3>Advanced Search <button type="button" class="btn btn-primary collapsed" id="advsrch" data-toggle="collapse" data-target="#advnsrchfrm1" style="font-size: 50%; line-height: normal"><span class="icon proconex-arrow-right2"></span><span class="icon proconex-arrow-down2 d-none"></span></button></h3>
+                    </div>
                 </div>
               </div>
+              </form>
+              <form class="search-form collapse" id="advnsrchfrm1" >
               <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3">
                   <div class="form-group">
@@ -401,7 +406,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
                   <div class="form-group pt-2 m-0">
-                    <input type="submit" value="Apply" class="btn btn-primary" style="font-size: 240%; width: 100%">
+                    <input type="submit" value="Apply" class="btn btn-primary" style="width: 100%">
                   </div>
                 </div>
               </div>
@@ -587,9 +592,11 @@
 <!-- InstanceBeginEditable name="js1" --> 
 <script>
     $(function(){
-        filterFunction("#searchbrand", );
+        $("#advsrch").click(function(){
+            $("#advsrch > .icon").toggleClass("d-none");
+        });
     })
-</script> 
+</script>
 <!-- InstanceEndEditable --> 
 </body>
 <!-- InstanceEnd --></html>
