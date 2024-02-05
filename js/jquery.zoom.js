@@ -10,7 +10,7 @@
 		target: false,
 		duration: 120,
 		on: 'mouseover', // other options: grab, click, toggle
-		touch: true, // enables a touch fallback
+		drag: true, // enables a drag fallback
 		onZoomIn: false,
 		onZoomOut: false,
 		magnify: 1
@@ -93,7 +93,7 @@
 			$img = $(img),
 			mousemove = 'mousemove.zoom',
 			clicked = false,
-			touched = false;
+			draged = false;
 
 			// If a url wasn't specified, look for an image element.
 			if (!settings.url) {
@@ -196,28 +196,31 @@
 				}
 
 				// Touch fallback
-				if (settings.touch) {
+				if (settings.drag) {
 					$source
-						.on('touchstart.zoom', function (e) {
-							e.preventDefault();
-							if (touched) {
-								touched = false;
+						.on('dragstart.zoom', function (e) {
+							if (draged) {
 								stop();
 							} else {
-								touched = true;
-								start( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
+								start(e);
 							}
+							draged = !draged;
 						})
-						.on('touchmove.zoom', function (e) {
-							e.preventDefault();
-							zoom.move( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
-						})
-						.on('touchend.zoom', function (e) {
-							e.preventDefault();
-							if (touched) {
-								touched = false;
+						.on('dragmove.zoom', function (e) {
+							if (draged) {
 								stop();
+							} else {
+								start(e);
 							}
+							draged = !draged;
+						})
+						.on('dragend.zoom', function (e) {
+                                if (draged) {
+                                    stop();
+                                } else {
+                                    start(e);
+                                }
+                                draged = !draged;
 						});
 				}
 				
