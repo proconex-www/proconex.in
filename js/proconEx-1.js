@@ -1,6 +1,9 @@
 // JavaScript Document of Proconex Pvt. Ltd.
 $(function(){
     $("#proconEx_bdy").addClass("fadein");
+	if($("#proconEx_carousel").length > 0){
+		
+	}
     if($(".product_photo_zoom").length > 0){
         $.getScript("js/jquery.zoom.js").done(function(){
             $(".product_photo_zoom").zoom({
@@ -63,4 +66,10 @@ function filterFunction(obj1, obj2) {
           $a[$i].style.display = "none";
         }
   }
+}
+
+function preloadphotos(photos){
+	$(photos).each(function(){
+		$("<img>")[0].src=this;
+	});	
 }
