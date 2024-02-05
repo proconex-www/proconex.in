@@ -648,6 +648,9 @@ img{
                 .btn{
                     font-size: calc(16em/10);
                 }
+                .input-group{
+                    
+                }
             }
         }
         .flex-btns{
@@ -976,11 +979,6 @@ img{
                         margin-top: calc(9em/10);
                     }
                 }
-                @media (max-width: 424px){
-                    .input-group-append{
-                        width: 100%;
-                    }
-                }
             }
             .custom-list { 
                 font-size: 100%;
@@ -1253,6 +1251,12 @@ img{
                     &.btn-primary{
                         @include hover; 
                     }
+                }
+            }
+            .input-group-prepend{
+                .form-control{
+                    border-top-right-radius:  0;
+                    border-bottom-right-radius:  0;
                 }
             }
         }
