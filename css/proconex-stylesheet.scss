@@ -135,6 +135,7 @@
 
 //import font-icons
 @import url("icons.css"); 
+@import url("owl.carousel.css"); 
 *{
     outline-color: #227153;
     outline-width: thin;
@@ -148,7 +149,7 @@ img{
 	font-size: 10px;
 	word-break: break-word;
     opacity: 0;
-//    user-select: none;
+    user-select: none;
     &.fadein{
         opacity: 1;
     }
@@ -413,7 +414,7 @@ img{
             }
             img{
                 &[class*="float-"]{
-                    margin: calc(12em/18);
+                    margin: calc(13em/45) 0px calc(13em/18) calc(13em/18);
                 }
                 &.float-right{
                     clear: right;
@@ -579,7 +580,7 @@ img{
                     }
                 }
                  &.product_carousel{
-                    padding: 0px calc(42em/10);
+                    padding: 0px calc(41em/10);
                     position: relative;
                     button{
                         font-family: "proconex-icons";
@@ -736,7 +737,7 @@ img{
                font-size: 130%;
                 display: block;
             }
-            margin-top: calc(18em/29); 
+            margin-top: calc(17em/29); 
             &:first-child{
                 margin-top: 0px;
             }
@@ -744,24 +745,24 @@ img{
         h3{  
             font-size: 240%;
             font-weight: normal;
-            margin-top: calc(12em/24);
+            margin-top: calc(13em/24);
             margin-bottom: 0px;
             &:first-child{
                 margin-top: 0px;
-                padding-bottom: calc(6em/24);
+                padding-bottom: calc(5em/24);
             }
         }
         h4{  
             font-size: 180%;
             font-weight: 600;
-            margin-top: calc(12em/24);
+            margin-top: calc(13em/24);
             margin-bottom: 0px; 
             &:first-child{
                 margin-top: 0px;
-                padding-bottom: calc(6em/24);
+                padding-bottom: calc(5em/24);
             }
             + label{
-                padding-top: calc(6em/24);
+                padding-top: calc(5em/24);
             }
         }
         h2, h3, p, ul, ol, dl {
@@ -976,7 +977,7 @@ img{
         }
         blockquote{
             font-size: 120%;
-            margin-top: calc(25em/10);
+            margin-top: calc(13em/10);
             font-style: italic; 
             p{
                 .big{
@@ -1185,7 +1186,7 @@ img{
             content: "";
             display: block;
             @include absolute;
-            background-image: url("../images/petrochemicals-industry.jpg");
+            background-image: url("../images/industry.jpg");
             @include BGcenter;
             background-attachment: fixed;
             z-index: 1;
