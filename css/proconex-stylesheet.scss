@@ -578,6 +578,49 @@ img{
                         width: 100%;
                     }
                 }
+                 &.product_carousel{
+                    padding: 0px calc(42em/10);
+                    position: relative;
+                    button{
+                        font-family: "proconex-icons";
+                        font-size: 300%;
+                        outline: none;
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+                        &.product-prev {
+                            position: absolute;
+                            left: calc(5em/30);
+                            top: 50%;
+                            transform: translateY(-50%);
+                            &:before{
+                                content: "\ea44";
+                                display: block;
+                                width: calc(42em/30);
+                                height: calc(42em/30);
+                            }
+                        }
+                        &.product-next {
+                            position: absolute;
+                            right: calc(5em/30);;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            &:before{
+                                content: "\ea42";
+                                display: block;
+                                width: calc(42em/30);
+                                height: calc(42em/30);
+                            }
+                        }
+                        @include linkhover;
+                    }
+                }
+                #proconEx_products{
+                    .proconEx_product{
+                        width: 100%;
+                    }
+                }
             }
             &.product_details{
                 ul{
@@ -603,14 +646,29 @@ img{
                 background-color: #2ECEF2;
                 border-radius: calc(5em/10);
                 padding-left: calc(23em/10);
-                label{
-                    font-size: 130%;
-                    &.form-check-label{
-                        .form-check-input{
-                            + .icon{
-                                &:after{
-                                    color: #0a7abf;
+                form{
+                    label{
+                        font-size: 130%;
+                        &.form-check-label{
+                            .form-check-input{
+                                + .icon{
+                                    &:after{
+                                        color: #0a7abf;
+                                    }
                                 }
+                            }
+                        }
+                    }
+                    .input-group{
+                        .btn{
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                        }
+                        .input-group-append{
+                            .form-control{
+                                border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
+                                border-color: #035aa6;
                             }
                         }
                     }
@@ -943,6 +1001,7 @@ img{
             }
             .btn{
                 font-size: calc(16em/10);
+                min-height: calc(38em/16);
             }
             .form-check-label{
                 font-size: 140%;
