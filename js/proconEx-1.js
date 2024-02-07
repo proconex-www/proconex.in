@@ -1,5 +1,6 @@
 // JavaScript Document of Proconex Pvt. Ltd.
 $(function(){
+    jQuery.event.special.touchstart = { setup: function( _, ns, handle ){ if ( ns.includes("noPreventDefault") ) { this.addEventListener("touchstart", handle, { passive: false }); } else { this.addEventListener("touchstart", handle, { passive: true }); } } };
     $("#proconEx_bdy").addClass("fadein");
     if($(".product_photo_zoom").length > 0){
         $.getScript("js/jquery.zoom.js").done(function(){

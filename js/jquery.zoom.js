@@ -199,7 +199,7 @@
 				if (settings.touch) {
 					$source
 						.on('touchstart.zoom', function (e) {
-							e.preventDefault();
+							//e.preventDefault();
 							if (touched) {
 								touched = false;
 								stop();
