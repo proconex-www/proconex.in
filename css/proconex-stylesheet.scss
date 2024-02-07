@@ -405,6 +405,10 @@ img{
             .proconEx_services_2{
                 padding: calc(15em/10);
             }
+            a{
+                color: #06468d;
+                @include linkhover;
+            }
             hr{
                 display: block;
                 height: 3px;
@@ -1400,7 +1404,23 @@ img{
             opacity: 0.6;
         }
         .proconEx_features_text{
-            padding: calc(15em/10);
+            padding: calc(15em/10); 
+            .breadcrumps{
+                font-size: 142%; 
+                color: #f2f2f2;
+                display: block;
+                text-align: right;
+                a{
+                    color: #73bcfc;
+                    &:hover, &:focus{
+                        color: #a9e5ce;
+                    }
+                    &:active{
+                        color: #cd9fc7;
+                        text-decoration: none;
+                    }
+                }
+            }
             h1{
                 font-size: 400%;
                 color: inherit;
