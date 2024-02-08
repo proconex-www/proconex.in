@@ -135,7 +135,7 @@
 
 //import font-icons
 @import url("icons.css"); 
-@import url("owl.carousel.css"); 
+@import url("slick.css");  
 *{
     outline-color: #227153;
     outline-width: thin;
@@ -408,6 +408,9 @@ img{
             a{
                 color: #06468d;
                 @include linkhover;
+                &.btn{
+                    @include hover;
+                }
             }
             hr{
                 display: block;
@@ -588,37 +591,48 @@ img{
                     position: relative;
                     button{
                         font-family: "proconex-icons";
-                        font-size: 300%;
+                        font-size: 300%; 
                         outline: none;
                         background: none;
                         border: none;
                         padding: 0;
                         margin: 0;
-                        &.product-prev {
+                        &.slick-arrow{
+                            color: #035AA6;
                             position: absolute;
-                            left: calc(5em/30);
                             top: 50%;
                             transform: translateY(-50%);
+                            width: calc(42em/30);
+                            height: calc(42em/30);
+                            text-indent: calc(42em/30);
+                            z-index: 1;
+                            overflow: hidden;
                             &:before{
-                                content: "\ea44";
                                 display: block;
                                 width: calc(42em/30);
                                 height: calc(42em/30);
+                                text-indent: 0;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
                             }
-                        }
-                        &.product-next {
-                            position: absolute;
-                            right: calc(5em/30);;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            &:before{
-                                content: "\ea42";
-                                display: block;
-                                width: calc(42em/30);
-                                height: calc(42em/30);
+                            &.slick-prev {
+                                left: -1em;
+                                &:before{
+                                    content: "\ea44";
+                                }
                             }
+                            &.slick-next {
+                                right: -1em; 
+                                &:before{
+                                    content: "\ea42";
+                                }
+                            }
+                            &.slick-disabled{
+                                opacity: 0.5;
+                            }
+                            @include linkhover;
                         }
-                        @include linkhover;
                     }
                 }
                 #proconEx_products{
@@ -646,12 +660,93 @@ img{
                         display: block;
                     }
                 }
+                .product_thumbs.slick-slider{
+                    position: relative;
+                    padding: 10px 40px;
+                    .product_photo_thumb{
+                        display: block;
+                        img{
+                            padding: 5px;
+                        }
+                    }
+                    button{
+                        font-family: "proconex-icons";
+                        font-size: 230%;
+                        outline: none;
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+                        &.slick-arrow{
+                            color: #035AA6;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: calc(42em/30);
+                            height: calc(42em/30);
+                            text-indent: calc(42em/30);
+                            z-index: 1;
+                            overflow: hidden;
+                            &:before{
+                                display: block;
+                                width: calc(42em/30);
+                                height: calc(42em/30);
+                                text-indent: 0;
+                                position: absolute; 
+                                left: 0;
+                                top: 0;
+                            }
+                            &.slick-prev {
+                                left: calc(5em/30);
+                                &:before{
+                                    content: "\ea40";
+                                }
+                            }
+                            &.slick-next {
+                                right: calc(5em/30); 
+                                &:before{
+                                    content: "\ea3c";
+                                }
+                            }
+                            &.slick-disabled{
+                                opacity: 0.5;
+                            }
+                            @include linkhover;
+                        }
+                    }
+                    .slick-list{
+                        z-index: 0;
+                        .slick-slide{
+                            .product_photo_thumb{
+                                border: 1px solid rgba(3,90,166,0.00);
+                            }
+                            &.slick-current{
+                                .product_photo_thumb{
+                                    border: 1px solid rgba(3,90,166,1.00);
+                                    &:hover, &:focus{
+                                        border-color: #227153;
+                                    }
+                                    &:active{
+                                        border-color: #4E5397;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             &.enquiry{
                 background-color: #2ECEF2;
                 border-radius: calc(5em/10);
                 padding-left: calc(23em/10);
                 form{
+                    p.label{
+                        font-size: 130%;
+                        display: block;
+                        padding-top: calc(5em/24);
+                        margin-top: 0em;
+                        margin-bottom: 0.5em;
+                    }
                     label{
                         font-size: 130%;
                         &.form-check-label{
@@ -1245,8 +1340,17 @@ img{
             }
         }
         form{
+            p.label{
+                font-size: 140%;
+                display: block;
+                letter-spacing: 0.6px;
+                padding-top: 0;
+                margin-top: 0em;
+                margin-bottom: calc(6em/14);
+            }
             label{
                 font-size: 140%;
+                margin-bottom: calc(6em/14);
             }
             ul.form-control{
                 font-size: 140%;
@@ -1334,7 +1438,7 @@ img{
                         }
                         &:focus{
                             + .icon{
-                                background-color: rgba(255,255,255,0.5);
+								box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
                             }
                         }
                         &:checked{
@@ -1345,7 +1449,7 @@ img{
                             }
                             &:focus{
                                 + .icon{
-                                    background-color: #ffffff;
+									box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
                                 }
                             }
                         }
@@ -1357,6 +1461,12 @@ img{
             }
             .form-control{ 
                 font-size: 160%; 
+				&:focus{
+					box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
+				}
+				&:has(.form-control-file:focus){
+					box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
+				}
                 .form-control-file{
                     margin-top: calc(-3em/16);
                     outline: none;

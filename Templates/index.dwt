@@ -12,7 +12,7 @@
 <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
 <!-- TemplateBeginEditable name="stylesheets" -->
 <!-- TemplateEndEditable -->
-<link href="../css/proconex-stylesheet.css?v=7.7" rel="stylesheet">
+<link href="../css/proconex-stylesheet.css?v=8.4" rel="stylesheet">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>
@@ -332,7 +332,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="../js/popper.min.js"></script> 
 <script src="../js/bootstrap-4.4.1.js"></script>
-<script src="../js/proconEx-1.js?v=5.7"></script>
+<script src="../js/proconEx-1.js?v=5.9"></script>
 <!-- TemplateBeginEditable name="js1" -->
     
 <!-- TemplateEndEditable --> 

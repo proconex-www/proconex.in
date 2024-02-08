@@ -209,11 +209,11 @@
 							}
 						})
 						.on('touchmove.zoom', function (e) {
-							e.preventDefault();
+//							e.preventDefault();
 							zoom.move( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
 						})
 						.on('touchend.zoom', function (e) {
-							e.preventDefault();
+//							e.preventDefault();
 							if (touched) {
 								touched = false;
 								stop();
