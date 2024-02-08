@@ -40,6 +40,7 @@ $(function () {
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
+        pauseOnHover: true,
         dots: false,
         centerMode: false,
         focusOnSelect: true,
@@ -71,11 +72,18 @@ $(function () {
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+            }
           }
-        }]
+        ]
       });
     });
   }
