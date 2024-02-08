@@ -31,6 +31,34 @@ $(function () {
     });
   }
 
+  if ($(".proconEx_clients_list").length > 0) {
+    $.getScript("js/slick.js").done(function () {
+      $(".proconEx_clients_list").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 567,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+        ]
+      });
+    });
+  }
   if ($("#proconEx_products").length > 0) {
     $.getScript("js/slick.js").done(function () {
       $("#proconEx_products").slick({
