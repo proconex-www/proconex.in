@@ -1447,6 +1447,8 @@ img{
                     display: inline-block;
                     text-align: left;
                     padding-left: calc(22em/14);
+                    padding-right: calc(22em/14); 
+                    margin-bottom: 0.5em;
                     position: relative;
                     user-select: none;
                     .form-check-input{
