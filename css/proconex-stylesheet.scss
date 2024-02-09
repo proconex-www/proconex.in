@@ -1422,6 +1422,10 @@ img{
         p{
             color: #ffffff;
             font-size: 180%;
+            &.label{
+                font-size: 130%; 
+                letter-spacing: calc(0.6em/13);
+            }
             a{
                 color: #ffffff;
                 text-decoration: none;
@@ -1450,8 +1454,8 @@ img{
                     font-size: 140%;
                     display: inline-block;
                     text-align: left;
-                    padding-left: calc(22em/14);
-                    padding-right: calc(22em/14); 
+                    padding-left: calc(21em/14);
+                    padding-right: calc(21em/14); 
                     margin-bottom: 0.5em;
                     position: relative;
                     user-select: none;
@@ -1491,6 +1495,39 @@ img{
                         }
                     }
                 }
+                &.form-radio-label{
+                    font-size: 140%;
+                    display: inline-block;
+                    text-align: left;
+                    padding-left: calc(21em/14);
+                    padding-right: calc(21em/14);
+                    margin-bottom: 0.5em;
+                    position: relative;
+                    user-select: none;
+                    input{
+                        position: absolute;
+                        z-index: -1;
+                        appearance: none;
+                        &:focus{
+                            + .icon{
+                                box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
+                            }
+                        }
+                        + .icon{
+                            border-radius: 100%;
+                            &:before{
+                                content: "\ea56";
+                            }
+                        }
+                        &:checked{
+                            + .icon{
+                                &:before{
+                                    content: "\ea55";
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .form-check{
                 margin-bottom: 1em;
@@ -1520,6 +1557,13 @@ img{
                     margin-top: calc(6em/10);
                     &.btn-primary{
                         @include hover; 
+                    }
+                }
+            }
+            .input-group{
+                .form-group{
+                    + .form-group{
+                        margin-left: calc(15em/10);
                     }
                 }
             }
