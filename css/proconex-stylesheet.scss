@@ -158,6 +158,9 @@ img{
             appearance: none;
         }
     }
+    .bg_fix{
+        background-attachment: fixed;
+    }
     @media (min-width: 1367px){
         font-size: calc(100vw/13670 * 100);
         .container{
@@ -1397,7 +1400,7 @@ img{
         background-color: #0A7ABF;
         padding: calc(60em/10) 0px;
         .proconEx_support_1{
-            padding: calc(25em/10);
+            padding: calc(25em/10) 0px;
             img{
                 border: 5px solid #007bc7;
             }
@@ -1409,8 +1412,9 @@ img{
         }
         h3{
             color: #ffffff;
-            font-size: 330%;
-            margin-bottom: calc(24em/30);
+            font-size: 300%;
+            margin-top: calc(12em/30);
+            margin-bottom: calc(18em/30);
         }
         h4{
             color: #ffffff;
