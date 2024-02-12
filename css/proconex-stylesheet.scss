@@ -1596,6 +1596,10 @@ img{
             height: 100%;
             opacity: 0.6;
         }
+        &.short{
+            min-height: 100px;
+            padding: calc(2em) 0;
+        }
         .proconEx_features_text{
             padding: calc(15em/10); 
             .breadcrumps{
