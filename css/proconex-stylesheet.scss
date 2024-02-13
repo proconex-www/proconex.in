@@ -1,7 +1,7 @@
 // Scss Document of Proconex Pvt. Ltd.
 //active colors 
 @mixin hover{
-	&:hover, &:focus{
+	&:hover, &:focus{ 
 		color: #ffffff;
 		background-color: #227153;
 	}
@@ -403,14 +403,16 @@ img{
                 }
             }
         }
+		&.big_icons{
+			[class*="proconex-"]{
+				color: #035aa6;
+				font-size: 400%; 
+				display: block;
+				margin: calc(24em/96);
+			}
+		}
         .proconEx_services_1{
             padding: calc(15em/10);
-            [class*="proconex-"]{
-                color: #035aa6;
-                    font-size: 400%;
-                    display: block;
-                    margin: calc(24em/96);
-                }
             .proconEx_services_2{
                 padding: calc(15em/10);
             }
