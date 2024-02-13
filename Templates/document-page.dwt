@@ -12,7 +12,7 @@
 <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
 <!-- InstanceBeginEditable name="stylesheets" -->
 <!-- InstanceEndEditable -->
-<link href="../css/proconex-stylesheet.css?v=8.6" rel="stylesheet">
+<link href="../css/proconex-stylesheet.css?v=8.8" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
@@ -40,7 +40,7 @@
           <div class="dropdown-menu" aria-labelledby="proconEx_navbar_Dropdown2"> <a class="dropdown-item" href="../customer-end-user-solutions.html">Custom End User Solutions</a> <a class="dropdown-item" href="../industrial-and-automation-spares.html">Industrial &amp; Automation Spares</a> <a class="dropdown-item" href="../control-Instrumentation-spares.html">Control and Instrumentation Spares</a> </div>
         </li>
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="proconEx_navbar_Dropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Major Industries</a>
-          <div class="dropdown-menu" aria-labelledby="proconEx_navbar_Dropdown3"> <a class="dropdown-item" href="../power-generation.html" title="Gas, Thermal, Hydro Winds & Biomass">Power Generation</a> <a class="dropdown-item" href="../Petrochemicals.html">Petrochemicals</a> <a class="dropdown-item" href="../refineries.html">Refineries</a> <a class="dropdown-item" href="../mines.html">Mines</a> <a class="dropdown-item" href="../oil-and-gas-plants.html">Oil &amp; Gas</a> <a class="dropdown-item" href="../steel-plants.html">Steel Plants</a> <a class="dropdown-item" href="../sugar-plants.html">Sugar Plants</a> <a class="dropdown-item" href="../paper-mills.html">Paper Mills</a> <a class="dropdown-item" href="../smelting-and-other-metalworking-plants.html">Smelting &amp; all Other Metal Working Plants</a> <a class="dropdown-item" href="../textile-plants.html">Textile Plants</a> <a class="dropdown-item" href="automobile-plants.html">Automobile Plants</a> <a class="dropdown-item" href="../pharmaceutical-plants.html">Pharmaceutical Plants</a> <a class="dropdown-item" href="../processing-automation-plants.html">All kind of Processing &amp; Automation Plants</a> </div>
+          <div class="dropdown-menu" aria-labelledby="proconEx_navbar_Dropdown3"> <a class="dropdown-item" href="../power-generation.html" title="Gas, Thermal, Hydro Winds & Biomass">Power Generation</a> <a class="dropdown-item" href="../Petrochemicals.html">Petrochemicals</a> <a class="dropdown-item" href="../refineries.html">Refineries</a> <a class="dropdown-item" href="../mines.html">Mines</a> <a class="dropdown-item" href="../oil-and-gas-plants.html">Oil &amp; Gas</a> <a class="dropdown-item" href="../steel-plants.html">Steel Plants</a> <a class="dropdown-item" href="../sugar-plants.html">Sugar Plants</a> <a class="dropdown-item" href="../paper-mills.html">Paper Mills</a> <a class="dropdown-item" href="../smelting-and-other-metalworking-plants.html">Smelting &amp; all Other Metal Working Plants</a> <a class="dropdown-item" href="../textile-plants.html">Textile Plants</a> <a class="dropdown-item" href="../automobile-plants.html">Automobile Plants</a> <a class="dropdown-item" href="../pharmaceutical-plants.html">Pharmaceutical Plants</a> <a class="dropdown-item" href="../processing-automation-plants.html">All kind of Processing &amp; Automation Plants</a> </div>
         </li>
         <li class="nav-item"> <a class="nav-link" href="../support.html">Support </a> </li>
         <li class="nav-item"> <a class="nav-link" href="../store.html">Store</a> </li>
@@ -114,7 +114,7 @@
               <p><a href="../support.html">Support</a></p>
               <p><a href="../buy-back-asset-recovery-proconex.html">Buy Back &amp; Asset recovery</a></p>
               <p><a href="../ask-engineers.html">Ask Network of Engineers?</a></p>
-              <p>Customer Support</p>
+              <p><a href="../customer-support.html">Customer Support</a></p>
             </div>
             <!--<div class="proconEx_certify_1">
               <h3>Social Media</h3>

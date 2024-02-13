@@ -33,6 +33,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.proconex-chat-online {
+  &:before {
+    content: $proconex-chat-online;     
+    color: #035aa6;
+  }
+}
+.proconex-support {
+  &:before {
+    content: $proconex-support;     
+    color: #035aa6;
+  }
+}
+.proconex-emergency {
+  &:before {
+    content: $proconex-emergency;     
+    color: #035aa6;
+  }
+}
+.proconex-maintanence {
+  &:before {
+    content: $proconex-maintanence;     
+    color: #035aa6;
+  }
+}
+.proconex-parts-assisstance {
+  &:before {
+    content: $proconex-parts-assisstance;     
+    color: #035aa6;
+  }
+}
 .proconex-ask-engineers {
   &:before { 
     content: $proconex-ask-engineers;     

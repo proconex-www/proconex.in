@@ -405,6 +405,12 @@ img{
         }
         .proconEx_services_1{
             padding: calc(15em/10);
+            [class*="proconex-"]{
+                color: #035aa6;
+                    font-size: 400%;
+                    display: block;
+                    margin: calc(24em/96);
+                }
             .proconEx_services_2{
                 padding: calc(15em/10);
             }
@@ -428,6 +434,50 @@ img{
                 }
                 &.float-right{
                     clear: right;
+                }
+            }
+            dt{
+                p{
+                    font-size: 210%;
+                    margin-bottom: calc(13em/21);
+                }
+            }
+            dl, dt, dd{
+                margin: 0px;
+            }
+            .btn{
+                font-size: 100%;
+                background-color: #035AA6;
+                padding: calc(7em/20) calc(15em/20);
+                border-radius: calc(4.7em/20);
+                border: none;
+                box-shadow: none;
+                &.btn-primary{
+                    background-color: #035AA6;
+                    @include hover;
+                }
+            }
+            .brands{
+                p{
+                    display: inline-block;
+                }
+                img{
+                    max-height: calc(45em/10);
+                    margin: calc(6em/10);
+                    @media (max-width:991px){
+                        max-height: calc(25em/10);
+                    }
+                    @media (max-width:374px){
+                        max-height: calc(16em/10);
+                    }
+                }
+            }
+            form{ 
+                .btn{
+                    font-size: calc(16em/10);
+                }
+                .input-group{
+                    
                 }
             }
             &.support{
@@ -775,50 +825,6 @@ img{
                             }
                         }
                     }
-                }
-            }
-            dt{
-                p{
-                    font-size: 210%;
-                    margin-bottom: calc(13em/21);
-                }
-            }
-            dl, dt, dd{
-                margin: 0px;
-            }
-            .btn{
-                font-size: 100%;
-                background-color: #035AA6;
-                padding: calc(7em/20) calc(15em/20);
-                border-radius: calc(4.7em/20);
-                border: none;
-                box-shadow: none;
-                &.btn-primary{
-                    background-color: #035AA6;
-                    @include hover;
-                }
-            }
-            .brands{
-                p{
-                    display: inline-block;
-                }
-                img{
-                    max-height: calc(45em/10);
-                    margin: calc(6em/10);
-                    @media (max-width:991px){
-                        max-height: calc(25em/10);
-                    }
-                    @media (max-width:374px){
-                        max-height: calc(16em/10);
-                    }
-                }
-            }
-            form{ 
-                .btn{
-                    font-size: calc(16em/10);
-                }
-                .input-group{
-                    
                 }
             }
         }
