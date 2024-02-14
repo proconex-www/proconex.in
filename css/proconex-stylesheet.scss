@@ -1457,12 +1457,12 @@ img{
         form{
             color: #ffffff;
             user-select: none;
-            label{
+            label{ 
                 font-size: 130%;
                 letter-spacing: calc(0.6em/13);
                 &.custom-file-label{
                     margin: 0px;
-                    letter-spacing: 0px;
+                    letter-spacing: 0px; 
                 }
                 &.form-check-label{
                     font-size: 140%;
@@ -1585,6 +1585,17 @@ img{
                 .form-control{
                     border-top-right-radius:  0;
                     border-bottom-right-radius:  0;
+                }
+            }
+            ul{
+                padding: 0px;
+                margin: 0px;
+                li{
+                    list-style: none;
+                    padding-left: 1.25em; 
+                    &.has-checkbox{
+                        margin: 0 2em 1.5em;
+                    }
                 }
             }
         }
