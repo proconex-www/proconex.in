@@ -1343,6 +1343,18 @@ img{
                 border-radius: calc(15em/10);
                 border: calc(4em/10) solid #1ea4d9;
                 margin: calc(13em/10) 0px;
+                a{
+                    &:hover, &:focus{
+                        img{
+                            border: calc(4em/10) solid #DBEFD8;
+                        }
+                    }
+                    &:active{
+                        img{
+                            border: calc(4em/10) solid #EFD8EB;
+                        }
+                    }
+                }
                 img{
                     width: 100%;
                     border: calc(4em/10) solid #d8e9ef;
