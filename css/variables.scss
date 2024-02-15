@@ -1,11 +1,17 @@
 $icomoon-font-family: "proconex-icons" !default;
 $icomoon-font-path: "../webfonts/icons/" !default;
 
+$proconex-commissions: unquote('"\\e91d"');
+$proconex-expert: unquote('"\\e91f"');
+$proconex-performance: unquote('"\\e920"');
+$proconex-products: unquote('"\\e921"');
+$proconex-promote: unquote('"\\e922"');
+$proconex-signup: unquote('"\\e923"');
 $proconex-chat-online: "\e91c";
 $proconex-support: "\e917";
 $proconex-emergency: "\e918";
 $proconex-maintanence: "\e919";
-$proconex-parts-assisstance: "\e91a";
+$proconex-parts-assisstance: "\e91a"; 
 $proconex-ask-engineers: "\e904"; 
 $proconex-contact-store: "\e905";
 $proconex-FAX: "\e906";

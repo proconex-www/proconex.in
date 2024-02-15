@@ -33,6 +33,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.proconex-commissions {
+  &:before {
+    content: $proconex-commissions;     
+    color: #035aa6;
+  }
+}
+.proconex-expert {
+  &:before {
+    content: $proconex-expert;     
+    color: #035aa6;
+  }
+}
+.proconex-performance {
+  &:before {
+    content: $proconex-performance;     
+    color: #035aa6;
+  }
+}
+.proconex-products {
+  &:before {
+    content: $proconex-products;     
+    color: #035aa6;
+  }
+}
+.proconex-promote {
+  &:before {
+    content: $proconex-promote;     
+    color: #035aa6;
+  }
+}
+.proconex-signup {
+  &:before {
+    content: $proconex-signup;     
+    color: #035aa6;
+  }
+}
 .proconex-chat-online {
   &:before {
     content: $proconex-chat-online;     
