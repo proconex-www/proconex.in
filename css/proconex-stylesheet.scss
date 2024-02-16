@@ -1398,36 +1398,29 @@ img{
     }
     //Clients
     #proconEx_clients{
-        background-color: #1EA4D9; 
+        background-color: #ffffff; 
         padding: calc(60em/10) 0px calc(35em/10);
         text-align: center;
         .proconEx_clients{
-            color: #ffffff;
+            color: #333;
         }
         .proconEx_clients_list {
-            color: #ffffff;
+            color: #333;
             .proconEx_client{
-                color: #ffffff;
+                color: #333;
                 display: block;
                 padding: calc(25em/10);
-                a{
-                    color: #ffffff;
-                    text-decoration: none;
-                    &:hover, &:focus{
-                        
+                figure{
+                    display: block;
+                    text-align: center;
+                    margin: 0; 
+                    img{
+                        display: inline-block;
                     }
-                    figure{
+                    figcaption{
+                        font-size: 160%;
                         display: block;
-                        text-align: center;
-                        margin: 0;
-                        img{
-                            display: inline-block;
-                        }
-                        figcaption{
-                            font-size: 160%;
-                            display: block;
-                            padding: calc(13em/16);
-                        }
+                        padding: calc(13em/16);
                     }
                 }
             }

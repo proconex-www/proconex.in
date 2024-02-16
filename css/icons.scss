@@ -33,6 +33,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.proconex-compare {
+  &:before {
+    content: $proconex-compare; 
+  }
+}
 .proconex-commissions {
   &:before {
     content: $proconex-commissions;     
