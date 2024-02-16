@@ -226,6 +226,9 @@ img{
                 top: 50%;
                 transform: translateY(-50%);
             }
+            @media (min-width: 1200px){
+                white-space: nowrap;
+            }
 		}
 	}
     .dropdown{
@@ -1307,9 +1310,9 @@ img{
                 background-image: url("../images/extensive-network.jpg");
             }
         }
-        &.bg-obsolute-panels{
+        &.bg-obsolete-panels{
             &:before{
-                background-image: url("../images/Supply-repair-OBSOLETE-Panels.jpg");
+                background-image: url("../images/supply-repair-obsolete-panels.jpg");
             }
         }
         &.bg-social{
@@ -1327,7 +1330,6 @@ img{
             z-index: 2;
         }
         .proconEx_services_1{
-            
             .proconEx_services_2{
                 padding: calc(15em/10);
             }
@@ -1344,21 +1346,30 @@ img{
                 border: calc(4em/10) solid #1ea4d9;
                 margin: calc(13em/10) 0px;
                 a{
+                    display: block;
+                    overflow: hidden;
+                    &:has(img){
+                        border: calc(4em/10) solid #d8e9ef;
+                        margin: calc(6em/10) 0px;
+                    }
+                    img{
+                        width: 100%;
+                        transform: scale(1.01);
+                        transition: all 0.3s linear;
+                    }
                     &:hover, &:focus{
+                        border-color: #DBEFD8;
                         img{
-                            border: calc(4em/10) solid #DBEFD8;
+                            transform: scale(1.02);
                         }
                     }
                     &:active{
+                        border-color: #EFD8EB;
                         img{
-                            border: calc(4em/10) solid #EFD8EB;
+                            transform: scale(1.01);
+                            transition: none;
                         }
                     }
-                }
-                img{
-                    width: 100%;
-                    border: calc(4em/10) solid #d8e9ef;
-                    margin: calc(6em/10) 0px; 
                 }
             }
         }
@@ -1399,17 +1410,24 @@ img{
                 color: #ffffff;
                 display: block;
                 padding: calc(25em/10);
-                figure{
-                    display: block;
-                    text-align: center;
-                    margin: 0;
-                    img{
-                        display: inline-block;
+                a{
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:hover, &:focus{
+                        
                     }
-                    figcaption{
-                        font-size: 160%;
+                    figure{
                         display: block;
-                        padding: calc(13em/16);
+                        text-align: center;
+                        margin: 0;
+                        img{
+                            display: inline-block;
+                        }
+                        figcaption{
+                            font-size: 160%;
+                            display: block;
+                            padding: calc(13em/16);
+                        }
                     }
                 }
             }
