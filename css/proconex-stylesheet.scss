@@ -175,9 +175,11 @@ img{
 	@media (max-width: 767px){
 		font-size: 9px;
 	}
-	@media (max-width: 576px){
-//		font-size: 8px;
-	}
+	@media (min-width: 576px){
+        .container{
+            max-width: 90%;
+        }
+    }
 	@media (max-width: 319px){
 		font-size: 7px; 
 	}
@@ -1504,6 +1506,61 @@ img{
         .proconEx_support_2{
             padding: calc(50em/10) 0px 0px;
         }
+        .awards_carousel{
+                padding: 0px calc(41em/10);
+                position: relative;
+                .slick-track{
+                    display: block;
+                }
+                .awards_carousel_1{
+                    padding: 0;
+                }
+                button{
+                    font-family: "proconex-icons";
+                    font-size: 500%; 
+                    outline: none;
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    &.slick-arrow{
+                        color: #ffffff;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: calc(42em/30);
+                        height: calc(42em/30);
+                        text-indent: calc(42em/30);
+                        z-index: 1;
+                        overflow: hidden;
+                        &:before{
+                            display: block;
+                            width: calc(42em/30);
+                            height: calc(42em/30);
+                            text-indent: 0;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                        &.slick-prev {
+                            left: -1.3em;
+                            &:before{
+                                content: "\e910";
+                            }
+                        }
+                        &.slick-next {
+                            right: -1.3em; 
+                            &:before{
+                                content: "\e911";
+                            }
+                        }
+                        &.slick-disabled{
+                            opacity: 0.5;
+                        }
+                        @include linkhoverlight;
+                    }
+                }
+            }
         h2{
             color: #ffffff;
             font-size: 370%;

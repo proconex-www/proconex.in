@@ -66,6 +66,20 @@ $(function () {
       });
     });
   }
+  if ($("#awards_carousel").length > 0) {
+    $.getScript("js/slick.js").done(function () {
+      $("#awards_carousel").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+      });
+    });
+  }
   if ($("#certificates_carousel").length > 0) {
     $.getScript("js/slick.js").done(function () {
       $("#certificates_carousel").slick({
