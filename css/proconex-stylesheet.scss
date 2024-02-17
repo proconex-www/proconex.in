@@ -307,9 +307,9 @@ img{
         position: relative;
         z-index: 1;
         .container{
-            @media (max-width: 767px){
-                max-width: 95%;
-            }
+//            @media (max-width: 767px){
+//                max-width: 95%;
+//            }
         }
     }
     //Carousel 
@@ -572,6 +572,68 @@ img{
                     min-height: 480px;
                 }
             }
+            &.certificates_carousel{
+                padding: 0px calc(41em/10);
+                position: relative;
+                .slick-track{
+                    display: block;
+                }
+                .proconEx_certificates{
+                    padding: calc(9em/10) calc(24em/10) 0;
+                    .certificates_text{
+                        
+                    }
+                    .certificates_photo{
+                        margin-top: calc(12em/10);
+                        border: 6px double rgba(255,255,255,0.6);
+                    }
+                }
+                button{
+                    font-family: "proconex-icons";
+                    font-size: 300%; 
+                    outline: none;
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    &.slick-arrow{
+                        color: #035AA6;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: calc(42em/30);
+                        height: calc(42em/30);
+                        text-indent: calc(42em/30);
+                        z-index: 1;
+                        overflow: hidden;
+                        &:before{
+                            display: block;
+                            width: calc(42em/30);
+                            height: calc(42em/30);
+                            text-indent: 0;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                        &.slick-prev {
+                            left: -1em;
+                            &:before{
+                                content: "\ea44";
+                            }
+                        }
+                        &.slick-next {
+                            right: -1em; 
+                            &:before{
+                                content: "\ea42";
+                            }
+                        }
+                        &.slick-disabled{
+                            opacity: 0.5;
+                        }
+                        @include linkhover;
+                    }
+                }
+            }
             &.products{
                 padding: 0px;
                 .proconEx_product{
@@ -706,7 +768,7 @@ img{
                     li{
                         display: block;
                         padding-right: calc(60em/18);
-                        margin: calc(5em/18) 0px;
+                        margin: calc(6em/18) 0px;
                         &:has(+ ul){
                             width: 100%;
                         }
@@ -850,7 +912,7 @@ img{
                font-size: 130%;
                 display: block;
             }
-            margin-top: calc(17em/29); 
+            margin-top: calc(16em/29); 
             &:first-child{
                 margin-top: 0px;
             }
@@ -858,29 +920,29 @@ img{
         h3{  
             font-size: 240%;
             font-weight: normal;
-            margin-top: calc(13em/24);
+            margin-top: calc(12em/24);
             margin-bottom: 0px;
             &:first-child{
                 margin-top: 0px;
-                padding-bottom: calc(5em/24);
+//                padding-bottom: calc(6em/24);
             }
         }
         h4{  
             font-size: 180%;
             font-weight: 600;
-            margin-top: calc(13em/24);
+            margin-top: calc(12em/24);
             margin-bottom: 0px; 
             &:first-child{
                 margin-top: 0px;
-                padding-bottom: calc(5em/24);
+//                padding-bottom: calc(6em/24);
             }
             + label{
-                padding-top: calc(5em/24);
+                padding-top: calc(6em/24);
             }
         }
         h2, h3, p, ul, ol, dl {
             + iframe, + form {
-                margin-top: calc(13em/10);
+                margin-top: calc(12em/10);
             }
         }
         p, ul, ol{
@@ -891,7 +953,7 @@ img{
         p{
             font-size: 180%;
             margin-bottom: 0px;
-            margin-top: calc(13em/18);
+            margin-top: calc(12em/18);
             a{
                 color: #06468d;
                 &:hover, &:focus{
@@ -1090,7 +1152,7 @@ img{
         }
         blockquote{
             font-size: 120%;
-            margin-top: calc(13em/10);
+            margin-top: calc(12em/10);
             font-style: italic; 
             p{
                 .big{
@@ -1344,7 +1406,7 @@ img{
             &.bg_white{
                 border-radius: calc(15em/10);
                 border: calc(4em/10) solid #1ea4d9;
-                margin: calc(13em/10) 0px;
+                margin: calc(12em/10) 0px;
                 a{
                     display: block;
                     overflow: hidden;
@@ -1669,7 +1731,7 @@ img{
                 margin: 0px;
                 @include textshadow1(#403f7c);
                 + p{
-                    margin-top: 12px;
+                    margin-top: calc(12em/10);
                 }
             }
             p{
@@ -1678,7 +1740,7 @@ img{
                 margin: 0px;
                 @include textshadow1(#403f7c);
                 + p{
-                    margin-top: 6px;
+                    margin-top: calc(6em/10);
                 }
             }
         }

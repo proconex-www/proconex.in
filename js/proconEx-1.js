@@ -55,6 +55,39 @@ $(function () {
             settings: {
               slidesToShow: 2,
             }
+          },
+          {
+            breakpoint: 374,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    });
+  }
+  if ($("#certificates_carousel").length > 0) {
+    $.getScript("js/slick.js").done(function () {
+      $("#certificates_carousel").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+            }
           }
         ]
       });
