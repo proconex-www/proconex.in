@@ -14,6 +14,7 @@ $(function () {
     }
   };
   $("#proconEx_bdy").addClass("fadein");
+  setTimeout(whatsappchat, 3000);
   if ($(".product_photo_zoom").length > 0) {
     $.getScript("js/jquery.zoom.js").done(function () {
       $(".product_photo_zoom").zoom({
@@ -169,6 +170,16 @@ $(function () {
       filterFunction($obj1, $obj2);
     });
   }
+  
+  if($("#product_enquiry_form").length > 0){
+      $("#product_enquiry_form").submit(function(e){
+          e.preventDefault();
+          $("#proconEx_support").modal({
+              backdrop: false
+          });
+      })
+  }
+    
 });
 
 function filterFunction(obj1, obj2) {
@@ -189,4 +200,8 @@ function preloadphotos(photos) {
   $(photos).each(function () {
     $("<img>")[0].src = this;
   });
+}
+
+function whatsappchat() {
+  $("#whatsapp_chat").removeClass("d-none").animate({bottom: "20", opacity: "1"});
 }

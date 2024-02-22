@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,9 @@
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <!-- InstanceBeginEditable name="stylesheets" -->
 <!-- InstanceEndEditable -->
-<link href="css/proconex-stylesheet.css?v=9.3" rel="stylesheet">
-
+<link href="css/proconex-stylesheet.css?v=9.4" rel="stylesheet">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-
 </head>
 <body id="proconEx_bdy">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -39,8 +38,7 @@
     </div>
   </nav>
 </header>
-<main> 
-  <!-- InstanceBeginEditable name="features_text" -->
+<main> <!-- InstanceBeginEditable name="features_text" -->
   <section style="background-image: url('images/store-proconex.jpg');" id="proconEx_features" class="d-flex justify-content-center align-items-center short">
     <div class="container">
       <div class="row">
@@ -52,8 +50,7 @@
       </div>
     </div>
   </section>
-  <!-- InstanceEndEditable -->
-  <!-- InstanceBeginEditable name="page-content" -->
+  <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="page-content" -->
   <section id="proconEx_services" class="bg_white">
     <div class="container-fluid">
       <div class="row">
@@ -82,8 +79,9 @@
                 <p><strong>Origin:</strong> Hungary</p>
                 <p><strong>Delivery:</strong> 1 week</p>
                 <p><strong>Datasheet:</strong> <a href="#" class="btn btn-info docs" target="_blank"><span class="icon proconex-file-pdf"></span></a></p>
-                  <p><a href="#"><span class="icon proconex-heart"></span> Add to Wishlist</a></p>
-                  <p><span style="font-size: 150%" class="icon proconex-compare"></span> <a href="product_comparator.html"> Add this to Product Comparator</a></p>
+                <p><a href="#"><span class="icon proconex-heart"></span> Add to Wishlist</a></p>
+                <p><a href="product_comparator.html"><span style="font-size: 150%" class="icon proconex-compare"></span> Add this to Product Comparator</a></p>
+                  <p><strong class="notes">Note:</strong> Proconex Pvt. Ltd. is NOT an authorized distributor for any of the brands mentioned on this website.</p>
               </div>
             </div>
           </div>
@@ -92,7 +90,7 @@
           <div class="proconEx_services_1 enquiry">
             <h3 class="heading_green">In-Stock: 448</h3>
             <p>Available in bulk, can ship immediately</p>
-            <form>
+            <form id="product_enquiry_form" action="spare-part.html">
               <div class="form-group">
                 <h4>Part Condition</h4>
                 <p class="label">Choose Part Conditions</p>
@@ -132,14 +130,14 @@
               <div class="form-group">
                 <input name="enquire" type="submit" id="enquire" class="btn btn-primary" value="Enquire Requirements">
               </div>
-              <div class="form-group">
+              <!--<div class="form-group">
                 <div class="input-group">
                   <div class="input-group-append">
                     <input type="number" id="supply_qty" name="supply_qty" min="1" max="448" class="form-control">
                   </div>
                   <input name="request_supply" type="submit" id="request_supply" class="btn btn-primary" value="Request Supply">
                 </div>
-              </div>
+              </div>-->
             </form>
           </div>
         </div>
@@ -622,7 +620,7 @@
               <p><span class="icon proconex-sphere"></span> Website: www.proconex.in</p>
               <p><span class="icon proconex-phone"></span> Telephone: <a href="tel:08029634292">080-29634292</a>, <a href="tel:08029534292">080-29534292</a></p>
               <p><span class="icon proconex-mobile"></span> Mobile: <a href="tel:09900002852">9900002852</a></p>
-            <p><span class="icon proconex-whatsapp1"></span> Whatsapp: <a href="https://wa.me/919900002852">9900002852</a></p>
+              <p><span class="icon proconex-whatsapp1"></span> Whatsapp: <a href="https://wa.me/919900002852">9900002852</a></p>
               </address>
             </div>
             <div class="proconEx_certify_1">
@@ -707,15 +705,87 @@
     <img src="images/proconex-process-control-experts.jpg" width="1654" height="197" alt="" style="width: 100%"> </section>
   <div class="d-flex copyrights">
     <p>Follow us on Social Media: <span class="d-inline-block"><a href="https://www.facebook.com/Proconex-Pvt-Ltd" target="_blank">Facebook</a> <span class="icon proconex-facebook2"></span></span> | <span class="d-inline-block"><a href="https://in.linkedin.com/company/proconex-pvt-ltd" target="_blank">LinkedIn</a> <span class="icon proconex-linkedin"></span></span> | <span class="d-inline-block"><span class="icon proconex-youtube"></span> <a href="https://www.youtube.com/channel/UCCjLkA30c6DoEprVm6CJJ3w" target="_parent">YouTube Channel</a></span></p>
+    <a href="https://wa.me/919900002852" target="_blank" class="whatsapp d-none" title="Enquire on WhatsApp" id="whatsapp_chat"><span class="icon proconex-whatsapp"></span></a>
     <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
     <p>Copyrights<sup>&copy;</sup> Proconex Pvt. Ltd. All rights reserved<sup>&reg;</sup></p>
   </div>
 </footer>
-
+<!-- InstanceBeginEditable name="modals" -->
+<section id="proconEx_support" class="modal">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="proconEx_forms">
+            <h2>Enquiry for Air Damper Actuators from Honeywell</h2>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3>Part Number: LKS 210-10 (B1-5 S1)</h3>
+          <form id="pExfrm1">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="fullname_pExfrm1">Full Name:</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <select class="form-control" id="initial_pExfrm">
+                        <option selected="selected">Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Master.</option>
+                        <option>Miss.</option>
+                      </select>
+                    </div>
+                    <input type="text" required="required" class="form-control" id="fullname_pExfrm1" placeholder="Enter Fullname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email_pExfrm1">Email address:</label>
+                  <input type="email" required="required" class="form-control" id="email_pExfrm1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="tel_pExfrm1">Contact Number:</label>
+                  <input type="tel" required="required" class="form-control" id="tel_pExfrm1" placeholder="Enter Contact Number">
+                </div>
+                <div class="form-group">
+                  <label for="com_pExfrm1">Company Name:</label>
+                  <input type="text" required="required" class="form-control" id="com_pExfrm1" placeholder="Enter Company Name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="inq_pExfrm1">Enquiry Description:</label>
+                  <textarea rows="4" required="required" class="form-control" id="inq_pExfrm1" placeholder="Enter Enquiry description"></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="prefer_pExfrm1">Preferred Contact Method:</label>
+                      <select id="prefer_pExfrm1" class="form-control">
+                        <option selected="selected">Email</option>
+                        <option>Phone</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="form-group">
+                  <label for="product_qty">Number of Quantity:</label>
+                  <input type="number" required="required" min="1"  class="form-control" id="product_qty" placeholder="Enter Quantity">
+                </div>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Enquire">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- InstanceEndEditable --> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script> 
-<script src="js/proconEx-1.js?v=6"></script> 
+<script src="js/proconEx-1.js?v=6.1"></script> 
 <!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

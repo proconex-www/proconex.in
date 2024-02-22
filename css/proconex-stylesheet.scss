@@ -416,6 +416,15 @@ img{
 				margin: calc(24em/96);
 			}
 		}
+        .proconex-compare{
+            color: #a6034d;
+        }
+        .notes{
+            color: #ffdf80;
+            background-color: #227153;
+            border-radius: 5px;
+            padding: 0px 7px;
+        }
         .proconEx_services_1{
             padding: calc(15em/10);
             .proconEx_services_2{
@@ -874,8 +883,15 @@ img{
                         &.form-check-label{
                             .form-check-input{
                                 + .icon{
+                                    font-size: 88%;
+                                    border-color: #0a7abf;
                                     &:after{
                                         color: #0a7abf;
+                                    }
+                                }
+                                &:checked{
+                                    +.icon{
+                                        border-color: #035aa6;
                                     }
                                 }
                             }
@@ -958,6 +974,11 @@ img{
             margin-top: calc(12em/18);
             a{
                 color: #06468d;
+                &:has(span){ 
+                    &:hover, &:focus{
+                        text-decoration: none;
+                    }
+                }
                 &:hover, &:focus{
                     color: #026ad9;
                 }
@@ -1249,20 +1270,27 @@ img{
                     position: absolute;
                     z-index: -1;
                     + .icon{ 
+                        font-size: 90%;
                         background-color: #ffffff;
-                        border-radius: 0.5em;
-                        line-height: calc(11em/14.49);
+                        width: calc(15em/14);
+                        height: calc(15em/14);
+                        border: 1px solid #ced4da;
+                        border-radius: 0.1em;
+                        position: relative;
+                        margin: 0px 0px calc(3em/14);
+                        overflow: hidden;
                         &:before{
+                            font-size: 100%;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translateX(-50%) translateY(-50%);
                             color: #0A7ABF;
-                            content: "\ea52";
+                            content: "\e914";
                             display: none;
-                            line-height: 100%;
                         }
                         &:after{
-                            color: #ced4da;
-                            content: "\ea53";
-                            display: block;
-                            line-height: 100%;
+                            
                         } 
                     }
                     &:focus{
@@ -1273,11 +1301,14 @@ img{
                     &:checked{
                         &:focus{
                             + .icon{
-                                background-color: #ffffff;
+                                background-color: #035aa6;
                             }
                         }
                         + .icon{
+                            background-color: #035aa6;
+                            border-color: #035aa6;
                             &:before{
+                                color: #ffffff;
                                 display: block;
                             }
                             &:after{
@@ -1550,8 +1581,35 @@ img{
     #proconEx_support{
         background-color: #0A7ABF;
         padding: calc(60em/10) 0px;
+        &.modal{
+            opacity: 0;
+            transition: all 0.3s ease-in;
+            &.show{
+                opacity: 1;
+            }
+        }
         .proconEx_forms{
             padding: calc(15em/10) calc(15em/10) 0;
+            position: relative;
+            .close{
+                color: #ffffff;
+                position: absolute;
+                top: 0;
+                right: 0;
+                outline: none;
+                opacity: 0.8;
+                text-shadow: 0 1px 0 #ffffff;
+                &:hover, &:focus{
+                    color: #95DFC3;
+                    text-shadow: 0 1px 0 #95DFC3;
+                    opacity: 1;
+                }
+                &:active{
+                    color: #C9CDFD;
+                    text-shadow: 0 1px 0 #C9CDFD;
+                    opacity: 1;
+                }
+            }
         }
         .proconEx_support_1{
             padding: calc(25em/10) 0px;
@@ -1961,7 +2019,7 @@ img{
         .copyrights{
             position: relative;
             z-index: 2;
-            padding: calc(15em/14);
+            padding: calc(15em/14) calc(15em/14) calc(80em/14);
             flex-wrap: wrap;
             justify-content: center;
             p{
@@ -1980,6 +2038,38 @@ img{
                         .icon{
                             color: #c9cdfd;
                         }
+                    }
+                }
+            }
+            a.whatsapp{
+                text-decoration: none;
+                position: fixed;
+                background-color: #25d366;
+                width: calc(60em/42);
+                height: calc(60em/42);
+                border-radius: 100%;
+                bottom: calc(10em/42);
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 300%;
+                right: calc(20em/42);
+                box-shadow: calc(2em/42) calc(2em/42) calc(5em/42) #227153;
+                opacity: 0;
+                .icon{
+                    transform: rotateZ(19deg);
+                    transition: all 0.5s linear;
+                }
+                &:hover, &:focus{
+                    .icon{
+                        transform: rotateZ(5deg);
+                    }
+                }
+                &:active{
+                    .icon{
+                        transform: rotateZ(0deg);
+                        transition: none;
                     }
                 }
             }
