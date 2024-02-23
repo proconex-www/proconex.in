@@ -136,6 +136,7 @@
 //import font-icons
 @import url("icons.css"); 
 @import url("slick.css");  
+@import url("lightgallery.css");  
 *{
     outline-color: #227153;
     outline-width: thin;
@@ -867,6 +868,7 @@ img{
                 }
             }
             &.enquiry{
+                font-size: 115%;
                 background-color: #2ECEF2;
                 border-radius: calc(5em/10);
                 padding-left: calc(23em/10);
@@ -921,6 +923,19 @@ img{
                 font-weight: 700;
                 flex-grow: 1;
                 letter-spacing: 0.01em;
+            }
+        }
+        figure{
+            &.image{
+                &.image-style-side{
+                    margin: 1rem 0 0;
+                    @media (min-width: 992px){
+                        float: right;
+                        padding: calc(5em/10) calc(15em/10) 0;
+                        margin: calc(13em/10) 0px calc(13em/10) calc(13em/10);
+                        max-width: 41.666667%; 
+                    }
+                }
             }
         }
         h2{
@@ -1441,7 +1456,9 @@ img{
         width: calc(100% - (50em/10));
     }
     #proconEx_services_industry{
-        background-color: #1EA4D9;
+        background-image: url("../images/industry.jpg");
+        @include BGcenter;
+        background-attachment: fixed;
         position: relative;
         h3{
             font-weight: bold;
@@ -1450,31 +1467,21 @@ img{
             content: "";
             display: block;
             @include absolute;
-            background-image: url("../images/industry.jpg");
-            @include BGcenter;
-            background-attachment: fixed;
+            background-color: #1EA4D9;
             z-index: 1;
-            opacity: 0.1;
+            opacity: 0.9;
         }
         &.bg-networks{
-            &:before{
-                background-image: url("../images/extensive-network.jpg");
-            }
+            background-image: url("../images/extensive-network.jpg");
         }
         &.bg-obsolete-panels{
-            &:before{
-                background-image: url("../images/supply-repair-obsolete-panels.jpg");
-            }
+            background-image: url("../images/supply-repair-obsolete-panels.jpg");
         }
         &.bg-social{
-            &:before{
-                background-image: url("../images/social-subscription.jpg");
-            }
+            background-image: url("../images/social-subscription.jpg");
         }
         &.bg-about{
-            &:before{
-                background-image: url("../images/proconex-team.jpg"); 
-            }
+            background-image: url("../images/proconex-team.jpg"); 
         }
         .container{
             position: relative;
@@ -1623,9 +1630,6 @@ img{
         .awards_carousel{
                 padding: 0px calc(41em/10);
                 position: relative;
-                .slick-track{
-                    display: block;
-                }
                 .awards_carousel_1{
                     padding: 0;
                 }
