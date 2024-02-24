@@ -682,6 +682,12 @@ img{
                         }
                         .product_text{
                             padding: 0px calc(10em/20) calc(10em/20) 0px;
+                            p{
+                                .icon{
+                                    display: inline-block;
+                                    vertical-align: middle; 
+                                }
+                            }
                         }
                         h3, p{
                             padding: 0px;
@@ -700,7 +706,7 @@ img{
                         img{
                             border: 1px double #f2f2f2;
                             width: auto;
-                            height: calc(120em/20);
+                            max-height: calc(100em/20);
                         }
                         @media (max-width: 991px){
                             flex-wrap: wrap;
@@ -1345,6 +1351,24 @@ img{
                 .row{
                     + .row{
                         margin-top: calc(9em/10);
+                    }
+                }
+                #advsrch{ 
+                    font-size: 50%; 
+                    line-height: normal;
+                    &.collapsed{
+                        .icon{
+                            &.proconex-arrow-right2{
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                    .icon{
+                        display: block;
+                        transition: all 0.35s ease;
+                        &.proconex-arrow-right2{
+                            transform: rotate(90deg);
+                        }
                     }
                 }
             }
