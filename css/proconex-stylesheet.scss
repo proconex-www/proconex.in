@@ -858,15 +858,25 @@ img{
                         .slick-slide{
                             .product_photo_thumb{
                                 border: 4px double rgba(3,90,166,0.00);
+                                img{
+                                    border: 4px double rgba(3,90,166,0.00);
+                                }
                             }
                             &.slick-current{
                                 .product_photo_thumb{
-                                    border: 4px double rgba(3,90,166,1.00);
+                                    border: 4px double rgba(3,90,166,0.00);
+                                    img{
+                                        border: 4px double rgba(3,90,166,1.00);
+                                    }
                                     &:hover, &:focus{
-                                        border-color: #227153;
+                                        img{
+                                            border-color: #227153;
+                                        }
                                     }
                                     &:active{
-                                        border-color: #4E5397;
+                                        img{
+                                            border-color: #4E5397;
+                                        }
                                     }
                                 }
                             }
@@ -901,6 +911,43 @@ img{
                                 &:checked{
                                     +.icon{
                                         border-color: #035aa6;
+                                    }
+                                }
+                            }
+                        }
+                        &.form-radio-label{
+                            display: inline-block;
+                            text-align: left;
+                            padding-left: calc(14em/14);
+                            padding-right: calc(7em/14);
+                            margin: 0.5em 0 0;
+                            position: relative;
+                            user-select: none;
+                            input{
+                                position: absolute;
+                                z-index: -1;
+                                appearance: none; 
+                                &:focus{
+                                    + .icon{
+                                        box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
+                                    }
+                                }
+                                + .icon{
+                                    font-size: 100%;
+                                    display: inline-block;
+                                    vertical-align: text-top;
+                                    background-color: #ffffff;
+                                    width: calc(15em/14);
+                                    height: calc(15em/14);
+                                    border: 1px solid #035AA6;
+                                    border-radius: 100%;
+                                    overflow: hidden;
+                                }
+                                &:checked{
+                                    + .icon{
+                                        background-color: #035AA6;
+                                        outline: 1px solid #ffffff;
+                                        outline-offset: calc(-5em/14);;
                                     }
                                 }
                             }

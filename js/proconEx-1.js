@@ -133,9 +133,12 @@ $(function () {
         infinite: false,
         arrows: false,
         fade: true,
-        asNavFor: ".product_thumbs"
+        asNavFor: "#product_thumbs",
+        draggable: false,
+        touchMove: false,
+        swipeToSlide: false
       });
-      $(".product_thumbs").slick({
+      $("#product_thumbs").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
@@ -143,10 +146,14 @@ $(function () {
         dots: false,
         centerMode: false,
         focusOnSelect: true,
+        draggable: false,
+        touchMove: false,
+        swipeToSlide: false,
         responsive: [{
           breakpoint: 425,
           settings: {
             slidesToShow: 2,
+            slidesToScroll: 1
           }
         }]
       });
@@ -168,29 +175,29 @@ $(function () {
     })
   }
   if ($("#product_carousel").length > 0) {
-      $.getScript("js/lightgallery.js").done(function () {
-        $("#product_carousel").lightGallery({
-            selector: '.proconex-zoom-in',
-            flipHorizontal: false,
-            flipVertical: false,
-            rotate: false,
-            pinterest: false,
-            googlePlus: false,
-            hideBarsDelay: 0,
-            download: false,
-            thumbnail: false,
-            share: false,
-            autoplayControls: false,
-            mousewheel: false
-        });
+    $.getScript("js/lightgallery.js").done(function () {
+      $("#product_carousel").lightGallery({
+        selector: '.proconex-zoom-in',
+        flipHorizontal: false,
+        flipVertical: false,
+        rotate: false,
+        pinterest: false,
+        googlePlus: false,
+        hideBarsDelay: 0,
+        download: false,
+        thumbnail: false,
+        share: false,
+        autoplayControls: false,
+        mousewheel: false
       });
-//    $.when($.getScript("js/lightgallery.umd.js"), $.getScript("js/plugins/zoom/lg-zoom.umd.js")).done(function () {
-//      lightGallery(document.getElementById("product_carousel"), {
-//        download: false,
-//        plugins: [lgZoom],
-//        selector: ".proconex-zoom-in"
-//      });
-//    });
+    });
+    //    $.when($.getScript("js/lightgallery.umd.js"), $.getScript("js/plugins/zoom/lg-zoom.umd.js")).done(function () {
+    //      lightGallery(document.getElementById("product_carousel"), {
+    //        download: false,
+    //        plugins: [lgZoom],
+    //        selector: ".proconex-zoom-in"
+    //      });
+    //    });
   }
 });
 
@@ -220,4 +227,3 @@ function whatsappchat() {
     opacity: "1"
   });
 }
-
