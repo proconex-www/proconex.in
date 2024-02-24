@@ -444,6 +444,7 @@ img{
                 background-image: url("../images/hr.gif");
                 background-repeat: repeat-x;
                 border: none;
+                opacity: 0.3;
             }
             img{
                 &[class*="float-"]{
@@ -850,11 +851,11 @@ img{
                         z-index: 0;
                         .slick-slide{
                             .product_photo_thumb{
-                                border: 1px solid rgba(3,90,166,0.00);
+                                border: 4px double rgba(3,90,166,0.00);
                             }
                             &.slick-current{
                                 .product_photo_thumb{
-                                    border: 1px solid rgba(3,90,166,1.00);
+                                    border: 4px double rgba(3,90,166,1.00);
                                     &:hover, &:focus{
                                         border-color: #227153;
                                     }

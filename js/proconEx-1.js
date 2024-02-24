@@ -168,13 +168,29 @@ $(function () {
     })
   }
   if ($("#product_carousel").length > 0) {
-    $.when($.getScript("js/lightgallery.umd.js"), $.getScript("js/plugins/zoom/lg-zoom.umd.js")).done(function () {
-      lightGallery(document.getElementById("product_carousel"), {
-        download: false,
-        plugins: [lgZoom],
-        selector: ".proconex-zoom-in"
+      $.getScript("js/lightgallery.js").done(function () {
+        $("#product_carousel").lightGallery({
+            selector: '.proconex-zoom-in',
+            flipHorizontal: false,
+            flipVertical: false,
+            rotate: false,
+            pinterest: false,
+            googlePlus: false,
+            hideBarsDelay: 0,
+            download: false,
+            thumbnail: false,
+            share: false,
+            autoplayControls: false,
+            mousewheel: false
+        });
       });
-    });
+//    $.when($.getScript("js/lightgallery.umd.js"), $.getScript("js/plugins/zoom/lg-zoom.umd.js")).done(function () {
+//      lightGallery(document.getElementById("product_carousel"), {
+//        download: false,
+//        plugins: [lgZoom],
+//        selector: ".proconex-zoom-in"
+//      });
+//    });
   }
 });
 
