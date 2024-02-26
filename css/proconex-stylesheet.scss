@@ -1525,13 +1525,18 @@ img{
         margin: calc(3em/10) calc(25em/10);
         width: calc(100% - (50em/10));
     }
-    #proconEx_services_industry{
+    #proconEx_services_industry{  
         background-image: url("../images/industry.jpg");
         @include BGcenter;
         background-attachment: fixed;
         position: relative;
         h3{
             font-weight: bold;
+        }
+        h4{  
+            + label{
+                padding-top: calc(6em/14);
+            }
         }
         &:before{
             content: "";
