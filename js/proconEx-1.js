@@ -134,10 +134,12 @@ $(function () {
         arrows: false,
         fade: true,
         asNavFor: "#product_thumbs",
+        swipe: false,
         draggable: false,
         touchMove: false,
+        touchstart: false,
         swipeToSlide: false
-      });
+      });     
       $("#product_thumbs").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
