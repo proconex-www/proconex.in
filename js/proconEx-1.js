@@ -106,7 +106,6 @@ $(function () {
         infinite: false,
         dots: false,
         centerMode: false,
-        focusOnSelect: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [{
@@ -206,13 +205,6 @@ $(function () {
         mousewheel: false
       });
     });
-    //    $.when($.getScript("js/lightgallery.umd.js"), $.getScript("js/plugins/zoom/lg-zoom.umd.js")).done(function () {
-    //      lightGallery(document.getElementById("product_carousel"), {
-    //        download: false,
-    //        plugins: [lgZoom],
-    //        selector: ".proconex-zoom-in"
-    //      });
-    //    });
   }
 });
 
