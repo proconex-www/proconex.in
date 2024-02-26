@@ -98,9 +98,9 @@ $(function () {
       });
     });
   }
-  if ($("#proconEx_products").length > 0) {
+  if ($(".proconEx_products").length > 0) {
     $.getScript("js/slick.js").done(function () {
-      $("#proconEx_products").slick({
+      $(".proconEx_products").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
@@ -139,7 +139,7 @@ $(function () {
         touchMove: false,
         touchstart: false,
         swipeToSlide: false
-      });     
+      });
       $("#product_thumbs").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -169,8 +169,21 @@ $(function () {
     });
   }
   if ($("#product_enquiry_form").length > 0) {
+    $('#product_enquiry_form .form-check-input').change(function () {
+      if ($(this).is(":checked")) {
+        $(this).attr("checked", "checked");
+      }
+    });
     $("#product_enquiry_form").submit(function (e) {
       e.preventDefault();
+        if($("#request_product").length > 0){
+            $reqstproduct = $("#request_product").html();
+            $("#requestproduct").html($reqstproduct);
+        }
+      $partcondition = $("#part_condition").html();
+      $partavailability = $("#part_availability").html();
+      $("#partcondition").html($partcondition);
+      $("#partavailability").html($partavailability);
       $("#proconEx_support").modal({
         backdrop: false
       });
