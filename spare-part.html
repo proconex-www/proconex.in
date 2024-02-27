@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,8 @@
 <!-- InstanceBeginEditable name="stylesheets" -->
 <!-- InstanceEndEditable -->
 <link href="css/proconex-stylesheet.css?v=9.66" rel="stylesheet">
-
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-
 </head>
 <body id="proconEx_bdy">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -39,8 +38,7 @@
     </div>
   </nav>
 </header>
-<main> 
-  <!-- InstanceBeginEditable name="features_text" -->
+<main> <!-- InstanceBeginEditable name="features_text" -->
   <section style="background-image: url('images/store-proconex.jpg');" id="proconEx_features" class="d-flex justify-content-center align-items-center short">
     <div class="container">
       <div class="row">
@@ -52,8 +50,7 @@
       </div>
     </div>
   </section>
-  <!-- InstanceEndEditable -->
-  <!-- InstanceBeginEditable name="page-content" -->
+  <!-- InstanceEndEditable --> <!-- InstanceBeginEditable name="page-content" -->
   <section id="proconEx_services" class="bg_white">
     <div class="container-fluid">
       <div class="row">
@@ -64,10 +61,10 @@
               <div class="col-lg-6">
                 <div id="product_carousel">
                   <div class="item">
-                      <div class="product_photo_zoom"><a href="images/inventory/4217821706609321.jpg" class="btn icon proconex-zoom-in"></a><img src="images/inventory/4217821706609321.jpg" width="1238" height="1080" alt=""></div>
+                    <div class="product_photo_zoom"><a href="images/inventory/4217821706609321.jpg" class="btn icon proconex-zoom-in"></a><img src="images/inventory/4217821706609321.jpg" width="1238" height="1080" alt=""></div>
                   </div>
                   <div class="item">
-                      <div class="product_photo_zoom"><a href="images/inventory/4936721706874661.jpg" class="btn icon proconex-zoom-in"></a><img src="images/inventory/4936721706874661.jpg" width="1866" height="1080" alt=""></div>
+                    <div class="product_photo_zoom"><a href="images/inventory/4936721706874661.jpg" class="btn icon proconex-zoom-in"></a><img src="images/inventory/4936721706874661.jpg" width="1866" height="1080" alt=""></div>
                   </div>
                 </div>
                 <div id="product_thumbs" class="product_thumbs"> <a href="#product_photo1" class="product_photo_thumb"><img src="images/inventory/thumbnails/6306001706874055.jpg" width="275" height="240" alt=""></a> <a href="#product_photo2" class="product_photo_thumb"><img src="images/inventory/4936721706874661.jpg" width="1866" height="1080" alt=""></a> </div>
@@ -84,7 +81,7 @@
                 <p><strong>Datasheet:</strong> <a href="#" class="btn btn-info docs" target="_blank"><span class="icon proconex-file-pdf"></span></a></p>
                 <p><a href="#"><span class="icon proconex-heart"></span> Add to Wishlist</a></p>
                 <p><a href="product_comparator.html"><span style="font-size: 150%" class="icon proconex-compare"></span> Add this to Product Comparator</a></p>
-                  <p><strong class="notes">Note:</strong> Proconex Pvt. Ltd. is NOT an authorized distributor for any of the brands mentioned on this website.</p>
+                <p><strong class="notes">Note:</strong> Proconex Pvt. Ltd. is NOT an authorized distributor for any of the brands mentioned on this website.</p>
               </div>
             </div>
           </div>
@@ -97,10 +94,14 @@
               <div class="form-group" id="request_product">
                 <h4>Request Product</h4>
                 <div class="input-group">
-                      <label class="form-radio-label"><input name="requestpart" type="radio" value="Yes" checked="checked" class="form-check-input"><span class="icon"></span> Yes</label>
-                      <label class="form-radio-label"><input name="requestpart" type="radio" value="No" class="form-check-input"><span class="icon"></span> No</label>
-                    </div>
+                  <label class="form-radio-label">
+                    <input name="requestpart" type="radio" value="Yes" checked="checked" class="form-check-input">
+                    <span class="icon"></span> Yes</label>
+                  <label class="form-radio-label">
+                    <input name="requestpart" type="radio" value="No" class="form-check-input">
+                    <span class="icon"></span> No</label>
                 </div>
+              </div>
               <div class="form-group" id="part_condition">
                 <h4>Part Condition</h4>
                 <p class="label">Choose Part Conditions</p>
@@ -270,7 +271,7 @@
                   <label for="ps_search">Search</label>
                   <div class="row align-items-center">
                     <div class="col-12 col-sm-8 col-lg-9">
-                      <input name="ps_search" type="search" class="form-control" id="ps_search" placeholder="Search Products col-lg-3">
+                      <input name="ps_search" type="search" class="form-control" id="ps_search" placeholder="Search Products">
                     </div>
                     <div class="col-12 col-sm-4 col-lg-3 pt-2 pb-2">
                       <p><strong>Total Products:</strong> 7000</p>
@@ -593,9 +594,12 @@
                   </div>
                 </div>
                 <div class="row justify-content-center">
-                  <div class="col-12 col-sm-6 col-md-5 col-lg-5 text-center">
+                  <div class="col-12 col-sm-11 col-md-10 col-lg-7 text-center">
                     <div class="form-group pt-2 m-0">
-                      <input type="submit" value="Search" class="btn btn-primary">
+                      <div class="input-group flex-nowrap">
+                        <input name="searchinventory" type="submit" class="btn btn-primary" id="searchinventory" value="Search">
+                        <input name="searchreset" type="reset" class="btn btn-secondary" id="searchreset" value="Reset">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -623,7 +627,7 @@
               <p><span class="icon proconex-sphere"></span> Website: www.proconex.in</p>
               <p><span class="icon proconex-phone"></span> Telephone: <a href="tel:08029634292">080-29634292</a>, <a href="tel:08029534292">080-29534292</a></p>
               <p><span class="icon proconex-mobile"></span> Mobile: <a href="tel:09900002852">9900002852</a></p>
-            <p><span class="icon proconex-whatsapp1"></span> Whatsapp: <a href="https://wa.me/919900002852">9900002852</a></p>
+              <p><span class="icon proconex-whatsapp1"></span> Whatsapp: <a href="https://wa.me/919900002852">9900002852</a></p>
               </address>
             </div>
             <div class="proconEx_certify_1">
@@ -719,9 +723,9 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="proconEx_forms">
-            <h2>Enquiry for Air Damper Actuators from Honeywell</h2>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h3>Part Number: LKS 210-10 (B1-5 S1)</h3>
+          <h2>Enquiry for Air Damper Actuators from Honeywell</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3>Part Number: LKS 210-10 (B1-5 S1)</h3>
           <form id="pExfrm1">
             <div class="row">
               <div class="col-lg-6">
@@ -769,25 +773,25 @@
                   </div>
                   <div class="col-lg-8">
                     <div class="form-group">
-                  <label for="product_qty">Number of Quantity:</label>
-                  <input type="number" required="required" min="1"  class="form-control" id="product_qty" placeholder="Enter Quantity">
-                </div>
+                      <label for="product_qty">Number of Quantity:</label>
+                      <input type="number" required="required" min="1"  class="form-control" id="product_qty" placeholder="Enter Quantity">
+                    </div>
                   </div>
                 </div>
                 <input type="submit" class="btn btn-primary" value="Enquire">
               </div>
               <div class="col-12 col-md-4">
                 <div class="form-group" id="requestproduct"></div>
-                </div>
-                <div class="col-12 col-md-4">
+              </div>
+              <div class="col-12 col-md-4">
                 <div class="form-group" id="partcondition"></div>
-                </div>
-                <div class="col-12 col-md-4">
+              </div>
+              <div class="col-12 col-md-4">
                 <div class="form-group" id="partavailability"></div>
-                </div>
-                <div class="col-12 text-center">
+              </div>
+              <div class="col-12 text-center">
                 <input type="submit" class="btn btn-primary" value="Enquire">
-                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -795,12 +799,12 @@
     </div>
   </div>
 </section>
-<!-- InstanceEndEditable -->
+<!-- InstanceEndEditable --> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script> 
 <script src="js/proconEx-1.js?v=6.2"></script> 
-<!-- InstanceBeginEditable name="js1" --> 
-<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="js1" --> <!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

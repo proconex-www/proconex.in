@@ -475,6 +475,10 @@ img{
                     background-color: #035AA6;
                     @include hover;
                 }
+                &.btn-secondary{ 
+                    background-color: #545454; 
+                    @include hover;
+                }
             }
             .brands{
                 p{
@@ -1627,7 +1631,14 @@ img{
                     font-size: 100%;
                 }
             }
-            input[type="submit"]{
+            .input-group{
+                input[type="submit"], input[type="reset"]{
+                    width: auto;
+                    margin-bottom: 0;
+                    flex-grow: 1;
+                }
+            }
+            input[type="submit"], input[type="reset"]{
                 &.btn{
                     font-size: 240%;
                 }
@@ -1899,7 +1910,7 @@ img{
                     outline: none;
                 }
             }
-            input[type="submit"]{
+            input[type="submit"], input[type="reset"]{ 
                 &.btn{
                     font-size: 230%;
                     color: #ffffff;
@@ -1910,6 +1921,10 @@ img{
                     padding: calc(6em/10);
                     margin-top: calc(6em/10);
                     &.btn-primary{
+                        @include hover; 
+                    }
+                    &.btn-secondary{
+                        background-color: #545454; 
                         @include hover; 
                     }
                 }
