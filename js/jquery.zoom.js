@@ -227,7 +227,7 @@
 			};
 
 			img.setAttribute('role', 'presentation');
-			img.alt = '';
+			img.alt = 'Proconex Photo';
 			img.src = settings.url;
 		});
 	};

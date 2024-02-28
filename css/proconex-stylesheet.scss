@@ -702,7 +702,7 @@ img{
                         p{
                             font-size: 140%;
                             strong{
-                                font-weight: 500;
+                                font-weight: 600;
                             }
                         }
                         img{
@@ -806,8 +806,10 @@ img{
                     padding: 10px 40px;
                     .product_photo_thumb{
                         display: block;
+                        text-align: center;
                         img{
                             padding: 5px;
+                            display: inline-block;
                         }
                     }
                     button{
@@ -860,8 +862,10 @@ img{
                         .slick-slide{
                             .product_photo_thumb{
                                 border: 4px double rgba(3,90,166,0.00);
+                                text-align: center;
                                 img{
                                     border: 4px double rgba(3,90,166,0.00);
+                                    display: inline-block;
                                 }
                             }
                             &.slick-current{
@@ -985,6 +989,12 @@ img{
             &.image{
                 &.image-style-side{
                     margin: 1rem 0 0;
+                    figcaption{
+                        font-size: 120%;
+                        text-align: center;
+                        display: block;
+                        padding: 0.5em;
+                    }
                     @media (min-width: 992px){
                         float: right;
                         padding: calc(5em/10) calc(15em/10) 0;
