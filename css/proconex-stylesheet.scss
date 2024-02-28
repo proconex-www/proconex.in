@@ -943,7 +943,7 @@ img{
                                     display: inline-block;
                                     vertical-align: text-top;
                                     background-color: #ffffff;
-                                    width: calc(15em/14);
+                                    min-width: calc(15em/14);
                                     height: calc(15em/14);
                                     border: 1px solid #035AA6;
                                     border-radius: 100%;
@@ -1351,7 +1351,7 @@ img{
                     + .icon{ 
                         font-size: 90%;
                         background-color: #ffffff;
-                        width: calc(15em/14);
+                        min-width: calc(15em/14);
                         height: calc(15em/14);
                         border: 1px solid #ced4da;
                         border-radius: 0.1em;
@@ -1837,7 +1837,7 @@ img{
                         z-index: -1;
                         + .icon{
                             display: block;
-                            width: calc(15em/14.84);
+                            min-width: calc(15em/14.84);
                             height: calc(15em/14.84);
                             position: absolute;
                             left: 0px;
