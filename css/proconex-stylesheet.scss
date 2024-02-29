@@ -1633,7 +1633,11 @@ img{
             }
             ul.form-control{
                 font-size: 140%;
-                padding: calc(6em/14) 0;
+                li{ 
+                    label{
+                        margin-bottom: 0;
+                    }
+                }
             }
             .custom-list{
                 label{
