@@ -1471,7 +1471,7 @@ img{
                                 + .list{
                                     color: #212529;
                                     display: block;
-                                    padding: 0px 12px;
+                                    padding: calc(5em/14) calc(12em/14);
                                     margin: 0px -1px;
                                     border: 1px solid #ffffff;
                                 }
@@ -1633,6 +1633,7 @@ img{
             }
             ul.form-control{
                 font-size: 140%;
+                padding: calc(6em/14) 0;
             }
             .custom-list{
                 label{
