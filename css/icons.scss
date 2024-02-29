@@ -5,7 +5,7 @@
   src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2') format('woff2'), url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: fallback;
+  font-display: fallback; 
 }
 
 .icon {
