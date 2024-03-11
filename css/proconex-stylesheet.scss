@@ -2086,6 +2086,18 @@ img{
                         display: inline-block;
                         @include linkhoverlight;
                     }
+					p.symbol{
+                        &:has(span){
+                            position: relative;
+                            padding-left: calc(22em/16);
+                            .icon{
+                                position: absolute;
+                                display: block;
+                                left: 0;
+                                top: calc(1em/16);;
+                            }
+                        }
+                    }
                     @media (min-width: 1200px){
                         width: 20%;
                     }
@@ -2142,6 +2154,17 @@ img{
                     @include linkhoverlight;
                 }
                 .d-inline-block{
+					a{
+						display: inline-block;
+						padding-left: 18px;
+						position: relative;
+						.icon{
+							text-decoration: none;
+							position: absolute;
+							left: 0px;
+							top: calc(2rem/12.6);
+						}
+					}
                     &:hover, &:hover{
                         .icon{
                             color: #95dfc3;
