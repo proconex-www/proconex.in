@@ -60,6 +60,14 @@
 @mixin boxshadow1{
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+@mixin hedingbasics{
+    display: inline-block;
+    padding: calc(6em/26.1) calc(12em/26.1);
+    margin-left: calc(-12em/26.1); 
+    border-radius: calc(15em/26.1);
+    border: calc(4em/26.1) solid #ffffff;
+}
+
 //Web Fonts
 @font-face {
     font-family: 'Swis721 Cn BT';
@@ -192,11 +200,14 @@ img{
         &_green{
             background: #227153;
             color: #ffffff;
-            display: inline-block;
-            padding: calc(6em/26.1) calc(12em/26.1);
-            margin-left: calc(-12em/26.1); 
-            border-radius: calc(15em/26.1);
-            border: calc(4em/26.1) solid #1EA4D9;
+            @include hedingbasics;
+            border-color: #1EA4D9;
+        }
+        &_gold {
+            background: #A6783F;
+            color: #ffffff;
+            @include hedingbasics;
+            border-color: #F2D649; 
         }
     }
     //Header
@@ -430,6 +441,65 @@ img{
             padding: calc(15em/10);
             .proconEx_services_2{
                 padding: calc(15em/10);
+                .d-flex.gap{
+                    column-gap: calc(15em/10);
+                    row-gap: calc(15em/10);
+                }
+            }
+            .proconEx_event{
+                display: block;
+                width: calc(25% - (30em/18));
+                text-decoration: none;
+                padding: calc(30em/18);
+                background: #fcfaf8;
+                border: 3px solid #fcf4cf;
+                p{
+                    font-size: 150%;
+                    + p{
+                        margin-top: 0;
+                    }
+                }
+                .proconEx_services_photo{
+                    display: block;
+                    margin-top: calc(12em/18);
+                    overflow: hidden;
+                    img{
+                        min-width: 100%;
+                        transition: all 0.3s linear;
+                    }
+                }
+                &:hover, &:focus{
+                    border-color: #f8eaa0;
+                    h3{
+                        color: #a6783f;
+                    }
+                    .proconEx_services_photo{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &:active{
+                    border-color: #C9CDFD;
+                    h3{
+                        color: #4E5397;
+                    }
+                    .proconEx_services_photo{
+                        img{
+                            transform: scale(1);
+                            transition: none;
+                        }
+                    }
+                }
+                @media (max-width: 991px){
+                    width: calc(33.3333% - (30em/18));
+                }
+                @media (max-width: 768px){
+                    width: calc(50% - (30em/18));
+                }
+                @media (max-width: 567px){
+                    width: calc(100%);
+                }
             }
             a{
                 color: #06468d;
