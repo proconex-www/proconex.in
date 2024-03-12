@@ -175,10 +175,10 @@ $(function () {
     });
     $("#product_enquiry_form").submit(function (e) {
       e.preventDefault();
-        if($("#request_product").length > 0){
-            $reqstproduct = $("#request_product").html();
-            $("#requestproduct").html($reqstproduct);
-        }
+      if ($("#request_product").length > 0) {
+        $reqstproduct = $("#request_product").html();
+        $("#requestproduct").html($reqstproduct);
+      }
       $partcondition = $("#part_condition").html();
       $partavailability = $("#part_availability").html();
       $("#partcondition").html($partcondition);
@@ -188,6 +188,7 @@ $(function () {
       });
     })
   }
+    
   if ($("#product_carousel").length > 0) {
     $.getScript("js/lightgallery.js").done(function () {
       $("#product_carousel").lightGallery({
@@ -208,6 +209,44 @@ $(function () {
   }
 });
 
+if ($("#certificates_carousel").length > 0) {
+  $.getScript("js/lightgallery.js").done(function () {
+    $("#certificates_carousel").lightGallery({
+      selector: '.certphoto',
+      flipHorizontal: false,
+      flipVertical: false,
+      rotate: false,
+      pinterest: false,
+      googlePlus: false,
+      hideBarsDelay: 0,
+      download: false,
+      thumbnail: false,
+      share: false,
+      autoplayControls: false,
+      mousewheel: false
+    });
+  });
+}
+if ($("#awards_carousel").length > 0) {
+  $.getScript("js/lightgallery.js").done(function () {
+    $("#awards_carousel").lightGallery({
+      selector: '.awardphoto',
+      flipHorizontal: false,
+      flipVertical: false,
+      rotate: false,
+      pinterest: false,
+      googlePlus: false,
+      hideBarsDelay: 0,
+      download: false,
+      thumbnail: false,
+      share: false,
+      autoplayControls: false,
+      mousewheel: false
+    });
+  });
+}
+
+//functions
 function filterFunction(obj1, obj2) {
   //  var input, filter, ul, li, a, i, dropdowns;
   $filter = $(obj1).val().toUpperCase();
