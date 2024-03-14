@@ -189,6 +189,24 @@ $(function () {
     })
   }
     
+  if ($(".gallery").length > 0) {
+      $.getScript("js/lightgallery.js").done(function () {
+        $(".gallery").lightGallery({
+            selector: '.proconEx_event',
+            flipHorizontal: false,
+            flipVertical: false,
+            rotate: false,
+            pinterest: false,
+            googlePlus: false,
+            hideBarsDelay: 0,
+            download: false,
+            thumbnail: true,
+            share: false,
+            autoplayControls: false,
+            mousewheel: false
+        });
+      });
+  }
   if ($("#product_carousel").length > 0) {
     $.getScript("js/lightgallery.js").done(function () {
       $("#product_carousel").lightGallery({
