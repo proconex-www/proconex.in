@@ -159,6 +159,9 @@ img{
 	word-break: break-word;
     opacity: 0;
     user-select: none;
+    h1{
+        text-transform: capitalize;
+    } 
     &.fadein{
         opacity: 1;
     }
@@ -194,6 +197,9 @@ img{
 	}
 	.bg_white{
 		background-color: #F2F2F2;
+	}
+    .bg-white{
+		background-color: #ffffff;
 	}
 	.heading{
 		font-family: 'Futura Md BT';
@@ -1232,6 +1238,9 @@ img{
             font-size: 180%;
             margin-bottom: 0px;
             margin-top: calc(12em/18);
+            + ol, + ul {
+                margin-top: calc(6em/18);
+            }
             a{
                 color: #06468d;
                 &:has(span){ 
@@ -1453,7 +1462,7 @@ img{
         }
         ol{
             font-size: 180%;
-            padding: calc(12em/18) 0px;
+            padding: 0 calc(12em/18);
             margin-left: calc(30em/18);
             margin-top: calc(12em/18);
             margin-bottom: 0px;
@@ -1485,6 +1494,17 @@ img{
                     }
                     @media (max-width: 576px){
                         width: 100%;
+                    }
+                }
+            }
+            &[style*="list-style-type:lower-latin"]{
+                counter-reset: list;
+                padding-left: 0;
+                li{
+                    list-style: none;
+                    &:before{
+                      content: counter(list, lower-alpha) ") ";
+                      counter-increment: list;
                     }
                 }
             }
