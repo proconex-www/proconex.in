@@ -441,43 +441,114 @@ img{
             padding: calc(15em/10);
             .proconEx_services_2{
                 padding: calc(15em/10);
-                .d-flex.gap{
-                    column-gap: calc(15em/10);
-                    row-gap: calc(15em/10);
-                    &.gallery{
-                        overflow: auto;
-                        .proconEx_event{
-                            padding: 0;
-                            border: none;
-                            background: none;
-                            position: relative;
-                            &:before{
-                                content: "";
-                                display: block;
-                                position: absolute;
+                .d-flex{
+                    &.gap{
+                        column-gap: calc(15em/10);
+                        row-gap: calc(15em/10);
+                        &.gallery{
+                            overflow: auto;
+                            .proconEx_event{
+                                padding: 0;
+                                border: none;
+                                background: none;
+                                position: relative;
+                                &:before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: 1;
+                                }
+                                .proconEx_services_photo{
+                                    display: block;
+                                    width: auto;
+                                    height: auto;
+                                    max-height: 135px;
+                                    margin: 0;
+                                    img{
+                                        width: auto;
+                                        min-height: 135px;
+                                    }
+                                }
+                                &:hover, &:focus{
+                                    &:before{
+                                        box-shadow: inset 0em 0em 0.1em 0.3em #f8eaa0
+                                    }
+                                }
+                                &:active{
+                                    &:before{
+                                        box-shadow: inset 0em 0em 0.1em 0.3em #C9CDFD;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.eventslider{
+                        .event_slide{
+                            padding: calc(15em/10);
+                            .proconEx_event{
+                                color: #212529;
                                 width: 100%;
                                 height: 100%;
+                                outline-color: #f7dd52;
+                            }
+                        }
+                        button{
+                            font-family: "proconex-icons";
+                            font-size: 300%; 
+                            outline: none;
+                            background: none;
+                            border: none;
+                            padding: 0;
+                            margin: 0;
+                            &.slick-arrow{
+                                color: #f8eaa0;
+                                font-weight: bold;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: calc(42em/30);
+                                height: calc(42em/30);
+                                text-indent: calc(42em/30);
                                 z-index: 1;
-                            }
-                            .proconEx_services_photo{
-                                display: block;
-                                width: auto;
-                                height: auto;
-                                max-height: 135px;
-                                margin: 0;
-                                img{
-                                    width: auto;
-                                    min-height: 135px;
-                                }
-                            }
-                            &:hover, &:focus{
+                                overflow: hidden;
                                 &:before{
-                                    box-shadow: inset 0em 0em 0.1em 0.3em #f8eaa0
+                                    display: block;
+                                    width: calc(42em/30);
+                                    height: calc(42em/30);
+                                    text-indent: 0;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
                                 }
-                            }
-                            &:active{
-                                &:before{
-                                    box-shadow: inset 0em 0em 0.1em 0.3em #C9CDFD;
+                                &.slick-prev {
+                                    left: -1em;
+                                    &:before{
+                                        content: "\e910";
+                                    }
+                                }
+                                &.slick-next {
+                                    right: -1em; 
+                                    &:before{
+                                        content: "\e911";
+                                    }
+                                }
+                                &.slick-disabled{
+                                    opacity: 0.5;
+                                    cursor: default;
+                                    &:hover, &:focus{
+                                        color: #f8eaa0;
+                                    }
+                                    &:active{
+                                        color: #f8eaa0;
+                                    }
+                                }
+                                &:hover, &:focus{
+                                    color: #f7dd52;
+                                }
+                                &:active{
+                                    color: #C9CDFD;
                                 }
                             }
                         }

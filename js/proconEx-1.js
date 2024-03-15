@@ -22,6 +22,39 @@ $(function () {
       });
     });
   }
+  if ($(".eventslider").length > 0) {
+    $.getScript("js/slick.js").done(function () {
+      $(".eventslider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 374,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    });
+  }
   if ($(".proconEx_clients_list").length > 0) {
     $.getScript("js/slick.js").done(function () {
       $(".proconEx_clients_list").slick({
@@ -188,24 +221,24 @@ $(function () {
       });
     })
   }
-    
+
   if ($(".gallery").length > 0) {
-      $.getScript("js/lightgallery.js").done(function () {
-        $(".gallery").lightGallery({
-            selector: '.proconEx_event',
-            flipHorizontal: false,
-            flipVertical: false,
-            rotate: false,
-            pinterest: false,
-            googlePlus: false,
-            hideBarsDelay: 0,
-            download: false,
-            thumbnail: true,
-            share: false,
-            autoplayControls: false,
-            mousewheel: false
-        });
+    $.getScript("js/lightgallery.js").done(function () {
+      $(".gallery").lightGallery({
+        selector: '.proconEx_event',
+        flipHorizontal: false,
+        flipVertical: false,
+        rotate: false,
+        pinterest: false,
+        googlePlus: false,
+        hideBarsDelay: 0,
+        download: false,
+        thumbnail: true,
+        share: false,
+        autoplayControls: false,
+        mousewheel: false
       });
+    });
   }
   if ($("#product_carousel").length > 0) {
     $.getScript("js/lightgallery.js").done(function () {
