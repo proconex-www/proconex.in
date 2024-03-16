@@ -30,7 +30,6 @@ $(function () {
         infinite: false,
         dots: false,
         centerMode: false,
-        focusOnSelect: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [{
@@ -67,7 +66,6 @@ $(function () {
         pauseOnHover: true,
         dots: false,
         centerMode: false,
-        focusOnSelect: true,
         responsive: [{
             breakpoint: 1200,
             settings: {
@@ -98,7 +96,6 @@ $(function () {
         infinite: false,
         dots: false,
         centerMode: false,
-        focusOnSelect: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
       });
@@ -112,7 +109,6 @@ $(function () {
         infinite: false,
         dots: false,
         centerMode: false,
-        focusOnSelect: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [{
