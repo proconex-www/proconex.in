@@ -1502,9 +1502,13 @@ img{
                 padding-left: 0;
                 li{
                     list-style: none;
+                    padding-left: calc(18em/18);
+                    position: relative;
                     &:before{
                       content: counter(list, lower-alpha) ") ";
                       counter-increment: list;
+                        position: absolute;
+                        left: 0;
                     }
                 }
             }
