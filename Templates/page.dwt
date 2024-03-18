@@ -23,7 +23,7 @@
 <script src="../js/jquery-3.4.1.min.js"></script> 
 <!-- InstanceBeginEditable name="hd-js" --> <!-- InstanceEndEditable -->
 <header>
-  <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="../index.html"><img src="../images/proconex-pvt-ltd.png" width="1024" height="121" alt="Proconex Pvt. Ltd."></a>
+  <nav class="navbar navbar-expand-xl bg_white"> <a class="navbar-brand" href="../index.html"><img src="../images/proconex-logo.png" width="870" height="120" alt="Proconex Pvt. Ltd."></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#proconEx-navbar" aria-controls="proconEx-navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">&#9776;</span> </button>
     <div class="collapse navbar-collapse justify-content-end" id="proconEx-navbar">
       <ul class="navbar-nav">
