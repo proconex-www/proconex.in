@@ -1697,13 +1697,14 @@ img{
                     z-index: -1;
                     + .icon{ 
                         font-size: 90%;
+                        font-weight: bold;
                         background-color: #ffffff;
-                        min-width: calc(15em/14);
-                        height: calc(15em/14);
+                        min-width: calc(15em/12.6);
+                        height: calc(15em/12.6);
                         border: 1px solid #ced4da;
                         border-radius: 0.1em;
                         position: relative;
-                        margin: 0px 0px calc(3em/14);
+                        margin: 0px 0px calc(3em/12.6);
                         overflow: hidden;
                         &:before{
                             font-size: 100%;
