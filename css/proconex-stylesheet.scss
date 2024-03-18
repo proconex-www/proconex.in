@@ -2,7 +2,7 @@
 //active colors 
 @mixin hover{
 	&:hover, &:focus{ 
-		color: #ffffff;
+		color: #ffffff; 
 		background-color: #227153;
 	}
 	&:active{
@@ -1771,7 +1771,7 @@ img{
                         display: block;
                         transition: all 0.35s ease;
                         &.proconex-arrow-right2{
-                            transform: rotate(90deg) translateY(0.2em); 
+                            transform: rotate(90deg) translateY(0); 
                         }
                     }
                 }
