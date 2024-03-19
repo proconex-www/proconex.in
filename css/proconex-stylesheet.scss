@@ -7,7 +7,7 @@
 	}
 	&:active{
 		color: #ffffff;
-		background-color: #4e5397;
+		background-color: #4e5397; 
 	}
 }
 @mixin linkhover{
@@ -156,7 +156,7 @@ img{
 #proconEx_bdy{
 	font-family: 'Swis721 Cn BT'; 
 	font-size: 10px;
-	word-break: break-word;
+	word-wrap: break-word;
     opacity: 0;
     user-select: none;
     h1{
@@ -572,7 +572,7 @@ img{
                 height: 100%;
                 outline-color: #f7dd52;
                 display: block;
-                width: calc(25% - (30em/18));
+//                width: calc(25% - (30em/18));
                 text-decoration: none;
                 padding: calc(30em/18);
                 background: #fcfaf8;
@@ -732,6 +732,17 @@ img{
                 }
                 form{
                     user-select: none;
+					&.form-inline{
+						.form-group{
+							.input-group{
+								width: 100%;
+								.form-control{ 
+									width: 100%;
+									margin: 0; 
+								}
+							}
+						}
+					}
                     label{
                         font-size: 130%;
                         letter-spacing: 0.6px;
@@ -1128,7 +1139,7 @@ img{
                             .form-check-input{
                                 + .icon{
                                     font-size: 88%;
-                                    border-color: #0a7abf;
+                                    border-color: #0976B9;
                                     &:after{
                                         color: #0a7abf;
                                     }
@@ -1284,7 +1295,7 @@ img{
             margin-top: calc(12em/18);
             a{
                 color: #06468d;
-                &:has(span){ 
+                &:has( > span){ 
                     &:hover, &:focus{
                         text-decoration: none;
                     }
@@ -1732,8 +1743,8 @@ img{
                             }
                         }
                         + .icon{
-                            background-color: #035aa6;
-                            border-color: #035aa6;
+                            background-color: #014F92;
+                            border-color: #0257A0;
                             &:before{
                                 color: #ffffff;
                                 display: block;
@@ -1827,7 +1838,7 @@ img{
                                 &:checked{
                                     + .list{
                                         color: #ffffff;
-                                        background-color: #035AA6;
+                                        background-color: #02559E;
                                         border-color: #035AA6;
                                     }
                                     &:focus, &:hover{
@@ -1942,7 +1953,7 @@ img{
                 a{
                     display: block;
                     overflow: hidden;
-                    &:has(img){
+                    &:has( > img){
                         border: calc(4em/10) solid #d8e9ef;
                         margin: calc(6em/10) 0px;
                     }
@@ -2264,7 +2275,7 @@ img{
 				&:focus{
 					box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
 				}
-				&:has(.form-control-file:focus){
+				&:has( > input:focus){
 					box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.5);
 				}
                 .form-control-file{
@@ -2436,7 +2447,7 @@ img{
                         @include linkhoverlight;
                     }
                     p.symbol{
-                        &:has(span){
+                        &:has( > span){
                             position: relative;
                             padding-left: calc(22em/16);
                             .icon{
