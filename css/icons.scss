@@ -6,7 +6,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: fallback; 
-}
+} 
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -24,6 +24,11 @@
   font-variant-ligatures: discretionary-ligatures;
 }
 
+.proconex-schematic {
+  &:before {
+    content: $proconex-schematic; 
+  }
+}
 .proconex-compare {
   &:before {
     content: $proconex-compare; 
@@ -158,6 +163,56 @@
 .proconex-whatsapp1 {
   &:before {
     content: $proconex-whatsapp1;     
+  }
+}
+.proconex-film {
+  &:before {
+    content: $proconex-film; 
+  }
+}
+.proconex-file-picture {
+  &:before {
+    content: $proconex-file-picture; 
+  }
+}
+.proconex-file-play {
+  &:before {
+    content: $proconex-file-play; 
+  }
+}
+.proconex-file-video {
+  &:before {
+    content: $proconex-file-video; 
+  }
+}
+.proconex-stack {
+  &:before {
+    content: $proconex-stack; 
+  }
+}
+.proconex-folder {
+  &:before {
+    content: $proconex-folder; 
+  }
+}
+.proconex-folder-open {
+  &:before {
+    content: $proconex-folder-open; 
+  }
+}
+.proconex-folder-plus {
+  &:before {
+    content: $proconex-folder-plus; 
+  }
+}
+.proconex-folder-minus {
+  &:before {
+    content: $proconex-folder-minus; 
+  }
+}
+.proconex-folder-download {
+  &:before {
+    content: $proconex-folder-download; 
   }
 }
 .proconex-newspaper {

@@ -221,24 +221,38 @@ img{
         position: relative;
         z-index: 3;
         user-select: none;
-	.navbar-brand{
-		display: block;
-		max-width: calc(320em/20);
-		height: auto; 
-		padding-right: calc(35em/20); 
-        @media(min-width: 1367px){
-            max-width: 23.721%;
-        }
-	}
 	.navbar{
 		padding: calc(25em/10);
+        .d-flex{
+            max-width: calc(320em/10);
+            justify-content: space-between;
+            align-items: center;
+            .navbar-brand{
+                min-width: calc(320em/20);
+                display: block;
+                height: auto; 
+            }
+            @media (max-width: 1199px){
+                width: 100%;
+                max-width: 100%;
+                .navbar-brand{
+                    max-width: calc(320em/20);
+                    min-width: calc(120em/20);
+                    display: block;
+                    height: auto; 
+                }
+            }
+            @media(min-width: 1367px){
+                max-width: 23.721%;
+            }
+        }
 	}
 	.navbar-nav{
 		font-size: 170%;
 		.nav-link{
 			color: #333333;
             position: relative;
-            padding: calc(8rem/17) calc(19em/17) calc(8rem/17) calc(8rem/17);
+            padding: calc(3rem/17) calc(19em/17) calc(3rem/17) calc(8rem/17);
             @include linkhoverwbg;
             .icon{
                 position: absolute;
@@ -286,24 +300,29 @@ img{
 		}
 	}
 	.navbar-toggler{
+        font-size: 200%;
+        width: calc(33em/20);
+        height: calc(33em/20);
 		padding: 0px;
 		margin: 0px;
 		outline: none;
-		position: absolute;
-		right: calc(25em/20);
-		top: calc(27em/20);
-		@include hover;
-        &:hover, &:focus, &:active{
+        .navbar-toggler-icon{
+            font-size: 117%; 
+            display: block;
+            width: calc(33em/23.4);
+            height: calc(33em/23.4);
+            padding: 0px;
+            margin: 0px;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxkZWZzPjxzdHlsZT4uY2xzLTEsLmNscy0zLC5jbHMtNHtmaWxsLXJ1bGU6ZXZlbm9kZDt9LmNscy0xe2ZpbGw6dXJsKCNsaW5lYXItZ3JhZGllbnQpO30uY2xzLTJ7ZmlsbDp1cmwoI05ld19HcmFkaWVudF9Td2F0Y2hfY29weSk7fS5jbHMtM3tmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTIpO30uY2xzLTR7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudC0zKTt9LmNscy01e2ZpbGw6dXJsKCNOZXdfR3JhZGllbnRfU3dhdGNoX2NvcHktMik7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIyODUuNiIgeTE9Ii01Nzc3LjA2IiB4Mj0iMjg1LjYiIHkyPSI0MTUuMTEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMC44NiwgMC41LCAtMC41LCAwLjg2LCAtNDYuMywgOTQ5LjQ0KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzNkNTc5MSIvPjxzdG9wIG9mZnNldD0iMC4yOSIgc3RvcC1jb2xvcj0iIzVjODJiNSIvPjxzdG9wIG9mZnNldD0iMC43NiIgc3RvcC1jb2xvcj0iIzdkYmVlOCIvPjxzdG9wIG9mZnNldD0iMC44NSIgc3RvcC1jb2xvcj0iIzhkY2FlNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzlkZGFlOSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJOZXdfR3JhZGllbnRfU3dhdGNoX2NvcHkiIHgxPSI4MzIuOTkiIHkxPSI2MjQuNzMiIHgyPSI5MjEuNzIiIHkyPSI0NzIuNzgiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMCkiIHhsaW5rOmhyZWY9IiNsaW5lYXItZ3JhZGllbnQiLz48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudC0yIiB4MT0iNDEwLjAxIiB5MT0iLTQ1MjIuNTgiIHgyPSI0MTAuMDEiIHkyPSI2MDAuMTgiIHhsaW5rOmhyZWY9IiNsaW5lYXItZ3JhZGllbnQiLz48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudC0zIiB4MT0iLTEyNS4xNCIgeTE9Ii0zNzE1Ljk1IiB4Mj0iLTEyNS4xNCIgeTI9Ii0yMjYuNDciIHhsaW5rOmhyZWY9IiNsaW5lYXItZ3JhZGllbnQiLz48bGluZWFyR3JhZGllbnQgaWQ9Ik5ld19HcmFkaWVudF9Td2F0Y2hfY29weS0yIiB4MT0iMzA5LjM3IiB5MT0iMjU5LjU4IiB4Mj0iMzk4LjEiIHkyPSIxMDcuNjMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgMCwgMCkiIHhsaW5rOmhyZWY9IiNsaW5lYXItZ3JhZGllbnQiLz48L2RlZnM+PGc+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNzUwLjE0LDQ5MC41MkExMzQuMiwxMzQuMiwwLDAsMCw3MzcsNTIxLjQyaDBsLTcyMi43Ni0uNTZ2ODMuNzVsNzI0LjM3LjM1QTEzOC44OCwxMzguODgsMCwwLDAsODAwLjE5LDY4MWgwYzY2LjMzLDM4Ljc0LDE1MS45NCwxNi4yNSwxOTAuNjItNTBoMGMzOC44LTY2LjQ1LDE2LjI0LTE1MS45NC01MC4wOS0xOTAuNjdTNzg5LDQyNC4wNyw3NTAuMTQsNDkwLjUyWm01Ny43NywzMy43M0E3Mi42LDcyLjYsMCwwLDEsOTA3LjA1LDQ5OGgwYzM0LjUxLDIwLjE2LDQ2LDY0LjcsMjUuODcsOTkuMjFoMGE3Mi40Nyw3Mi40NywwLDAsMS05OSwyNmgwYTcyLjQ3LDcyLjQ3LDAsMCwxLTI2LTk5WiIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iODcwLjQ0IiBjeT0iNTYwLjYiIHI9IjcyLjQiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik04NzAuNDQsODg0LjEyaDBsLTg1Ni4yNS0uMjh2ODMuNzVsODU2LjI1LjA3WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTIyNi41MiwxMjUuMzdhMTMzLjg4LDEzMy44OCwwLDAsMC0xMy4xOSwzMC44OWgwTDE0LjE5LDE1My42NHY4My43NWwyMDAuNzUsMi40MmExMzguOSwxMzguOSwwLDAsMCw2MS42Myw3Ni4wOGgwYzY2LjMzLDM4LjczLDE1MS45NCwxNi4yNSwxOTAuNjItNTBoMEM1MDYsMTk5LjQ0LDQ4My40MywxMTQsNDE3LjEsNzUuMjNTMjY1LjMzLDU4LjkyLDIyNi41MiwxMjUuMzdabTU3Ljc2LDMzLjczYTcyLjYxLDcyLjYxLDAsMCwxLDk5LjE0LTI2LjIxaDBjMzQuNTEsMjAuMTUsNDYsNjQuNywyNS44OCw5OS4yMWgwYTcyLjQ4LDcyLjQ4LDAsMCwxLTk5LDI2aDBhNzIuNDksNzIuNDksMCwwLDEtMjYtOTlaIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTUiIGN4PSIzNDYuODIiIGN5PSIxOTUuNDUiIHI9IjcyLjQiLz48L2c+PC9zdmc+');
+            background-repeat: no-repeat;
+            transform: rotate(-32.9deg);
+            transition: all 0.35s ease;
+        }
+        &.collapsed{
             .navbar-toggler-icon{
-                color: #ffffff;
+                transform: rotate(0deg);
             }
         }
-	}
-	.navbar-toggler-icon{
-		font-size: 117%; 
-		padding: 0px;
-		margin: 0px;
-		line-height: calc(35rem/17);
 	}
 	@media (min-width: 992px){
 		.navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -1066,7 +1085,6 @@ img{
                             color: #035AA6;
                             position: absolute;
                             top: 50%;
-
                             transform: translateY(-50%);
                             width: calc(42em/30);
                             height: calc(42em/30);
@@ -1132,12 +1150,30 @@ img{
                         }
                     }
                 }
+				.yotube_iframe{
+					position: relative; 
+					width: 100%; 
+					padding-top: calc(900%/16);
+					margin-top: calc(25em/18);
+                    background-color: #ffffff;
+                    border-radius: calc(25em/10);
+                    border: calc(6em/10) double #2ecef2;
+                    overflow: hidden;
+					iframe{						
+						display: block; 
+						width: 100%; 
+						height: 100%; 
+						border: none;
+						position: absolute;
+						top: 0;
+					}
+				}
             }
-            &.enquiry{
+            .enquiry{
                 font-size: 115%;
                 background-color: #2ECEF2;
                 border-radius: calc(5em/10);
-                padding-left: calc(23em/10);
+                padding: calc(23em/10);
                 form{
                     p.label{
                         font-size: 130%;
