@@ -231,6 +231,7 @@ img{
                 min-width: calc(320em/20);
                 display: block;
                 height: auto; 
+                padding-right: calc(12em/20); 
             }
             @media (max-width: 1199px){
                 width: 100%;
@@ -1541,6 +1542,8 @@ img{
                                     content: "";
                                     border-top: 0.5em solid #f2f2f2;
                                     border-right: 1.3em solid transparent;
+
+
                                     border-bottom: 0;
                                     border-left: 1.3em solid transparent;
                                     position: absolute;
@@ -2096,6 +2099,9 @@ img{
         }
         .proconEx_clients_list {
             color: #333;
+            .slick-track{
+                justify-content: center; 
+            }
             .proconEx_client{
                 color: #333;
                 display: block;
