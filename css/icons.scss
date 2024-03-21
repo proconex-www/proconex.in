@@ -101,7 +101,7 @@
   }
 }
 .proconex-ask-engineers {
-  &:before { 
+  &:before {
     content: $proconex-ask-engineers;     
     color: #035aa6;
   }
@@ -163,56 +163,57 @@
 .proconex-whatsapp1 {
   &:before {
     content: $proconex-whatsapp1;     
+    color: #25d366;
   }
 }
-.proconex-film {
+.proconex-add {
   &:before {
-    content: $proconex-film; 
+    content: $proconex-add; 
   }
 }
-.proconex-file-picture {
+.proconex-remove {
   &:before {
-    content: $proconex-file-picture; 
+    content: $proconex-remove; 
   }
 }
-.proconex-file-play {
+.proconex-keyboard-arrow-down {
   &:before {
-    content: $proconex-file-play; 
+    content: $proconex-keyboard-arrow-down; 
   }
 }
-.proconex-file-video {
+.proconex-keyboard-arrow-left {
   &:before {
-    content: $proconex-file-video; 
+    content: $proconex-keyboard-arrow-left; 
   }
 }
-.proconex-stack {
+.proconex-keyboard-arrow-right {
   &:before {
-    content: $proconex-stack; 
+    content: $proconex-keyboard-arrow-right; 
   }
 }
-.proconex-folder {
+.proconex-keyboard-arrow-up {
   &:before {
-    content: $proconex-folder; 
+    content: $proconex-keyboard-arrow-up; 
   }
 }
-.proconex-folder-open {
+.proconex-cancel {
   &:before {
-    content: $proconex-folder-open; 
+    content: $proconex-cancel; 
   }
 }
-.proconex-folder-plus {
+.proconex-check {
   &:before {
-    content: $proconex-folder-plus; 
+    content: $proconex-check; 
   }
 }
-.proconex-folder-minus {
+.proconex-notifications {
   &:before {
-    content: $proconex-folder-minus; 
+    content: $proconex-notifications; 
   }
 }
-.proconex-folder-download {
+.proconex-notifications_none {
   &:before {
-    content: $proconex-folder-download; 
+    content: $proconex-notifications_none; 
   }
 }
 .proconex-newspaper {
@@ -782,6 +783,7 @@
 }
 .proconex-file-pdf {
   &:before {
+
     content: $proconex-file-pdf; 
   }
 }
