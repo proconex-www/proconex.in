@@ -24,6 +24,16 @@
   font-variant-ligatures: discretionary-ligatures;
 }
 
+.proconex-form-spin {
+  &:before {
+    content: $proconex-form-spin; 
+  }
+}
+.proconex-spinner {
+  &:before {
+    content: $proconex-spinner; 
+  }
+}
 .proconex-schematic {
   &:before {
     content: $proconex-schematic; 
