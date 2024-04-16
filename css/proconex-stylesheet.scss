@@ -173,6 +173,11 @@ img{
     .bg_fix{
         background-attachment: fixed;
     }
+	@media (min-width: 1200px) and (max-width: 1365px){
+		header{
+			font-size: calc(100vw/13670 * 100);
+		}
+	}
     @media (min-width: 1367px){
         font-size: calc(100vw/13670 * 100);
         .container{
